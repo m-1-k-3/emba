@@ -47,6 +47,7 @@ jobs:
         run: |
           docker pull embeddedanalyzer/emba
           echo "Export of docker container starting to $(pwd)"
+          pwd
           docker save -o vuln-image.tar embeddedanalyzer/emba
           ls -lh vuln-image.tar
           echo "Export of docker container finished to $(pwd)"
