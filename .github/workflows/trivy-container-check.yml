@@ -46,7 +46,10 @@ jobs:
       - name: Generate tarball from image
         run: |
           docker pull embeddedanalyzer/emba
-          docker save -o vuln-image.tar embeddedanalyzer/emba
+          echo "Export of docker container starting ..."
+          docker save -o /github/workspace/vuln-image.tar embeddedanalyzer/emba
+          ls -lh /github/workspace/vuln-image.tar
+          echo "Export of docker container finished ..."
 
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
