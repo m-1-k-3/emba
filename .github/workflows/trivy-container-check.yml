@@ -51,6 +51,10 @@ jobs:
           docker save -o vuln-image.tar embeddedanalyzer/emba
           ls -lh vuln-image.tar
           echo "Export of docker container finished to $(pwd)"
+      - name: find extracted container
+        run: |
+          pwd
+          find / -name vuln-image.tar -ls
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
