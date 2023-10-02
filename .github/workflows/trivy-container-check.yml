@@ -43,29 +43,25 @@ jobs:
           haskell: true
           large-packages: false
           swap-storage: true
-      - name: Generate tarball from image
+      - name: Generate tarball from EMBA docker image
         run: |
           docker pull embeddedanalyzer/emba
           echo "Export of docker container starting to $(pwd)"
           pwd
           docker save -o vuln-image.tar embeddedanalyzer/emba
           ls -lh vuln-image.tar
+          # /home/runner/work/emba/emba/vuln-image.tar
           echo "Export of docker container finished to $(pwd)"
-      - name: find extracted container
-        run: |
-          pwd
-          find / -name vuln-image.tar -ls
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
-          # input: /github/workspace/vuln-image.tar
-          input: /home/runner/work/emba/emba/vuln-image.tar
+          # input: /home/runner/work/emba/emba/vuln-image.tar
+          input: /github/workspace/vuln-image.tar
           timeout: "60m"
           skip-dirs: "/external/semgrep-rules,/external/routersploit,/external/arachni,/etc/ssl/private/"
           format: 'sarif'
           output: 'trivy-results.sarif'
           severity: 'CRITICAL,HIGH'
-
       - name: Upload Trivy scan results to GitHub Security tab
         uses: github/codeql-action/upload-sarif@v2
         with:
