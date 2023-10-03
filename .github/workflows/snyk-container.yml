@@ -36,10 +36,6 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build a Docker image
       run: |
-        sudo apt-get install python3-venv -y
-        sudo mkdir ./external
-        sudo python3 -m venv "./external/emba_venv"
-        sudo source "./external/emba_venv/bin/activate"
         sudo docker-compose build --no-cache --pull
     - name: Run Snyk to check Docker image for vulnerabilities
       # Snyk can be used to break the build when it detects vulnerabilities.
