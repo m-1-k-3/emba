@@ -35,7 +35,12 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build a Docker image
-      run: docker build -t your/image-to-test .
+      run: |
+        apt-get install python3-venv -y
+        mkdir ./external
+        python3 -m venv "./external/emba_venv"
+        source "./external/emba_venv/bin/activate"
+        docker-compose build --no-cache --pull
     - name: Run Snyk to check Docker image for vulnerabilities
       # Snyk can be used to break the build when it detects vulnerabilities.
       # In this case we want to upload the issues to GitHub Code Scanning
