@@ -1,0 +1,2005 @@
+<!-- 
+EMBA - EMBEDDED LINUX ANALYZER
+
+Copyright 2020-2023 Siemens AG
+Copyright 2020-2025 Siemens Energy AG
+
+EMBA comes with ABSOLUTELY NO WARRANTY. This is free software, and you are
+welcome to redistribute it under the terms of the GNU General Public License.
+See LICENSE file for usage of this software.
+
+EMBA is licensed under GPLv3
+
+Author(s) and contributors from the EMBA project are listed here: https://github.com/e-m-b-a/emba/blob/master/CONTRIBUTORS.md
+-->
+
+<!-- Used icons: https://github.com/CoreyGinnivan/system-uicons -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EMBA firmware report</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./../style/style.css" type="text/css">
+  <link rel="icon" type="image/png" href="./../style/favicon.png">
+</head>
+<body>
+
+<div id="sidenav" class="side">
+  <div id="logo">
+    <a class="inherit" href="./../index.html"><img class="inherit" id="logoImage" src="./../style/emba.svg" alt="logo"></a>
+  </div>
+  <div id="nav">
+      <a id="embark" class="hidden" href="{{ embarkBackUrl }}">&laquo; Back to EMBArk</a> <!-- nosem -->
+      <a class="backButton" href="./../index.html">&laquo; Back to main</a>
+<a class="modul" href="./../p50_binwalk_extractor.html" title="./../p50_binwalk_extractor.html" >&laquo; Back to p50_binwalk_extractor</a>
+      <!-- navigation start -->
+      <!-- navigation end -->
+      <input id="expand" class="expand_njs hidden" type="button" value="More results:" onclick="this.value=this.value=='+ Show more results'?'- Hide more results':'+ Show more results';">
+      <div class="expand_area">
+        <!-- etc start -->
+        <!-- etc end -->
+      </div>
+  </div>
+
+  <a href="ERRORLINK"><div id="buttonErrorInvisible" class="rectButton"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></div></a>
+  <a href="TIMELINK"><div id="buttonTimeInvisible" class="rectButton"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1 0 0 1 19 2)"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 5.5v4H5"/></g></svg></div></a>
+
+  <div id="buttonSizer" class="rectButton buttonClose" onclick="buttonNav()"></div>
+</div>
+<div id="main" class="main">
+  <!-- content start -->
+<br />
+<pre>                                                                               /logs/firmware/binwalk_extracted/firmware</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ZIP archive, version: 2.0, file count: 7, total size: 7757362 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[+] Extraction of zip data at offset 0x0 completed successfully</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                                /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/Anleitung zur Installation der Firmware.pdf</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                PDF document, version 1.5</pre>
+<pre>3239                               0xCA7                              JPEG image, total size: 12446 bytes</pre>
+<pre>16290                              0x3FA2                             JPEG image, total size: 22946 bytes</pre>
+<pre>39416                              0x99F8                             JPEG image, total size: 22651 bytes</pre>
+<pre>62247                              0xF327                             JPEG image, total size: 25305 bytes</pre>
+<pre>87732                              0x156B4                            JPEG image, total size: 27540 bytes</pre>
+<pre>118054                             0x1CD26                            JPEG image, total size: 12446 bytes</pre>
+<pre>130834                             0x1FF12                            JPEG image, total size: 82376 bytes</pre>
+<pre>214868                             0x34754                            JPEG image, total size: 135113 bytes</pre>
+<pre>351800                             0x55E38                            JPEG image, total size: 174828 bytes</pre>
+<pre>527819                             0x80DCB                            JPEG image, total size: 83411 bytes</pre>
+<pre>612948                             0x95A54                            JPEG image, total size: 79058 bytes</pre>
+<pre>694725                             0xA99C5                            JPEG image, total size: 85874 bytes</pre>
+<pre>782334                             0xBEFFE                            JPEG image, total size: 80438 bytes</pre>
+<pre>864483                             0xD30E3                            JPEG image, total size: 180023 bytes</pre>
+<pre>1046320                            0xFF730                            JPEG image, total size: 134351 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[+] Extraction of jpeg data at offset 0xCA7 completed successfully</pre>
+<pre>[+] Extraction of jpeg data at offset 0x3FA2 completed successfully</pre>
+<pre>[+] Extraction of jpeg data at offset 0x99F8 completed successfully</pre>
+<pre>[+] Extraction of jpeg data at offset 0xF327 completed successfully</pre>
+<pre>[+] Extraction of jpeg data at offset 0x156B4 completed successfully</pre>
+<pre>[+] Extraction of jpeg data at offset 0x1CD26 completed successfully</pre>
+<pre>[+] Extraction of jpeg data at offset 0x1FF12 completed successfully</pre>
+<pre>[+] Extraction of jpeg data at offset 0x34754 completed successfully</pre>
+<pre>[+] Extraction of jpeg data at offset 0x55E38 completed successfully</pre>
+<pre>[+] Extraction of jpeg data at offset 0x80DCB completed successfully</pre>
+<pre>[+] Extraction of jpeg data at offset 0x95A54 completed successfully</pre>
+<pre>[+] Extraction of jpeg data at offset 0xA99C5 completed successfully</pre>
+<pre>[+] Extraction of jpeg data at offset 0xBEFFE completed successfully</pre>
+<pre>[+] Extraction of jpeg data at offset 0xD30E3 completed successfully</pre>
+<pre>[+] Extraction of jpeg data at offset 0xFF730 completed successfully</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                                    /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>96                                 0x60                               SEAMA firmware header, header size: 64 bytes, data size: 3305504 bytes</pre>
+<pre>160                                0xA0                               LZMA compressed data, properties: 0x5D, dictionary size: 33554432 bytes, compressed size: 1060335 bytes, uncompressed size: </pre>
+<pre>                                                                      3184036 bytes</pre>
+<pre>1114304                            0x1100C0                           SquashFS file system, Little Endian, version: 4.0, compression: lzma, inode count: 1338, block size: 131072, image size: 2189076 </pre>
+<pre>                                                                      bytes, created: 2011-04-08 03:13:34</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[+] Extraction of lzma data at offset 0xA0 completed successfully</pre>
+<pre>[+] Extraction of squashfs data at offset 0x1100C0 completed successfully</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>         /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libutil-0.9.30.1.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>          /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libiptc.so.0.0.0</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>        /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libresolv-0.9.30.1.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>          /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libdl-0.9.30.1.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>        /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/ld-uClibc-0.9.30.1.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>        /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libcrypt-0.9.30.1.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre>9892                               0x26A4                             MD5 hash constants, Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>            /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libgcc_s.so.1</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>          /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libm-0.9.30.1.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>          /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/librt-0.9.30.1.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>         /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libxtables.so.4.0.0</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>        /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_time.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>        /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libipt_TTL.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>     /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_conntrack.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>      /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_iprange.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>       /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_tcpmss.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>      /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_standard.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>       /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_string.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>        /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libipt_LOG.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>       /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_limit.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>      /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libipt_REJECT.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>        /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libuClibc-0.9.30.1.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>        /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_MARK.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>       /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_state.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>      /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libipt_HIJACK.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>       /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libipt_icmp.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>      /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_CLASSIFY.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>     /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libipt_REDIRECT.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>      /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_physdev.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>       /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_mport.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>       /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_TCPMSS.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>       /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libipt_SNAT.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>        /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_udp.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>    /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libipt_MASQUERADE.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>      /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_pkttype.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>       /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libipt_DNAT.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>        /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_mac.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>        /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_tcp.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>     /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_multiport.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>       /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_helper.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>        /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_mark.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>          /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libip4tc.so.0.0.0</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>       /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libpthread-0.9.30.1.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>         /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libnsl-0.9.30.1.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>         /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/modules/sw_tcpip.ko</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit relocatable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>        /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/modules/ifresetcnt.ko</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit relocatable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                                          /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                DLOB firmware header, header size: 108 bytes, data size: 3645472</pre>
+<pre>108                                0x6C                               LZMA compressed data, properties: 0x5D, dictionary size: 33554432 bytes, compressed size: 1146654 bytes, uncompressed size: </pre>
+<pre>                                                                      3479564 bytes</pre>
+<pre>1179788                            0x12008C                           SquashFS file system, Little Endian, version: 4.0, compression: lzma, inode count: 1479, block size: 131072, image size: 2463195 </pre>
+<pre>                                                                      bytes, created: 2013-02-06 06:18:46</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[+] Extraction of lzma data at offset 0x6C completed successfully</pre>
+<pre>[+] Extraction of squashfs data at offset 0x12008C completed successfully</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>       /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/modules/rt2860v2_ap.ko</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit relocatable, MIPS for System-V (Unix), Little Endian</pre>
+<pre>747712                             0xB68C0                            SHA256 hash constants, Little Endian</pre>
+<pre>748932                             0xB6D84                            AES RCON</pre>
+<pre>750864                             0xB7510                            AES S-Box</pre>
+<pre>751120                             0xB7610                            AES Acceleration Table</pre>
+<pre>751376                             0xB7710                            AES Acceleration Table</pre>
+<pre>751632                             0xB7810                            AES Acceleration Table</pre>
+<pre>751888                             0xB7910                            AES Acceleration Table</pre>
+<pre>752160                             0xB7A20                            AES S-Box</pre>
+<pre>752416                             0xB7B20                            AES Acceleration Table</pre>
+<pre>752672                             0xB7C20                            AES Acceleration Table</pre>
+<pre>752951                             0xB7D37                            AES RCON</pre>
+<pre>845776                             0xCE7D0                            CRC32 polynomial table, Little Endian</pre>
+<pre>849296                             0xCF590                            AES S-Box</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>        /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/htdocs/smart404/index.php</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>2793                               0xAE9                              Copyright text: "Copyright &amp;copy04-2011 D-Link Corporation Inc.&lt;/a&gt;&lt;/font&gt;&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; &lt;/td&gt;"</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>       /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/htdocs/webinc/templates.php</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>22971                              0x59BB                             Copyright text: "copyright"&gt;Copyright &amp;copy; 2008-2011 D-Link Systems, Inc.&lt;/div&gt; &lt;/body&gt; &lt;/html&gt; "</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>       /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/htdocs/web/pic/img_edit.gif</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                GIF image, 20x20 pixels, total size: 125 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[#] Extraction of gif data at offset 0x0 declined</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>       /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/htdocs/web/pic/head_03.gif</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                GIF image, 96x92 pixels, total size: 6746 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[#] Extraction of gif data at offset 0x0 declined</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>     /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/htdocs/web/pic/smart_head_1.jpg</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                JPEG image, total size: 5737 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[#] Extraction of jpeg data at offset 0x0 declined</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>      /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/htdocs/web/pic/smart_head.jpg</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                JPEG image, total size: 8492 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[#] Extraction of jpeg data at offset 0x0 declined</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>      /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/htdocs/web/pic/img_delete.gif</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                GIF image, 20x20 pixels, total size: 415 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[#] Extraction of gif data at offset 0x0 declined</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>       /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/htdocs/web/pic/head_01.gif</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                GIF image, 162x92 pixels, total size: 5672 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[#] Extraction of gif data at offset 0x0 declined</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>       /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/htdocs/web/pic/head_02.gif</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                GIF image, 1x92 pixels, total size: 291 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[#] Extraction of gif data at offset 0x0 declined</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>         /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/htdocs/web/pic/tail.gif</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                GIF image, 114x35 pixels, total size: 573 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[#] Extraction of gif data at offset 0x0 declined</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>     /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/htdocs/web/pic/topmenumodel.gif</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                GIF image, 135x28 pixels, total size: 1284 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[#] Extraction of gif data at offset 0x0 declined</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>     /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/htdocs/web/web_filter_info.php</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>2185                               0x889                              Copyright text: "copyright"&gt;Copyright &amp;copy; 2008-2010 D-Link Systems, Inc.&lt;/div&gt; &lt;/body&gt; &lt;/html&gt; "</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>       /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/htdocs/web/css/general.css</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>9945                               0x26D9                             Copyright text: "copyright { color: white; font: 12px Tahoma; text-align: center; padding: 10px; } "</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>              /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/htdocs/cgibin</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/servd</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/portt</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>              /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/logd</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>            /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/sendmail</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/neaps</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>              /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/pppd</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>           /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/igmpproxy</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>        /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/updatewifistats</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/proxyd</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/ubcfg</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre>7120                               0x1BD0                             CRC32 polynomial table, Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/xmldb</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/gpiod</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>            /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/telnetd</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/klogd</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>          /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/updateleases</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>         /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/iptables-multi</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/ddnsd</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/widget</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>            /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/trigger</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/nsbbox</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/rgbin</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>            /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/hostapd</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre>158094                             0x2698E                            Copyright text: "Copyright (c) 2002-2005, Jouni Malinen &lt;jkmaline&commat;cc.hut.fi&gt; and contributors "</pre>
+<pre>181184                             0x2C3C0                            AES S-Box</pre>
+<pre>182464                             0x2C8C0                            AES RCON</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/lld2d</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>              /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/ated</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>              /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/ecmh</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>               /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/tc</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>            /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/netbios</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>               /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/ip</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/logger</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/udhcpd</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>           /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/rt3052esw</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>            /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/iwconfig</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>            /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/rndimage</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>               /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/sbin/ubcom</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>            /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/dnsmasq</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre>136520                             0x21548                            Copyright text: "copyright.bind"</pre>
+<pre>136536                             0x21558                            Copyright text: "Copyright (C) 2000-2008 Simon Kelley"</pre>
+<pre>142400                             0x22C40                            Copyright text: "copyright information."</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>               /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/sbin/httpd</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>               /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/bin/busybox</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre>466015                             0x71C5F                            Copyright text: "Copyright (C) 1998-2008 Erik Andersen, Rob Landley, Denys Vlasenko and others. Licensed under GPLv2."</pre>
+<pre>488923                             0x775DB                            bzip2 compressed data, total size: 6062 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[+] Extraction of bzip2 data at offset 0x775DB completed successfully</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>              /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/libutil-0.9.30.1.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>              /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/wps</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre>577136                             0x8CE70                            SHA256 hash constants, Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/libresolv-0.9.30.1.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/libiptc.so.0.0.0</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>               /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/libdl-0.9.30.1.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/ld-uClibc-0.9.30.1.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>              /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/libcrypt-0.9.30.1.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre>9892                               0x26A4                             MD5 hash constants, Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                 /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/libgcc_s.so.1</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/libm-0.9.30.1.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>               /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/librt-0.9.30.1.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>              /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/libxtables.so.4.0.0</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libxt_time.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libipt_TTL.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>           /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libxt_conntrack.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>            /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libxt_iprange.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>            /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libxt_tcpmss.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>           /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libxt_standard.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>            /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libxt_string.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libipt_LOG.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libxt_limit.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>            /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libipt_REJECT.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libxt_state.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libxt_MARK.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>            /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libipt_HIJACK.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libipt_icmp.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>           /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libxt_CLASSIFY.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/libuClibc-0.9.30.1.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>           /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libipt_REDIRECT.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>            /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libxt_physdev.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libxt_mport.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>            /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libip6t_icmp6.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>            /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libxt_TCPMSS.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libipt_SNAT.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>              /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libxt_udp.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libip6t_LOG.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>           /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libip6t_REJECT.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>              /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libxt_mac.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>          /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libipt_MASQUERADE.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>            /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libxt_pkttype.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libipt_DNAT.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>              /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libxt_tcp.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>           /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libxt_multiport.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>            /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libxt_helper.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libxt_mark.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>               /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/libip4tc.so.0.0.0</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/libpthread-0.9.30.1.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>               /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/libip6tc.so.0.0.0</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>               /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/libnsl-0.9.30.1.so</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit shared object, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>              /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/modules/sw_tcpip.ko</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit relocatable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/modules/ifresetcnt.ko</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit relocatable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>            /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/htdocs/webinc/templates.php</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>21939                              0x55B3                             Copyright text: "copyright"&gt;Copyright &amp;copy; 2008-2011 D-Link Systems, Inc.&lt;/div&gt; &lt;/body&gt; &lt;/html&gt; "</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/modules/rt2860v2_ap.ko</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit relocatable, MIPS for System-V (Unix), Little Endian</pre>
+<pre>762624                             0xBA300                            SHA256 hash constants, Little Endian</pre>
+<pre>762960                             0xBA450                            AES S-Box</pre>
+<pre>763216                             0xBA550                            AES Acceleration Table</pre>
+<pre>763472                             0xBA650                            AES Acceleration Table</pre>
+<pre>763728                             0xBA750                            AES Acceleration Table</pre>
+<pre>763984                             0xBA850                            AES Acceleration Table</pre>
+<pre>764256                             0xBA960                            AES S-Box</pre>
+<pre>764512                             0xBAA60                            AES Acceleration Table</pre>
+<pre>764768                             0xBAB60                            AES Acceleration Table</pre>
+<pre>765047                             0xBAC77                            AES RCON</pre>
+<pre>765956                             0xBB004                            AES RCON</pre>
+<pre>857648                             0xD1630                            CRC32 polynomial table, Little Endian</pre>
+<pre>861184                             0xD2400                            AES S-Box</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                   /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/htdocs/cgibin</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>            /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/htdocs/web/pic/img_edit.gif</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                GIF image, 20x20 pixels, total size: 125 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[#] Extraction of gif data at offset 0x0 declined</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/htdocs/web/pic/head_03.gif</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                GIF image, 96x92 pixels, total size: 6746 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[#] Extraction of gif data at offset 0x0 declined</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>          /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/htdocs/web/pic/smart_head_1.jpg</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                JPEG image, total size: 5737 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[#] Extraction of jpeg data at offset 0x0 declined</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>           /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/htdocs/web/pic/smart_head.jpg</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                JPEG image, total size: 8492 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[#] Extraction of jpeg data at offset 0x0 declined</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>           /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/htdocs/web/pic/img_delete.gif</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                GIF image, 20x20 pixels, total size: 415 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[#] Extraction of gif data at offset 0x0 declined</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/htdocs/web/pic/head_01.gif</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                GIF image, 162x92 pixels, total size: 5672 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[#] Extraction of gif data at offset 0x0 declined</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>     /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/htdocs/web/pic/wan_detect_process_bar.gif</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                GIF image, 415x30 pixels, total size: 15681 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[#] Extraction of gif data at offset 0x0 declined</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/htdocs/web/pic/head_02.gif</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                GIF image, 1x92 pixels, total size: 291 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[#] Extraction of gif data at offset 0x0 declined</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>              /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/htdocs/web/pic/tail.gif</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                GIF image, 114x35 pixels, total size: 573 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[#] Extraction of gif data at offset 0x0 declined</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>          /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/htdocs/web/pic/topmenumodel.gif</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                GIF image, 135x28 pixels, total size: 1284 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[#] Extraction of gif data at offset 0x0 declined</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>           /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/htdocs/web/web_filter_info.php</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>2185                               0x889                              Copyright text: "copyright"&gt;Copyright &amp;copy; 2008-2010 D-Link Systems, Inc.&lt;/div&gt; &lt;/body&gt; &lt;/html&gt; "</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>             /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/htdocs/web/css/general.css</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>10052                              0x2744                             Copyright text: "copyright { color: white; font: 12px Tahoma; text-align: center; padding: 10px; } "</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                   /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/portt</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                   /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/servd</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                   /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/logd</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                 /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/sendmail</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                   /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/pppd</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                  /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/hostapd</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre>223059                             0x36753                            Copyright text: "Copyright (c) 2002-2008, Jouni Malinen &lt;j&commat;w1.fi&gt; and contributors "</pre>
+<pre>253952                             0x3E000                            AES S-Box</pre>
+<pre>255232                             0x3E500                            AES RCON</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                   /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/neaps</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                  /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/dhcp6s</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                   /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/xmldb</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                  /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/dhcp6c</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>              /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/updatewifistats</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                   /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/ubcfg</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre>7120                               0x1BD0                             CRC32 polynomial table, Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                 /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/igmpproxy</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                   /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/gpiod</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                  /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/telnetd</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                 /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/llmnresp</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                   /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/klogd</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                   /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/ddnsd</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>               /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/updateleases</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>              /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/ip6tables-multi</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>              /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/iptables-multi</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                  /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/nsbbox</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                  /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/widget</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                  /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/trigger</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                   /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/rgbin</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                   /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/lld2d</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                   /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/radvd</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                   /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/ated</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                    /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/ip</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                   /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/ecmh</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                  /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/dnsmasq</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre>136520                             0x21548                            Copyright text: "copyright.bind"</pre>
+<pre>136536                             0x21558                            Copyright text: "Copyright (C) 2000-2008 Simon Kelley"</pre>
+<pre>142400                             0x22C40                            Copyright text: "copyright information."</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                  /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/netbios</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                  /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/rdisc6</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre>22448                              0x57B0                             Copyright text: "Copyright (C) %u-%u Remi Denis-Courmont "</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                 /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/radvdump</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                    /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/tc</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                  /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/logger</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                 /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/rt3052esw</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                  /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/udhcpd</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                 /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/iwconfig</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                 /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/rndimage</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                     /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/sbin/ubcom</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                     /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/sbin/httpd</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                    /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/wps</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre>591040                             0x904C0                            SHA256 hash constants, Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                    /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/bin/busybox</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                ELF binary, 32-bit executable, MIPS for System-V (Unix), Little Endian</pre>
+<pre>457951                             0x6FCDF                            Copyright text: "Copyright (C) 1998-2008 Erik Andersen, Rob Landley, Denys Vlasenko and others. Licensed under GPLv2."</pre>
+<pre>479247                             0x7500F                            bzip2 compressed data, total size: 5972 bytes</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[+] Extraction of bzip2 data at offset 0x7500F completed successfully</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                     /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/A0/decompressed.bin</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                Linux version 2.6.33.2 (eric_wang&commat;enzo) (gcc version 4.3.3 (GCC) ) #1 Fri Apr 8 11:04:00 CST 2011, has symbol table: true</pre>
+<pre>2503808                            0x263480                           CRC32 polynomial table, Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[-] Extraction of linux_kernel data at offset 0x0 failed!</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<br />
+<pre>                           /logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/6C/decompressed.bin</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>DECIMAL                            HEXADECIMAL                        DESCRIPTION</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>0                                  0x0                                Linux version 2.6.33.2 (eric&commat;localhost.localdomain) (gcc version 4.3.3 (GCC) ) #1 Wed Oct 10 12:06:43 CST 2012, has symbol table: </pre>
+<pre>                                                                      true</pre>
+<pre>2753680                            0x2A0490                           CRC32 polynomial table, Little Endian</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<pre>[-] Extraction of linux_kernel data at offset 0x0 failed!</pre>
+<pre><hr class="mono" /><hr class="mono" /><hr class="mono" />-----</pre>
+<br />
+<pre>Analyzed 2236 files for 114 file signatures (258 magic patterns) in 989.0 milliseconds</pre>
+  <!-- content end -->
+</div>
+
+<a href="https://github.com/e-m-b-a/emba" title="github.com/e-m-b-a/emba" target="_blank">
+  <div id="buttonInfo" class="rectButtonVisible">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" transform="translate(2 2)"><g stroke="white" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 12.5v-4h-1"/><path d="M7.5 12.5h2"/></g><circle cx="8.5" cy="5.5" fill="white" r="1"/></g></svg>
+  </div>
+</a>
+<div id="buttonBack" class="nonClickable rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M9.5 14.5l4-4l-4-4" fill="none" stroke="#444" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<div id="buttonForward" class="nonClickable rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M11.5 14.5l-4-4l4-4" fill="none" stroke="#444" stroke-linecap="round" stroke-linejoin="round"/></svg></div> 
+<div id="buttonDown" class="rectButton" onclick="scrollDown()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5l-4 4l-4-4"/><path d="M14.5 10.5l-4 4l-4-4"/></g></svg></div>
+<div id="buttonUp" class="rectButton" onclick="scrollUp()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 14.5l4-4l4 4"/><path d="M6.5 10.5l4-4l4 4"/></g></svg></div> 
+
+<script>
+window.onload = function () {
+  var buttons = document.getElementsByClassName("rectButton");
+  for (let i=0; i<buttons.length; i++) {
+    buttons[i].style.visibility = "visible";
+  }
+  var buttonDown = document.getElementById("buttonDown");
+  buttonDown.classList.add('rectButtonVisible');
+  buttonDown.classList.remove('rectButton');
+
+  var buttonUp = document.getElementById("buttonUp");
+  buttonUp.classList.add('rectButtonVisible');
+  buttonUp.classList.remove('rectButton');
+    
+  var buttonSizer = document.getElementById("buttonSizer");
+  buttonSizer.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+  if (document.getElementById("buttonTime") !== null) {
+    var buttonTime = document.getElementById("buttonTime");
+    buttonTime.style.bottom = "50px";
+  }
+  if (document.getElementById("buttonError") !== null) {
+    var buttonError = document.getElementById("buttonError");
+    buttonError.style.bottom = "100px";
+  }
+  document.getElementById("expand").value = "+ Show more results";
+  document.getElementById("expand").className += " expand";
+  var embarkButton = document.getElementById("embark");
+  if ( !(embarkButton.href.includes("embarkBackUrl")) ) {
+    embarkButton.classList.remove('hidden');
+    document.getElementById("logoImage").src = "./../style/embark.svg";
+    document.getElementById("logo").style.background = "#2d2d2d";
+  }
+}
+
+function openNav() {
+  document.getElementById("sidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("nav").style.visibility = "visible";
+}
+
+function closeNav() {
+  document.getElementById("sidenav").style.width = "50px";
+  document.getElementById("sidenav").scrollTop = 0;
+  document.getElementById("main").style.marginLeft = "50px";
+  document.getElementById("nav").style.visibility = "hidden";
+}
+
+function scrollDown() {
+  window.scrollTo(0,document.body.scrollHeight);
+}
+
+function scrollUp() {
+  window.scrollTo(0,0);
+}
+
+function buttonNav() {
+  var button = document.getElementById("buttonSizer");
+  if ( button.classList.contains('buttonOpen') ) {
+    button.classList.remove('buttonOpen');
+    button.classList.add('buttonClose');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+    openNav();
+  } else if( button.classList.contains('buttonClose') ) {
+    button.classList.remove('buttonClose');
+    button.classList.add('buttonOpen');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 7.5v-5h-5"/><path d="M18.5 2.5l-6 5.929"/><path d="M7.5 18.5l-5 .023V13.5"/><path d="M8.5 12.5l-6 6"/></g></svg>';
+    closeNav();
+  };
+}
+
+// the following function is currently not used
+// it is for future extensions
+function overlay_output(link) {
+  var rawfile = new XMLHttpRequest();
+  rawfile.open('GET', link, false);
+  rawfile.overrideMimeType("text");
+  rawfile.onreadystatechange = function()
+  {
+    alert(rawfile.responseText);
+    //console.log(rawfile.responseText);
+  }
+  rawfile.send(null);
+}
+
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+      case 37:
+        document.getElementById("buttonForward").parentNode.click(); 
+        break;
+      case 39:
+        document.getElementById("buttonBack").parentNode.click();       
+        break;
+    }
+};
+</script>
+
+</body>
+</html>

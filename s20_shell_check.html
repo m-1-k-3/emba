@@ -1,0 +1,521 @@
+<!-- 
+EMBA - EMBEDDED LINUX ANALYZER
+
+Copyright 2020-2023 Siemens AG
+Copyright 2020-2025 Siemens Energy AG
+
+EMBA comes with ABSOLUTELY NO WARRANTY. This is free software, and you are
+welcome to redistribute it under the terms of the GNU General Public License.
+See LICENSE file for usage of this software.
+
+EMBA is licensed under GPLv3
+
+Author(s) and contributors from the EMBA project are listed here: https://github.com/e-m-b-a/emba/blob/master/CONTRIBUTORS.md
+-->
+
+<!-- Used icons: https://github.com/CoreyGinnivan/system-uicons -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EMBA firmware report</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style/style.css" type="text/css">
+  <link rel="icon" type="image/png" href="./style/favicon.png">
+</head>
+<body>
+
+<div id="sidenav" class="side">
+  <div id="logo">
+    <a class="inherit" href="./index.html"><img class="inherit" id="logoImage" src="./style/emba.svg" alt="logo"></a>
+  </div>
+  <div id="nav">
+      <a id="embark" class="hidden" href="{{ embarkBackUrl }}">&laquo; Back to EMBArk</a> <!-- nosem -->
+      <a class="backButton" href="./index.html">&laquo; Back to main</a>
+      <!-- navigation start --><a class="modul" href="#check_scripts_with_shellcheck_and_semgrep" title="#check_scripts_with_shellcheck_and_semgrep" >Check scripts with shellcheck and semgrep</a><a class="submodul" href="#checkscriptswithshellcheck" title="#checkscriptswithshellcheck" >Check scripts with shellcheck</a><a class="submodul" href="#summaryofshellissuesshellcheck" title="#summaryofshellissuesshellcheck" >Summary of shell issues (shellcheck)</a><a class="submodul" href="#checkshellscriptswithsemgrep" title="#checkshellscriptswithsemgrep" >Check shell scripts with semgrep</a><a class="submodul" href="#summaryofshellevalusages" title="#summaryofshellevalusages" >Summary of shell eval usages</a>
+      <!-- navigation end -->
+      <input id="expand" class="expand_njs hidden" type="button" value="More results:" onclick="this.value=this.value=='+ Show more results'?'- Hide more results':'+ Show more results';">
+      <div class="expand_area">
+        <!-- etc start -->
+        <!-- etc end -->
+      </div>
+  </div>
+
+  <a href="ERRORLINK"><div id="buttonErrorInvisible" class="rectButton"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></div></a>
+  <a href="TIMELINK"><div id="buttonTimeInvisible" class="rectButton"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1 0 0 1 19 2)"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 5.5v4H5"/></g></svg></div></a>
+
+  <div id="buttonSizer" class="rectButton buttonClose" onclick="buttonNav()"></div>
+</div>
+<div id="main" class="main">
+  <!-- content start -->
+<pre>[</span><span class="blue">+</span>] </span><span class="cyan"><span class="bold"><a id="check_scripts_with_shellcheck_and_semgrep"><a id="checkscriptswithshellcheck">Check scripts with shellcheck</a> and semgrep</a></span></pre>
+<pre><span class="bold"><hr class="double" /></span></pre>
+<pre>This module tries to identify shell scripts and analyses them with shellcheck - <a href="https://www.shellcheck.net/" title="https://www.shellcheck.net/" target="_blank" >https://www.shellcheck.net/</a>.</pre>
+<br />
+<br />
+<br />
+<pre></span><span class="blue">==&gt</span></span> </span><span class="cyan"><a id="checkscriptswithshellcheck">Check scripts with shellcheck</a></span></pre>
+<pre><hr class="mono" /></pre>
+<a class="reference" href="./s20_shell_check/fe3f1f864c2b49368a9274d2bddab11b.html" title="./s20_shell_check/fe3f1f864c2b49368a9274d2bddab11b.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">5 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/events/UPDATELEASES.php (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/c8084414d064a0ae523ce614fe9a0ce8.html" title="./s20_shell_check/c8084414d064a0ae523ce614fe9a0ce8.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">9 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/events/WANV6_ppp_dis.sh (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/f1e224c7e3ba737a4201615e3b5fa452.html" title="./s20_shell_check/f1e224c7e3ba737a4201615e3b5fa452.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">9 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/events/WANV6-DETECT.sh (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/645916afdc9c33b047eede27f9df1ff3.html" title="./s20_shell_check/645916afdc9c33b047eede27f9df1ff3.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">9 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/events/WANV6_AUTOCONF_DETECT.sh (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/2197a1b03e5e8d9e47a7a567ab4ecdeb.html" title="./s20_shell_check/2197a1b03e5e8d9e47a7a567ab4ecdeb.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">5 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/events/WANV6_ppp_chk.sh (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/9397fc88eb37c6ef94940039d22a4b39.html" title="./s20_shell_check/9397fc88eb37c6ef94940039d22a4b39.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">2 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/init0.d/S40event.sh (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/c49ce2066e9bada5ab67a97549eabd22.html" title="./s20_shell_check/c49ce2066e9bada5ab67a97549eabd22.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">2 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/init0.d/S41autowanv6.sh (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/8236fe94e322b4698bda4b467c19f2c1.html" title="./s20_shell_check/8236fe94e322b4698bda4b467c19f2c1.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">6 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/scripts/IPV4.DSLITE.php (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/e7153d3a9a8011488b8f456797eeff71.html" title="./s20_shell_check/e7153d3a9a8011488b8f456797eeff71.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">9 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/scripts/IP-WAIT.php (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/fe304d1b585c53a8b57fd44e1adb24fe.html" title="./s20_shell_check/fe304d1b585c53a8b57fd44e1adb24fe.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">9 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/scripts/IPV6.CHILD.php (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/07493134b65e459d9b328d5b0f9f846c.html" title="./s20_shell_check/07493134b65e459d9b328d5b0f9f846c.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">9 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/scripts/IPV6.INET.php (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/a486658bfbd3ecd57bbff3849a2b8f4d.html" title="./s20_shell_check/a486658bfbd3ecd57bbff3849a2b8f4d.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">6 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/scripts/IPV4.INET.php (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/207646e641ced7615f74543cfcae951c.html" title="./s20_shell_check/207646e641ced7615f74543cfcae951c.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">9 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/scripts/RA-WAIT.php (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/2d82406e8717b9cb9deb5deea3ffa7c2.html" title="./s20_shell_check/2d82406e8717b9cb9deb5deea3ffa7c2.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">9 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/scripts/dhcp6s_helper.php (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/c3a1c1fdda8c16084fe929b3aeaedd5e.html" title="./s20_shell_check/c3a1c1fdda8c16084fe929b3aeaedd5e.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">7 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/scripts/V6IN4-TUNNEL.php (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/37b78d88253d01f2f45b4493c4adeb9f.html" title="./s20_shell_check/37b78d88253d01f2f45b4493c4adeb9f.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">4 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/scripts/aplocked.sh (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/51225f2a5bc21d8e6dda208dbb116bff.html" title="./s20_shell_check/51225f2a5bc21d8e6dda208dbb116bff.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">1 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/scripts/dlcfg_hlper.sh (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/6e5550efe6c921ac99affdaf376c500f.html" title="./s20_shell_check/6e5550efe6c921ac99affdaf376c500f.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">11 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/scripts/igmpproxy_helper.sh (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/874c6c16a1efbf75b3a038a337130546.html" title="./s20_shell_check/874c6c16a1efbf75b3a038a337130546.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">15 issues</span><span class="green"> in script (</span><span class="cyan">common linux file: yes</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/scripts/ipv6-down (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/a40afbbcd626f3d18743d4783adc2a69.html" title="./s20_shell_check/a40afbbcd626f3d18743d4783adc2a69.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">11 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/scripts/mldproxy_helper.sh (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/1b272a604b2c56eec32f54dc2e4b1761.html" title="./s20_shell_check/1b272a604b2c56eec32f54dc2e4b1761.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">15 issues</span><span class="green"> in script (</span><span class="cyan">common linux file: yes</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/scripts/ipv6-up (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/e3c8794323b47a6cc26a84ce547c672f.html" title="./s20_shell_check/e3c8794323b47a6cc26a84ce547c672f.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">9 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/scripts/stopchild.php (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/0b33ce04e3acaae2101ee0dfa8abc1f4.html" title="./s20_shell_check/0b33ce04e3acaae2101ee0dfa8abc1f4.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">4 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/scripts/upnp/NOTIFYAB.php (-rw-r--r-- root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/3da114c2232711c21aba8d9bf769ab03.html" title="./s20_shell_check/3da114c2232711c21aba8d9bf769ab03.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">3 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/scripts/resetstats.sh (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/8734552567f3e327078000db398a19bd.html" title="./s20_shell_check/8734552567f3e327078000db398a19bd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">8 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/scripts/upnp/M-SEARCH.php (-rw-r--r-- root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/eaea01acc8648080bbc7f220796a2342.html" title="./s20_shell_check/eaea01acc8648080bbc7f220796a2342.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">12 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/scripts/upnp/NOTIFYAB.sh (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/f8bd29fbfbe8b37c63579ce796de0f29.html" title="./s20_shell_check/f8bd29fbfbe8b37c63579ce796de0f29.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">12 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/scripts/wps.sh (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/984a73c8c0a4622e2bf9bb9033c9013e.html" title="./s20_shell_check/984a73c8c0a4622e2bf9bb9033c9013e.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">10 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/services/INET/inet6_rdisc6_helper.php (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/2f74203ea710951f72465e124034250e.html" title="./s20_shell_check/2f74203ea710951f72465e124034250e.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">7 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/services/INET/inet4_dhcpc_helper.php (-rw-r--r-- root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/ada9eb0c20a0cbc7f539d1693b96e7bc.html" title="./s20_shell_check/ada9eb0c20a0cbc7f539d1693b96e7bc.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">10 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/services/INET/inet6_dhcpc_helper.php (-rw-r--r-- root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/44de31e8fc8cc60c82ec97ab6e16698d.html" title="./s20_shell_check/44de31e8fc8cc60c82ec97ab6e16698d.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">7 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/services/INET/ppp4_ipup.php (-rw-r--r-- root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/329140776f0aa563dca2b31accb49592.html" title="./s20_shell_check/329140776f0aa563dca2b31accb49592.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">7 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/services/INET/ppp6_ipdown.php (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/eb08ec6ee4d50c29804bf4f07b714494.html" title="./s20_shell_check/eb08ec6ee4d50c29804bf4f07b714494.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">7 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/etc/services/INET/ppp6_ipup.php (-rwxr-xr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/e5f5fc973e3e2fc71d5699121b6fd296.html" title="./s20_shell_check/e5f5fc973e3e2fc71d5699121b6fd296.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">6 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/events/AUTOCONFIG.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/5c8aaeb6174e92f15a530b99c6224204.html" title="./s20_shell_check/5c8aaeb6174e92f15a530b99c6224204.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">5 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/events/DHCPS-REDETECT.php (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/1006957ad312c8a7059398d50d3ef735.html" title="./s20_shell_check/1006957ad312c8a7059398d50d3ef735.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">1 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/events/DHCPS-REDETECT.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/0688a335dff1935baf17a5e6ebf02898.html" title="./s20_shell_check/0688a335dff1935baf17a5e6ebf02898.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">9 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/events/INF-RESTART.php (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/f7da05a0ef0ca27d6855c934e2ba348d.html" title="./s20_shell_check/f7da05a0ef0ca27d6855c934e2ba348d.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">1 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/events/SEALPAC-CLEAR.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/dc4897ffbe2e0f0bac9f05bf7d70a41e.html" title="./s20_shell_check/dc4897ffbe2e0f0bac9f05bf7d70a41e.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">2 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/events/SEALPAC-LOAD.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/fcb7938e0865b6af9aa44737b220845a.html" title="./s20_shell_check/fcb7938e0865b6af9aa44737b220845a.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">1 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/events/SEALPAC-SAVE.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/fe3f1f864c2b49368a9274d2bddab11b.html" title="./s20_shell_check/fe3f1f864c2b49368a9274d2bddab11b.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">5 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/events/UPDATELEASES.php (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/2b5bde41ad2450f5dd4b217d93943b7c.html" title="./s20_shell_check/2b5bde41ad2450f5dd4b217d93943b7c.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">2 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/events/UPDATELEASES.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/88f173cc614588ffa08aa679dc8b3856.html" title="./s20_shell_check/88f173cc614588ffa08aa679dc8b3856.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">5 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/events/WAN-DETECT.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/bfff8c1fc556690a8f26ec6ae885b169.html" title="./s20_shell_check/bfff8c1fc556690a8f26ec6ae885b169.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">2 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/events/WAN-1_dhcp_cb.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/fdba8f82148a39344c9f4c142dbadb18.html" title="./s20_shell_check/fdba8f82148a39344c9f4c142dbadb18.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">5 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/events/WAN_dhcp_chk.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/4a9ecd93055c173f25bd3855092fc84f.html" title="./s20_shell_check/4a9ecd93055c173f25bd3855092fc84f.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">9 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/events/checkfw.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/3550f8709e68db08ada49e1a4df1555f.html" title="./s20_shell_check/3550f8709e68db08ada49e1a4df1555f.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">5 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/events/WAN_dhcp_pri.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/494fc50141f5e44c18277e42abb8afad.html" title="./s20_shell_check/494fc50141f5e44c18277e42abb8afad.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">9 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/events/WAN_ppp_dis.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/9ae5f9cee256bae4e1b430871ea98363.html" title="./s20_shell_check/9ae5f9cee256bae4e1b430871ea98363.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">1 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/events/reboot.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/b149dfc660226e9695e81a9ed5d5a2f8.html" title="./s20_shell_check/b149dfc660226e9695e81a9ed5d5a2f8.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">1 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/events/freset.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/48b8e253e03dab0a2a5b2aa4674d4248.html" title="./s20_shell_check/48b8e253e03dab0a2a5b2aa4674d4248.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">9 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/events/dhcp_pri_chk.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/75a29f548d9552cfa0b2e7d77ea16fb8.html" title="./s20_shell_check/75a29f548d9552cfa0b2e7d77ea16fb8.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">2 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/init.d/S19init.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/0a16357be822c67cc8af31a5099277ef.html" title="./s20_shell_check/0a16357be822c67cc8af31a5099277ef.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">5 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/init0.d/S21layout.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/fd755e1d049c3e65c8d84fa9021f10af.html" title="./s20_shell_check/fd755e1d049c3e65c8d84fa9021f10af.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">5 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/init0.d/S21wlan.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/d4e80b1bbe039d933326e69095f0f146.html" title="./s20_shell_check/d4e80b1bbe039d933326e69095f0f146.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">2 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/init0.d/S40gpioevent.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/43cb1958b0b7d8adc7a0cc7214932bf8.html" title="./s20_shell_check/43cb1958b0b7d8adc7a0cc7214932bf8.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">2 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/init0.d/S41inf.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/a00fa59d68d565d1dca3cf65243364cb.html" title="./s20_shell_check/a00fa59d68d565d1dca3cf65243364cb.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">2 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/init0.d/S41autowan.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/9397fc88eb37c6ef94940039d22a4b39.html" title="./s20_shell_check/9397fc88eb37c6ef94940039d22a4b39.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">2 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/init0.d/S40event.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/4a69a8199004b61a442a40be8e216333.html" title="./s20_shell_check/4a69a8199004b61a442a40be8e216333.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">2 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/init0.d/S42pthrough.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/cfbea8949a5ccda6d7e28456319e804c.html" title="./s20_shell_check/cfbea8949a5ccda6d7e28456319e804c.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">2 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/init0.d/S41smart404.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/41b2dad610a4fa9141670e1b5ab7af58.html" title="./s20_shell_check/41b2dad610a4fa9141670e1b5ab7af58.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">2 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/init0.d/S65ddnsd.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/0ad7ef53c5147ccaeac26afd1346c38b.html" title="./s20_shell_check/0ad7ef53c5147ccaeac26afd1346c38b.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">2 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/init0.d/S80telnetd.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/a486658bfbd3ecd57bbff3849a2b8f4d.html" title="./s20_shell_check/a486658bfbd3ecd57bbff3849a2b8f4d.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">6 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/IPV4.INET.php (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/476b70fc8d6e9c424fc7285796eb58aa.html" title="./s20_shell_check/476b70fc8d6e9c424fc7285796eb58aa.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">3 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/conntrack_flush.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/b565defb3d7e8a336928484965a1965a.html" title="./s20_shell_check/b565defb3d7e8a336928484965a1965a.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">3 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/dbload.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/ef818d9e20dbd389cce7de4d08eda02e.html" title="./s20_shell_check/ef818d9e20dbd389cce7de4d08eda02e.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">11 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/delpathbytarget.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/c48f9f6fb88e9f23f79adb11c7092fc3.html" title="./s20_shell_check/c48f9f6fb88e9f23f79adb11c7092fc3.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">6 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/ddnsd_helper.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/51225f2a5bc21d8e6dda208dbb116bff.html" title="./s20_shell_check/51225f2a5bc21d8e6dda208dbb116bff.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">1 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/dlcfg_hlper.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/2095504aca5a06b05aae0d17cfd0b46f.html" title="./s20_shell_check/2095504aca5a06b05aae0d17cfd0b46f.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">3 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/dns-helper.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/90525c59f433d63f9ed77d5f4f47a5a5.html" title="./s20_shell_check/90525c59f433d63f9ed77d5f4f47a5a5.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">8 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/getmodem.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/6e5550efe6c921ac99affdaf376c500f.html" title="./s20_shell_check/6e5550efe6c921ac99affdaf376c500f.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">9 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/igmpproxy_helper.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/8434cdd4f79e9ca2863d08ba17a0fcbd.html" title="./s20_shell_check/8434cdd4f79e9ca2863d08ba17a0fcbd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">15 issues</span><span class="green"> in script (</span><span class="cyan">common linux file: yes</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/ip-down (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/1f2eb1ef686c9746e752e9985b1fe2d6.html" title="./s20_shell_check/1f2eb1ef686c9746e752e9985b1fe2d6.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">2 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/killpid.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/334c8a3987e5be1de68706c269fe15ed.html" title="./s20_shell_check/334c8a3987e5be1de68706c269fe15ed.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">15 issues</span><span class="green"> in script (</span><span class="cyan">common linux file: yes</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/ip-up (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/b3b11823f793f61e7186a9b3ca9cb744.html" title="./s20_shell_check/b3b11823f793f61e7186a9b3ca9cb744.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">7 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/libs/dns-helper.php (-rw-rw-r-- root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/d11c3c816aa057adfdf38eb1abe7cbe6.html" title="./s20_shell_check/d11c3c816aa057adfdf38eb1abe7cbe6.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">5 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/libs/igmpproxy_helper.php (-rw-rw-r-- root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/cb7d058cc8131acb1390f3b9ce66c8fd.html" title="./s20_shell_check/cb7d058cc8131acb1390f3b9ce66c8fd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">2 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/ppp-status (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/686c203a6994d87b96ed9fe67bfa0c33.html" title="./s20_shell_check/686c203a6994d87b96ed9fe67bfa0c33.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">1 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/ping.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/3da114c2232711c21aba8d9bf769ab03.html" title="./s20_shell_check/3da114c2232711c21aba8d9bf769ab03.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">3 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/resetstats.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/6719c3562f358adb9f3f30c863dd0268.html" title="./s20_shell_check/6719c3562f358adb9f3f30c863dd0268.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">7 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/setdate.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/c5b1472009932258ddd6d72154a40a22.html" title="./s20_shell_check/c5b1472009932258ddd6d72154a40a22.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">4 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/settime.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/2ff18c8f416b3bdecfbc73309fb2dc20.html" title="./s20_shell_check/2ff18c8f416b3bdecfbc73309fb2dc20.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">3 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/ubcom-monitor.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/8d16b0cfca6487e7c5d583d282c42719.html" title="./s20_shell_check/8d16b0cfca6487e7c5d583d282c42719.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">3 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/ubcom-run.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/8734552567f3e327078000db398a19bd.html" title="./s20_shell_check/8734552567f3e327078000db398a19bd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">8 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/upnp/M-SEARCH.php (-rw-rw-r-- root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/31c4253514d399b715e9e077ab208936.html" title="./s20_shell_check/31c4253514d399b715e9e077ab208936.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">8 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/upnp/M-SEARCH.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/0b33ce04e3acaae2101ee0dfa8abc1f4.html" title="./s20_shell_check/0b33ce04e3acaae2101ee0dfa8abc1f4.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">6 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/upnp/NOTIFYAB.php (-rw-rw-r-- root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/eaea01acc8648080bbc7f220796a2342.html" title="./s20_shell_check/eaea01acc8648080bbc7f220796a2342.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">11 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/upnp/NOTIFYAB.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/3f2bc77d328948500acb54c22d668718.html" title="./s20_shell_check/3f2bc77d328948500acb54c22d668718.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">6 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/upnp/run.NOTIFY-PROPCHANGE.php (-rw-rw-r-- root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/0e126cf75fbaaa010457dd67b81672da.html" title="./s20_shell_check/0e126cf75fbaaa010457dd67b81672da.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">6 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/upnp/run.NOTIFY-WFADEV.php (-rw-rw-r-- root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/6a5ba613ed4bec172e8f25cfe5f06d43.html" title="./s20_shell_check/6a5ba613ed4bec172e8f25cfe5f06d43.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">6 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/upwifistatshlper.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/f8bd29fbfbe8b37c63579ce796de0f29.html" title="./s20_shell_check/f8bd29fbfbe8b37c63579ce796de0f29.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">2 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/scripts/wps.sh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/2f74203ea710951f72465e124034250e.html" title="./s20_shell_check/2f74203ea710951f72465e124034250e.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">7 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/services/INET/inet4_dhcpc_helper.php (-rw-rw-r-- root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/ada9eb0c20a0cbc7f539d1693b96e7bc.html" title="./s20_shell_check/ada9eb0c20a0cbc7f539d1693b96e7bc.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">10 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/services/INET/inet6_dhcpc_helper.php (-rw-rw-r-- root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/984a73c8c0a4622e2bf9bb9033c9013e.html" title="./s20_shell_check/984a73c8c0a4622e2bf9bb9033c9013e.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">10 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/services/INET/inet6_rdisc6_helper.php (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/85ce60f22da4d09fd999938905ba5616.html" title="./s20_shell_check/85ce60f22da4d09fd999938905ba5616.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">7 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/services/INET/ppp4_ipdown.php (-rw-rw-r-- root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/3e2caa19603f4033b620c317362aed90.html" title="./s20_shell_check/3e2caa19603f4033b620c317362aed90.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">8 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/services/INET/ppp4_status.php (-rw-rw-r-- root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/44de31e8fc8cc60c82ec97ab6e16698d.html" title="./s20_shell_check/44de31e8fc8cc60c82ec97ab6e16698d.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">7 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/services/INET/ppp4_ipup.php (-rw-rw-r-- root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/329140776f0aa563dca2b31accb49592.html" title="./s20_shell_check/329140776f0aa563dca2b31accb49592.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">7 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/services/INET/ppp6_ipdown.php (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/eb08ec6ee4d50c29804bf4f07b714494.html" title="./s20_shell_check/eb08ec6ee4d50c29804bf4f07b714494.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">7 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/services/INET/ppp6_ipup.php (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/b9c93ca969f18453f12bf714a0954b83.html" title="./s20_shell_check/b9c93ca969f18453f12bf714a0954b83.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">11 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/services/svchlper (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/a3e082f3e64cc8a7107803b2859c9151.html" title="./s20_shell_check/a3e082f3e64cc8a7107803b2859c9151.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">1 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/phpsh (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s20_shell_check/c7404d86a95a734c2ed7cd920240c272.html" title="./s20_shell_check/c7404d86a95a734c2ed7cd920240c272.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">17 issues</span><span class="green"> in script (</span><span class="red">common linux file: no</span><span class="green">):</span> ./logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/mfc (-rwxrwxr-x root root)</pre></a>
+<pre></span></pre>
+
+<br />
+<br />
+<br />
+<pre></span><span class="blue">==&gt</span></span> </span><span class="cyan">Summary of shell issues (shellcheck)</span></pre>
+<pre><hr class="mono" /></pre>
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">626 issues</span><span class="green"> in </span><span class="orange">133</span><span class="green"> shell scripts (shellcheck mode)</span></pre>
+<br />
+<pre></span></pre>
+<br />
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="red">SC1036 (error): '(' is invalid here. Did you forget to escape it?</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="red">SC1050 (error): Expected 'then'.</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="red">SC1054 (error): You need a space after the '{'.</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="red">SC1056 (error): Expected a '}'. If you have one, try a ; or in front of it.</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="red">SC1064 (error): Expected a { to open the function definition.</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="red">SC1065 (error): Trying to declare parameters? Don't. Use () and refer to params as $1, $2..</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="red">SC1072 (error): Missing '}'. Fix any mentioned problems and try again.</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="red">SC1073 (error): Couldn't parse this brace group. Fix to allow more checks.</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="red">SC1088 (error): Parsing stopped here. Invalid use of parentheses?</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="red">SC1127 (error): Was this intended as a comment? Use # in sh.</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="red">SC2283 (error): Remove spaces around = to assign (or use [ ] to compare, or quote '=' if literal).</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="green">SC1009 (info): The mentioned syntax error was in this function.</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="green">SC2006 (style): Use $(...) notation instead of legacy backticks `...`.</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="green">SC2035 (info): Use ./*glob* or -- *glob* so names with dashes won't become options.</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="green">SC2086 (info): Double quote to prevent globbing and word splitting.</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="orange">SC2050 (warning): This expression is constant. Did you forget the $ on a variable?</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="orange">SC2092 (warning): Remove backticks to avoid executing output (or use eval if intentional).</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="orange">SC2166 (warning): Prefer [ p ] &amp;&amp; [ q ] as [ p -a q ] is not well defined.</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="orange">SC2188 (warning): This redirection doesn't have a command. Move to its command (or use 'true' as no-op).</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="orange">SC2211 (warning): This is a glob used as a command name. Was it supposed to be in ${..}, array, or is it missing quoting?</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="orange">SC3014 (warning): In POSIX sh, == in place of = is undefined.</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="orange">SC3031 (warning): In POSIX sh, redirecting to/from globs is undefined.</span></span></pre>
+<pre>    </span>[</span><span class="green">+</span>]</span><span class="green"> <span class="orange">SC3037 (warning): In POSIX sh, echo flags are undefined.</span></span></pre>
+<br />
+<br />
+<pre></span><span class="blue">==&gt</span></span> </span><span class="cyan"><a id="checkshellscriptswithsemgrep">Check shell scripts with semgrep</a></span></pre>
+<pre><hr class="mono" /></pre>
+<a class="reference" href="./s20_shell_check/1075c01bd2c90b0c81aa1cf0d0d62851.html" title="./s20_shell_check/1075c01bd2c90b0c81aa1cf0d0d62851.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">421 issues</span><span class="green"> in </span><span class="orange">189</span><span class="green"> shell scripts</span></pre></a>
+<pre></span></pre>
+
+<br />
+<br />
+<br />
+<pre></span><span class="blue">==&gt</span></span> </span><span class="cyan"><a id="summaryofshellevalusages">Summary of shell eval usages</a></span></pre>
+<pre><hr class="mono" /></pre>
+<pre>[</span><span class="red">-</span>] No eval usage found in shell scripts</pre>
+  <!-- content end -->
+</div>
+
+<a href="https://github.com/e-m-b-a/emba" title="github.com/e-m-b-a/emba" target="_blank">
+  <div id="buttonInfo" class="rectButtonVisible">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" transform="translate(2 2)"><g stroke="white" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 12.5v-4h-1"/><path d="M7.5 12.5h2"/></g><circle cx="8.5" cy="5.5" fill="white" r="1"/></g></svg>
+  </div>
+</a>
+<a href="./s22_php_check.html" title="./s22_php_check.html" ><div id="buttonBack" class="rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M9.5 14.5l4-4l-4-4" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg></div></a>
+<a href="./s17_cwe_checker.html" title="./s17_cwe_checker.html" ><div id="buttonForward" class="rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M11.5 14.5l-4-4l4-4" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg></div> </a>
+<div id="buttonDown" class="rectButton" onclick="scrollDown()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5l-4 4l-4-4"/><path d="M14.5 10.5l-4 4l-4-4"/></g></svg></div>
+<div id="buttonUp" class="rectButton" onclick="scrollUp()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 14.5l4-4l4 4"/><path d="M6.5 10.5l4-4l4 4"/></g></svg></div> 
+
+<script>
+window.onload = function () {
+  var buttons = document.getElementsByClassName("rectButton");
+  for (let i=0; i<buttons.length; i++) {
+    buttons[i].style.visibility = "visible";
+  }
+  var buttonDown = document.getElementById("buttonDown");
+  buttonDown.classList.add('rectButtonVisible');
+  buttonDown.classList.remove('rectButton');
+
+  var buttonUp = document.getElementById("buttonUp");
+  buttonUp.classList.add('rectButtonVisible');
+  buttonUp.classList.remove('rectButton');
+    
+  var buttonSizer = document.getElementById("buttonSizer");
+  buttonSizer.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+  if (document.getElementById("buttonTime") !== null) {
+    var buttonTime = document.getElementById("buttonTime");
+    buttonTime.style.bottom = "50px";
+  }
+  if (document.getElementById("buttonError") !== null) {
+    var buttonError = document.getElementById("buttonError");
+    buttonError.style.bottom = "100px";
+  }
+  document.getElementById("expand").value = "+ Show more results";
+  document.getElementById("expand").className += " expand";
+  var embarkButton = document.getElementById("embark");
+  if ( !(embarkButton.href.includes("embarkBackUrl")) ) {
+    embarkButton.classList.remove('hidden');
+    document.getElementById("logoImage").src = "./style/embark.svg";
+    document.getElementById("logo").style.background = "#2d2d2d";
+  }
+}
+
+function openNav() {
+  document.getElementById("sidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("nav").style.visibility = "visible";
+}
+
+function closeNav() {
+  document.getElementById("sidenav").style.width = "50px";
+  document.getElementById("sidenav").scrollTop = 0;
+  document.getElementById("main").style.marginLeft = "50px";
+  document.getElementById("nav").style.visibility = "hidden";
+}
+
+function scrollDown() {
+  window.scrollTo(0,document.body.scrollHeight);
+}
+
+function scrollUp() {
+  window.scrollTo(0,0);
+}
+
+function buttonNav() {
+  var button = document.getElementById("buttonSizer");
+  if ( button.classList.contains('buttonOpen') ) {
+    button.classList.remove('buttonOpen');
+    button.classList.add('buttonClose');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+    openNav();
+  } else if( button.classList.contains('buttonClose') ) {
+    button.classList.remove('buttonClose');
+    button.classList.add('buttonOpen');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 7.5v-5h-5"/><path d="M18.5 2.5l-6 5.929"/><path d="M7.5 18.5l-5 .023V13.5"/><path d="M8.5 12.5l-6 6"/></g></svg>';
+    closeNav();
+  };
+}
+
+// the following function is currently not used
+// it is for future extensions
+function overlay_output(link) {
+  var rawfile = new XMLHttpRequest();
+  rawfile.open('GET', link, false);
+  rawfile.overrideMimeType("text");
+  rawfile.onreadystatechange = function()
+  {
+    alert(rawfile.responseText);
+    //console.log(rawfile.responseText);
+  }
+  rawfile.send(null);
+}
+
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+      case 37:
+        document.getElementById("buttonForward").parentNode.click(); 
+        break;
+      case 39:
+        document.getElementById("buttonBack").parentNode.click();       
+        break;
+    }
+};
+</script>
+
+</body>
+</html>

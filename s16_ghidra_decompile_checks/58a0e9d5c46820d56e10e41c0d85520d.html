@@ -1,0 +1,605 @@
+<!-- 
+EMBA - EMBEDDED LINUX ANALYZER
+
+Copyright 2020-2023 Siemens AG
+Copyright 2020-2025 Siemens Energy AG
+
+EMBA comes with ABSOLUTELY NO WARRANTY. This is free software, and you are
+welcome to redistribute it under the terms of the GNU General Public License.
+See LICENSE file for usage of this software.
+
+EMBA is licensed under GPLv3
+
+Author(s) and contributors from the EMBA project are listed here: https://github.com/e-m-b-a/emba/blob/master/CONTRIBUTORS.md
+-->
+
+<!-- Used icons: https://github.com/CoreyGinnivan/system-uicons -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EMBA firmware report</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./../style/style.css" type="text/css">
+  <link rel="icon" type="image/png" href="./../style/favicon.png">
+</head>
+<body>
+
+<div id="sidenav" class="side">
+  <div id="logo">
+    <a class="inherit" href="./../index.html"><img class="inherit" id="logoImage" src="./../style/emba.svg" alt="logo"></a>
+  </div>
+  <div id="nav">
+      <a id="embark" class="hidden" href="{{ embarkBackUrl }}">&laquo; Back to EMBArk</a> <!-- nosem -->
+      <a class="backButton" href="./../index.html">&laquo; Back to main</a>
+<a class="modul" href="./dfcb5289802430e6fe9f1cb0f53844cb.html" title="./dfcb5289802430e6fe9f1cb0f53844cb.html" >&laquo; Back to dfcb5289802430e6fe9f1cb0f53844cb</a>
+      <!-- navigation start -->
+      <!-- navigation end -->
+      <input id="expand" class="expand_njs hidden" type="button" value="More results:" onclick="this.value=this.value=='+ Show more results'?'- Hide more results':'+ Show more results';">
+      <div class="expand_area">
+        <!-- etc start -->
+        <!-- etc end -->
+      </div>
+  </div>
+
+  <a href="ERRORLINK"><div id="buttonErrorInvisible" class="rectButton"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></div></a>
+  <a href="TIMELINK"><div id="buttonTimeInvisible" class="rectButton"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1 0 0 1 19 2)"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 5.5v4H5"/></g></svg></div></a>
+
+  <div id="buttonSizer" class="rectButton buttonClose" onclick="buttonNav()"></div>
+</div>
+<div id="main" class="main">
+  <!-- content start -->
+<br />
+<pre>undefined4 FUN_0040a440(undefined4 param_1,int param_2,undefined4 *param_3)</pre>
+<br />
+<pre>{</pre>
+<pre>  undefined4 *puVar1;</pre>
+<pre>  int iVar2;</pre>
+<pre>  undefined4 uVar3;</pre>
+<pre>  undefined1 uVar4;</pre>
+<pre>  undefined1 auStack_370 [4];</pre>
+<pre>  uint local_36c;</pre>
+<pre>  undefined4 local_368;</pre>
+<pre>  undefined1 local_364;</pre>
+<pre>  undefined1 auStack_360 [12];</pre>
+<pre>  undefined1 auStack_354 [12];</pre>
+<pre>  undefined1 auStack_348 [12];</pre>
+<pre>  undefined1 auStack_33c [12];</pre>
+<pre>  undefined1 auStack_330 [12];</pre>
+<pre>  undefined4 local_324;</pre>
+<pre>  undefined4 local_320;</pre>
+<pre>  undefined2 local_31c;</pre>
+<pre>  undefined1 auStack_318 [12];</pre>
+<pre>  undefined4 local_30c;</pre>
+<pre>  undefined4 local_308;</pre>
+<pre>  undefined2 local_304;</pre>
+<pre>  undefined1 auStack_300 [12];</pre>
+<pre>  undefined4 local_2f4;</pre>
+<pre>  undefined4 local_2f0;</pre>
+<pre>  undefined2 local_2ec;</pre>
+<pre>  undefined1 auStack_2e8 [12];</pre>
+<pre>  undefined1 auStack_2dc [16];</pre>
+<pre>  undefined1 auStack_2cc [16];</pre>
+<pre>  undefined1 auStack_2bc [16];</pre>
+<pre>  undefined1 auStack_2ac [16];</pre>
+<pre>  undefined1 auStack_29c [16];</pre>
+<pre>  undefined1 auStack_28c [16];</pre>
+<pre>  undefined1 auStack_27c [16];</pre>
+<pre>  undefined1 auStack_26c [16];</pre>
+<pre>  undefined1 auStack_25c [16];</pre>
+<pre>  undefined1 auStack_24c [11];</pre>
+<pre>  undefined4 local_241;</pre>
+<pre>  undefined1 local_23d;</pre>
+<pre>  undefined4 local_23c;</pre>
+<pre>  undefined4 local_238;</pre>
+<pre>  undefined4 local_234;</pre>
+<pre>  char local_230 [256];</pre>
+<pre>  uint local_130;</pre>
+<pre>  undefined4 local_12c;</pre>
+<pre>  undefined4 local_128;</pre>
+<pre>  undefined4 local_124;</pre>
+<pre>  undefined1 uStack_120;</pre>
+<pre>  char local_11f;</pre>
+<pre>  undefined1 auStack_11e [2];</pre>
+<pre>  undefined2 local_11c;</pre>
+<pre>  undefined4 local_11a;</pre>
+<pre>  undefined4 local_116;</pre>
+<pre>  undefined1 local_112;</pre>
+<pre>  undefined1 uStack_111;</pre>
+<pre>  uint local_110;</pre>
+<pre>  undefined3 uStack_10c;</pre>
+<pre>  undefined4 local_109;</pre>
+<pre>  undefined1 local_105;</pre>
+<pre>  undefined1 auStack_104 [2];</pre>
+<pre>  undefined2 local_102;</pre>
+<pre>  undefined4 local_100;</pre>
+<pre>  undefined4 local_fc;</pre>
+<pre>  undefined4 local_f8;</pre>
+<pre>  undefined4 local_f4;</pre>
+<pre>  undefined1 uStack_f0;</pre>
+<pre>  undefined4 local_ef;</pre>
+<pre>  undefined1 local_eb;</pre>
+<pre>  undefined1 auStack_ea [2];</pre>
+<pre>  undefined2 local_e8;</pre>
+<pre>  undefined4 local_e6;</pre>
+<pre>  undefined2 local_e2;</pre>
+<pre>  uint local_e0;</pre>
+<pre>  undefined4 local_dc;</pre>
+<pre>  undefined2 local_d8;</pre>
+<pre>  undefined1 auStack_d6 [2];</pre>
+<pre>  undefined2 local_d4;</pre>
+<pre>  undefined4 local_d2;</pre>
+<pre>  undefined1 local_ce;</pre>
+<pre>  undefined1 uStack_cd;</pre>
+<pre>  uint local_cc;</pre>
+<pre>  undefined4 local_c8;</pre>
+<pre>  undefined4 local_c4;</pre>
+<pre>  undefined4 local_c0;</pre>
+<pre>  undefined1 uStack_bc;</pre>
+<pre>  char local_bb;</pre>
+<pre>  undefined1 auStack_ba [2];</pre>
+<pre>  undefined2 local_b8;</pre>
+<pre>  undefined4 local_b6;</pre>
+<pre>  undefined4 local_b2;</pre>
+<pre>  undefined1 local_ae;</pre>
+<pre>  undefined1 uStack_ad;</pre>
+<pre>  uint local_ac;</pre>
+<pre>  undefined3 uStack_a8;</pre>
+<pre>  undefined4 local_a5;</pre>
+<pre>  undefined1 local_a1;</pre>
+<pre>  undefined1 auStack_a0 [2];</pre>
+<pre>  undefined2 local_9e;</pre>
+<pre>  undefined4 local_9c;</pre>
+<pre>  undefined4 local_98;</pre>
+<pre>  undefined4 local_94;</pre>
+<pre>  undefined4 local_90;</pre>
+<pre>  undefined1 uStack_8c;</pre>
+<pre>  undefined4 local_8b;</pre>
+<pre>  undefined1 local_87;</pre>
+<pre>  undefined1 auStack_86 [8];</pre>
+<pre>  short local_7e;</pre>
+<pre>  undefined4 local_7c;</pre>
+<pre>  undefined2 local_78;</pre>
+<pre>  undefined1 auStack_76 [2];</pre>
+<pre>  undefined2 local_74;</pre>
+<pre>  undefined4 local_72;</pre>
+<pre>  undefined4 local_6e;</pre>
+<pre>  undefined1 local_6a;</pre>
+<pre>  undefined1 uStack_69;</pre>
+<pre>  uint local_68;</pre>
+<pre>  undefined3 uStack_64;</pre>
+<pre>  undefined1 local_61;</pre>
+<pre>  uint local_60;</pre>
+<pre>  undefined4 local_5c;</pre>
+<pre>  undefined2 local_58;</pre>
+<pre>  undefined1 auStack_56 [2];</pre>
+<pre>  undefined2 local_54;</pre>
+<pre>  undefined4 local_52;</pre>
+<pre>  undefined2 local_4e;</pre>
+<pre>  uint local_4c;</pre>
+<pre>  undefined4 local_48;</pre>
+<pre>  undefined4 local_44;</pre>
+<pre>  undefined2 local_40;</pre>
+<pre>  undefined4 local_3e;</pre>
+<pre>  undefined4 local_3a;</pre>
+<pre>  char local_36;</pre>
+<pre>  undefined1 local_35;</pre>
+<pre>  undefined1 auStack_34 [11];</pre>
+<pre>  undefined4 local_29;</pre>
+<pre>  undefined1 local_25;</pre>
+<pre>  undefined4 local_24;</pre>
+<pre>  undefined4 local_20;</pre>
+<pre>  undefined4 local_1c;</pre>
+<pre>  </pre>
+<pre>  local_128 = (local_128 &gt;&gt; 8 &amp; 0xffff) &lt;&lt; 8;</pre>
+<pre>  local_130 = (uint)(ushort)local_130;</pre>
+<pre>  local_12c = 0;</pre>
+<pre>  local_124 = 0;</pre>
+<pre>  uStack_120 = 0;</pre>
+<pre>  local_11f = '\0';</pre>
+<pre>  local_11c = 0;</pre>
+<pre>  local_11a = 0;</pre>
+<pre>  local_116 = 0;</pre>
+<pre>  local_112 = 0;</pre>
+<pre>  local_110 = (uint3)local_110 &amp; 0xff0000ff;</pre>
+<pre>  uStack_10c = 0;</pre>
+<pre>  local_109 = 0;</pre>
+<pre>  local_f8 = (local_f8 &gt;&gt; 8 &amp; 0xffff) &lt;&lt; 8;</pre>
+<pre>  local_105 = 0;</pre>
+<pre>  local_102 = 0;</pre>
+<pre>  local_100 = 0;</pre>
+<pre>  local_fc = 0;</pre>
+<pre>  local_f4 = 0;</pre>
+<pre>  uStack_f0 = 0;</pre>
+<pre>  local_ef = 0;</pre>
+<pre>  local_eb = 0;</pre>
+<pre>  local_e8 = 0;</pre>
+<pre>  local_e6 = 0;</pre>
+<pre>  local_e2 = 0;</pre>
+<pre>  local_e0 = (uint)(ushort)local_e0;</pre>
+<pre>  local_dc = 0;</pre>
+<pre>  local_d8 = 0;</pre>
+<pre>  local_d4 = 0;</pre>
+<pre>  local_d2 = 0;</pre>
+<pre>  local_ce = 0;</pre>
+<pre>  local_cc = (uint3)local_cc &amp; 0xff0000ff;</pre>
+<pre>  local_c4 = local_c4 &amp; 0xffff00;</pre>
+<pre>  local_c8 = 0;</pre>
+<pre>  local_c0 = 0;</pre>
+<pre>  uStack_bc = 0;</pre>
+<pre>  local_bb = '\0';</pre>
+<pre>  local_b8 = 0;</pre>
+<pre>  local_b6 = 0;</pre>
+<pre>  local_b2 = 0;</pre>
+<pre>  local_ae = 0;</pre>
+<pre>  local_ac = (uint3)local_ac &amp; 0xff0000ff;</pre>
+<pre>  uStack_a8 = 0;</pre>
+<pre>  local_a5 = 0;</pre>
+<pre>  local_94 = (local_94 &gt;&gt; 8 &amp; 0xffff) &lt;&lt; 8;</pre>
+<pre>  local_a1 = 0;</pre>
+<pre>  local_9e = 0;</pre>
+<pre>  local_9c = 0;</pre>
+<pre>  local_98 = 0;</pre>
+<pre>  local_90 = 0;</pre>
+<pre>  uStack_8c = 0;</pre>
+<pre>  local_8b = 0;</pre>
+<pre>  local_87 = 0;</pre>
+<pre>  local_74 = 0;</pre>
+<pre>  local_72 = 0;</pre>
+<pre>  local_6e = 0;</pre>
+<pre>  local_6a = 0;</pre>
+<pre>  local_68 = (uint3)local_68 &amp; 0xff0000ff;</pre>
+<pre>  uStack_64 = 0;</pre>
+<pre>  local_61 = 0;</pre>
+<pre>  local_60 = (uint)(ushort)local_60;</pre>
+<pre>  local_5c = 0;</pre>
+<pre>  local_58 = 0;</pre>
+<pre>  local_54 = 0;</pre>
+<pre>  local_52 = 0;</pre>
+<pre>  local_4e = 0;</pre>
+<pre>  local_4c = (uint)(ushort)local_4c;</pre>
+<pre>  local_48 = 0;</pre>
+<pre>  local_44 = local_44 &amp; 0xffff0000;</pre>
+<pre>  local_40 = 0;</pre>
+<pre>  local_3e = 0;</pre>
+<pre>  local_3a = 0;</pre>
+<pre>  local_25 = 0;</pre>
+<pre>  local_29 = 0;</pre>
+<pre>  local_24 = 0;</pre>
+<pre>  local_20 = 0;</pre>
+<pre>  local_1c = 0;</pre>
+<pre>                    /* try { // try from 0040a6a4 to 0040a6ab has its CatchHandler &commat; 0040b32c */</pre>
+<pre>  FUN_00483360("WPS: In ProcessMessageM1: %d byte message\n",param_3[4]);</pre>
+<pre>                    /* try { // try from 0040a6bc to 0040a767 has its CatchHandler &commat; 0040b27c */</pre>
+<a class="reference" href="./60a509828ae386d869126f3fc030ed7b.html" title="./60a509828ae386d869126f3fc030ed7b.html" ><pre>  FUN_00407dec(&amp;local_36c,0x104a,param_3);</pre></a>
+
+<pre>  local_130 = local_36c;</pre>
+<pre>  local_12c = local_368;</pre>
+<pre>  local_128 = CONCAT31(local_128._1_3_,local_364);</pre>
+<a class="reference" href="./60a509828ae386d869126f3fc030ed7b.html" title="./60a509828ae386d869126f3fc030ed7b.html" ><pre>  FUN_00407dec(auStack_360,0x1022,param_3);</pre></a>
+
+<pre>  FUN_004868e0((int)&amp;local_128 + 1,auStack_360,9);</pre>
+<pre>  if (local_11f != '\x04') {</pre>
+<pre>    puVar1 = (undefined4 *)FUN_0047347c(4);</pre>
+<pre>    *puVar1 = 0x6006;</pre>
+<pre>    FUN_00475384(puVar1,&amp;PTR_PTR_FUN_004b2360,0);</pre>
+<pre>  }</pre>
+<a class="reference" href="./cbe19347af9eae054e4f4762b3fdcc6a.html" title="./cbe19347af9eae054e4f4762b3fdcc6a.html" ><pre>  FUN_00407a10();</pre></a>
+
+<pre>                    /* try { // try from 0040a778 to 0040a77f has its CatchHandler &commat; 0040a7c0 */</pre>
+<a class="reference" href="./50a9829894fbff8499e5100f2403a136.html" title="./50a9829894fbff8499e5100f2403a136.html" ><pre>  FUN_00407b10(auStack_11e,auStack_2dc);</pre></a>
+
+<a class="reference" href="./17e051284b8b28124604b9e79d824cf1.html" title="./17e051284b8b28124604b9e79d824cf1.html" ><pre>  FUN_00407740(auStack_2dc);</pre></a>
+
+<pre>                    /* try { // try from 0040a7b0 to 0040a7b7 has its CatchHandler &commat; 0040b27c */</pre>
+<a class="reference" href="./cbe19347af9eae054e4f4762b3fdcc6a.html" title="./cbe19347af9eae054e4f4762b3fdcc6a.html" ><pre>  FUN_00407a10(auStack_2cc,0x1020,param_3,6,0);</pre></a>
+
+<pre>                    /* try { // try from 0040a7d8 to 0040a7df has its CatchHandler &commat; 0040a820 */</pre>
+<a class="reference" href="./50a9829894fbff8499e5100f2403a136.html" title="./50a9829894fbff8499e5100f2403a136.html" ><pre>  FUN_00407b10(&amp;uStack_111,auStack_2cc);</pre></a>
+
+<a class="reference" href="./17e051284b8b28124604b9e79d824cf1.html" title="./17e051284b8b28124604b9e79d824cf1.html" ><pre>  FUN_00407740(auStack_2cc);</pre></a>
+
+<pre>                    /* try { // try from 0040a810 to 0040a817 has its CatchHandler &commat; 0040b27c */</pre>
+<a class="reference" href="./cbe19347af9eae054e4f4762b3fdcc6a.html" title="./cbe19347af9eae054e4f4762b3fdcc6a.html" ><pre>  FUN_00407a10(auStack_2bc,0x101a,param_3,0x10,0);</pre></a>
+
+<pre>                    /* try { // try from 0040a844 to 0040a84b has its CatchHandler &commat; 0040a88c */</pre>
+<a class="reference" href="./50a9829894fbff8499e5100f2403a136.html" title="./50a9829894fbff8499e5100f2403a136.html" ><pre>  FUN_00407b10(auStack_104,auStack_2bc);</pre></a>
+
+<a class="reference" href="./17e051284b8b28124604b9e79d824cf1.html" title="./17e051284b8b28124604b9e79d824cf1.html" ><pre>  FUN_00407740(auStack_2bc);</pre></a>
+
+<pre>                    /* try { // try from 0040a87c to 0040a883 has its CatchHandler &commat; 0040b27c */</pre>
+<a class="reference" href="./cbe19347af9eae054e4f4762b3fdcc6a.html" title="./cbe19347af9eae054e4f4762b3fdcc6a.html" ><pre>  FUN_00407a10(auStack_2ac,0x1032,param_3,0xc0,0);</pre></a>
+
+<pre>                    /* try { // try from 0040a8a4 to 0040a8ab has its CatchHandler &commat; 0040a8e4 */</pre>
+<a class="reference" href="./50a9829894fbff8499e5100f2403a136.html" title="./50a9829894fbff8499e5100f2403a136.html" ><pre>  FUN_00407b10((int)&amp;local_f8 + 1,auStack_2ac);</pre></a>
+
+<a class="reference" href="./17e051284b8b28124604b9e79d824cf1.html" title="./17e051284b8b28124604b9e79d824cf1.html" ><pre>  FUN_00407740(auStack_2ac);</pre></a>
+
+<pre>                    /* try { // try from 0040a8d4 to 0040a9e3 has its CatchHandler &commat; 0040b27c */</pre>
+<a class="reference" href="./4738f3d7adbc2571d92ccbf27f316710.html" title="./4738f3d7adbc2571d92ccbf27f316710.html" ><pre>  FUN_00407d50(auStack_330,0x1004,param_3);</pre></a>
+
+<pre>  FUN_004868e0(auStack_ea,auStack_330,10);</pre>
+<a class="reference" href="./4738f3d7adbc2571d92ccbf27f316710.html" title="./4738f3d7adbc2571d92ccbf27f316710.html" ><pre>  FUN_00407d50(&amp;local_324,0x1010,param_3);</pre></a>
+
+<pre>  local_e0 = local_324;</pre>
+<pre>  local_dc = local_320;</pre>
+<pre>  local_d8 = local_31c;</pre>
+<a class="reference" href="./60a509828ae386d869126f3fc030ed7b.html" title="./60a509828ae386d869126f3fc030ed7b.html" ><pre>  FUN_00407dec(auStack_354,0x100d,param_3);</pre></a>
+
+<pre>  FUN_004868e0(auStack_d6,auStack_354,9);</pre>
+<a class="reference" href="./4738f3d7adbc2571d92ccbf27f316710.html" title="./4738f3d7adbc2571d92ccbf27f316710.html" ><pre>  FUN_00407d50(auStack_318,0x1008,param_3);</pre></a>
+
+<pre>  FUN_004868e0(&amp;uStack_cd,auStack_318,10);</pre>
+<a class="reference" href="./60a509828ae386d869126f3fc030ed7b.html" title="./60a509828ae386d869126f3fc030ed7b.html" ><pre>  FUN_00407dec(auStack_348,0x1044,param_3);</pre></a>
+
+<pre>  FUN_004868e0((int)&amp;local_c4 + 1,auStack_348,9);</pre>
+<pre>  FUN_0041688c(auStack_29c,0x1021,param_3,0x40,0);</pre>
+<pre>                    /* try { // try from 0040a9f4 to 0040a9fb has its CatchHandler &commat; 0040aa3c */</pre>
+<a class="reference" href="./69be334b5743c2639cd037db94b12067.html" title="./69be334b5743c2639cd037db94b12067.html" ><pre>  FUN_00407c30(auStack_ba,auStack_29c);</pre></a>
+
+<pre>  FUN_00416a30(auStack_29c);</pre>
+<pre>                    /* try { // try from 0040aa2c to 0040aa33 has its CatchHandler &commat; 0040b27c */</pre>
+<pre>  FUN_0041688c(auStack_28c,0x1023,param_3,0x20,0);</pre>
+<pre>                    /* try { // try from 0040aa54 to 0040aa5b has its CatchHandler &commat; 0040aa9c */</pre>
+<a class="reference" href="./69be334b5743c2639cd037db94b12067.html" title="./69be334b5743c2639cd037db94b12067.html" ><pre>  FUN_00407c30(&amp;uStack_ad,auStack_28c);</pre></a>
+
+<pre>  FUN_00416a30(auStack_28c);</pre>
+<pre>                    /* try { // try from 0040aa8c to 0040aa93 has its CatchHandler &commat; 0040b27c */</pre>
+<pre>  FUN_0041688c(auStack_27c,0x1024,param_3,0x20,0);</pre>
+<pre>                    /* try { // try from 0040aab4 to 0040aabb has its CatchHandler &commat; 0040aafc */</pre>
+<a class="reference" href="./69be334b5743c2639cd037db94b12067.html" title="./69be334b5743c2639cd037db94b12067.html" ><pre>  FUN_00407c30(auStack_a0,auStack_27c);</pre></a>
+
+<pre>  FUN_00416a30(auStack_27c);</pre>
+<pre>                    /* try { // try from 0040aaec to 0040aaf3 has its CatchHandler &commat; 0040b27c */</pre>
+<pre>  FUN_0041688c(auStack_26c,0x1042,param_3,0x20,0);</pre>
+<pre>                    /* try { // try from 0040ab14 to 0040ab1b has its CatchHandler &commat; 0040ab54 */</pre>
+<a class="reference" href="./69be334b5743c2639cd037db94b12067.html" title="./69be334b5743c2639cd037db94b12067.html" ><pre>  FUN_00407c30((int)&amp;local_94 + 1,auStack_26c);</pre></a>
+
+<pre>  FUN_00416a30(auStack_26c);</pre>
+<pre>                    /* try { // try from 0040ab44 to 0040ab77 has its CatchHandler &commat; 0040b27c */</pre>
+<a class="reference" href="./e0c3204b7ce8c534e1713c6801c5e8a2.html" title="./e0c3204b7ce8c534e1713c6801c5e8a2.html" ><pre>  FUN_004064b4(auStack_86,param_3);</pre></a>
+
+<pre>  FUN_0041688c(auStack_25c,0x1011,param_3,0x20,0);</pre>
+<pre>                    /* try { // try from 0040ab88 to 0040ab8f has its CatchHandler &commat; 0040abc8 */</pre>
+<a class="reference" href="./69be334b5743c2639cd037db94b12067.html" title="./69be334b5743c2639cd037db94b12067.html" ><pre>  FUN_00407c30(auStack_76,auStack_25c);</pre></a>
+
+<pre>  FUN_00416a30(auStack_25c);</pre>
+<pre>                    /* try { // try from 0040abb8 to 0040b273 has its CatchHandler &commat; 0040b27c */</pre>
+<a class="reference" href="./60a509828ae386d869126f3fc030ed7b.html" title="./60a509828ae386d869126f3fc030ed7b.html" ><pre>  FUN_00407dec(auStack_33c,0x103c,param_3);</pre></a>
+
+<pre>  FUN_004868e0(&amp;uStack_69,auStack_33c,9);</pre>
+<a class="reference" href="./4738f3d7adbc2571d92ccbf27f316710.html" title="./4738f3d7adbc2571d92ccbf27f316710.html" ><pre>  FUN_00407d50(&amp;local_30c,0x1002,param_3);</pre></a>
+
+<pre>  local_60 = local_30c;</pre>
+<pre>  local_5c = local_308;</pre>
+<pre>  local_58 = local_304;</pre>
+<a class="reference" href="./4738f3d7adbc2571d92ccbf27f316710.html" title="./4738f3d7adbc2571d92ccbf27f316710.html" ><pre>  FUN_00407d50(auStack_300,0x1012,param_3);</pre></a>
+
+<pre>  FUN_004868e0(auStack_56,auStack_300,10);</pre>
+<a class="reference" href="./4738f3d7adbc2571d92ccbf27f316710.html" title="./4738f3d7adbc2571d92ccbf27f316710.html" ><pre>  FUN_00407d50(&amp;local_2f4,0x1009,param_3);</pre></a>
+
+<pre>  local_4c = local_2f4;</pre>
+<pre>  local_48 = local_2f0;</pre>
+<pre>  local_44 = CONCAT22(local_44._2_2_,local_2ec);</pre>
+<pre>  FUN_004167d0(auStack_2e8,0x102d,param_3);</pre>
+<pre>  FUN_004868e0((int)&amp;local_44 + 2,auStack_2e8,0xc);</pre>
+<a class="reference" href="./9b0d94ec186b06d25bf5a039d7d3c568.html" title="./9b0d94ec186b06d25bf5a039d7d3c568.html" ><pre>  iVar2 = FUN_00404bbc(param_3);</pre></a>
+
+<pre>  if (iVar2 == 0x1049) {</pre>
+<pre>    local_23d = 0;</pre>
+<pre>    local_241 = 0;</pre>
+<pre>    local_23c = 0;</pre>
+<pre>    local_238 = 0;</pre>
+<pre>    local_234 = 0;</pre>
+<pre>    FUN_004868e0(auStack_34,auStack_24c,0x1c);</pre>
+<pre>    FUN_004169d0(auStack_24c);</pre>
+<a class="reference" href="./8e1426058ac31644640d2ac5e107de50.html" title="./8e1426058ac31644640d2ac5e107de50.html" ><pre>    FUN_0040640c(auStack_34,param_3);</pre></a>
+
+<pre>    uVar4 = local_25;</pre>
+<pre>    uVar3 = local_29;</pre>
+<a class="reference" href="./caae4058309a081a26441782e1d06467.html" title="./caae4058309a081a26441782e1d06467.html" ><pre>    iVar2 = FUN_00405db8(auStack_34,0,local_29,local_25,local_230,auStack_370);</pre></a>
+
+<pre>    if (iVar2 == 0) {</pre>
+<pre>      local_36 = '\0';</pre>
+<pre>    }</pre>
+<pre>    else {</pre>
+<pre><span class="green">      local_36 = local_230[0]</span></span>   //possible issue identified - semgrep</pre>
+<pre>    }</pre>
+<a class="reference" href="./caae4058309a081a26441782e1d06467.html" title="./caae4058309a081a26441782e1d06467.html" ><pre>    iVar2 = FUN_00405db8(auStack_34,3,uVar3,uVar4,local_230,auStack_370);</pre></a>
+
+<pre>    local_35 = iVar2 == 0 || local_230[0] != '\0';</pre>
+<pre>  }</pre>
+<pre>  if (*(int *)(param_2 + 0x10) == 0) {</pre>
+<pre>    uVar3 = FUN_004749f0(0x13c);</pre>
+<pre>    *(undefined4 *)(param_2 + 0x10) = uVar3;</pre>
+<pre>  }</pre>
+<pre>  **(undefined1 **)(param_2 + 0x10) = (undefined1)local_128;</pre>
+<pre>  FUN_004868e0(*(int *)(param_2 + 0x10) + 1,local_116,local_11c);</pre>
+<pre>  FUN_004868e0(*(int *)(param_2 + 0x10) + 0x11,local_109,local_110 &gt;&gt; 8 &amp; 0xffff);</pre>
+<pre>  FUN_004868e0(param_2 + 0x1bf,local_fc,local_102);</pre>
+<pre>  FUN_004868e0(param_2 + 0x20,local_ef,0xc0);</pre>
+<pre>  iVar2 = FUN_0042db38();</pre>
+<pre>  *(int *)(param_2 + 0x18) = iVar2;</pre>
+<pre>  if (iVar2 == 0) {</pre>
+<pre>    puVar1 = (undefined4 *)FUN_0047347c(4);</pre>
+<pre>    *puVar1 = 0x1002;</pre>
+<pre>    iVar2 = FUN_00475384(puVar1,&amp;PTR_PTR_FUN_004b2360,0);</pre>
+<pre>  }</pre>
+<pre>  iVar2 = FUN_0042e2b4(param_2 + 0x20,0xc0,iVar2);</pre>
+<pre>  if (iVar2 == 0) {</pre>
+<pre>    puVar1 = (undefined4 *)FUN_0047347c(4);</pre>
+<pre>    *puVar1 = 0x6002;</pre>
+<pre>    FUN_00475384(puVar1,&amp;PTR_PTR_FUN_004b2360,0);</pre>
+<pre>  }</pre>
+<pre>  iVar2 = *(int *)(param_2 + 0x10);</pre>
+<pre>  *(undefined1 *)(iVar2 + 0x43) = (undefined1)local_e2;</pre>
+<pre>  *(char *)(iVar2 + 0x44) = (char)((ushort)local_e2 &gt;&gt; 8);</pre>
+<pre>  iVar2 = *(int *)(param_2 + 0x10);</pre>
+<pre>  *(undefined1 *)(iVar2 + 0x47) = (undefined1)local_d8;</pre>
+<pre>  *(undefined1 *)(iVar2 + 0x48) = local_d8._1_1_;</pre>
+<pre>  *(undefined1 *)(*(int *)(param_2 + 0x10) + 0x4b) = local_ce;</pre>
+<pre>  iVar2 = *(int *)(param_2 + 0x10);</pre>
+<pre>  *(undefined1 *)(iVar2 + 0x4d) = (undefined1)local_c4;</pre>
+<pre>  *(undefined1 *)(iVar2 + 0x4c) = local_c8._3_1_;</pre>
+<pre>  *(char *)(*(int *)(param_2 + 0x10) + 0x4e) = local_bb;</pre>
+<pre>  FUN_00486b50(*(int *)(param_2 + 0x10) + 0x50,local_b2,0x40);</pre>
+<pre>  FUN_00486b50(*(int *)(param_2 + 0x10) + 0x90,local_a5,0x20);</pre>
+<pre>  FUN_00486b50(*(int *)(param_2 + 0x10) + 0xb0,local_98,0x20);</pre>
+<pre>  FUN_00486b50(*(int *)(param_2 + 0x10) + 0xd0,local_8b,0x20);</pre>
+<pre>  iVar2 = *(int *)(param_2 + 0x10);</pre>
+<pre>  *(undefined1 *)(iVar2 + 0x37) = (undefined1)local_7e;</pre>
+<pre>  *(char *)(iVar2 + 0x38) = (char)((ushort)local_7e &gt;&gt; 8);</pre>
+<pre>  *(undefined4 *)(*(int *)(param_2 + 0x10) + 0x39) = local_7c;</pre>
+<pre>  iVar2 = *(int *)(param_2 + 0x10);</pre>
+<pre>  *(undefined1 *)(iVar2 + 0x3d) = (undefined1)local_78;</pre>
+<pre>  *(undefined1 *)(iVar2 + 0x3e) = local_78._1_1_;</pre>
+<pre>  FUN_00486b50(*(int *)(param_2 + 0x10) + 0x17,local_6e,0x20);</pre>
+<pre>  *(undefined1 *)(*(int *)(param_2 + 0x10) + 0xf0) = local_61;</pre>
+<pre>  iVar2 = *(int *)(param_2 + 0x10);</pre>
+<pre>  *(undefined1 *)(iVar2 + 0xf9) = (undefined1)local_58;</pre>
+<pre>  *(undefined1 *)(iVar2 + 0xfa) = local_58._1_1_;</pre>
+<pre>  iVar2 = *(int *)(param_2 + 0x10);</pre>
+<pre>  *(undefined1 *)(iVar2 + 0xfb) = (undefined1)local_4e;</pre>
+<pre>  *(char *)(iVar2 + 0xfc) = (char)((ushort)local_4e &gt;&gt; 8);</pre>
+<pre>  uVar4 = (undefined1)local_44;</pre>
+<pre>  puVar1 = *(undefined4 **)(param_2 + 0x10);</pre>
+<pre>  if ((ushort)(*(short *)((int)puVar1 + 0xfb) - 2U) &lt; 2) {</pre>
+<pre>    *(undefined1 *)((int)puVar1 + 0xfd) = uVar4;</pre>
+<pre>    *(undefined1 *)((int)puVar1 + 0xfe) = local_44._1_1_;</pre>
+<pre>    puVar1 = (undefined4 *)FUN_0047347c(4);</pre>
+<pre>    uVar4 = 0x60;</pre>
+<pre>    *puVar1 = 0x1007;</pre>
+<pre>    FUN_00475384(puVar1,&amp;PTR_PTR_FUN_004b2360,0);</pre>
+<pre>  }</pre>
+<pre>  *(undefined1 *)((int)puVar1 + 0xfd) = uVar4;</pre>
+<pre>  *(undefined1 *)((int)puVar1 + 0xfe) = local_44._1_1_;</pre>
+<pre>  *(undefined4 *)(*(int *)(param_2 + 0x10) + 0xf1) = local_3a;</pre>
+<pre>  *(char *)(*(int *)(param_2 + 0x10) + 0x136) = local_36;</pre>
+<pre>  *(undefined1 *)(*(int *)(param_2 + 0x10) + 0x138) = local_35;</pre>
+<pre>  if (((local_7e == 6) &amp;&amp; (local_78 == 1)) &amp;&amp; (local_bb == '\x01')) {</pre>
+<pre>    *(undefined1 *)(*(int *)(param_2 + 0x10) + 0xff) = 1;</pre>
+<pre>  }</pre>
+<pre>  else {</pre>
+<pre>    *(undefined1 *)(*(int *)(param_2 + 0x10) + 0xff) = 0;</pre>
+<pre>  }</pre>
+<a class="reference" href="./4e6b1e5289c4a5dc6c341bbdde130205.html" title="./4e6b1e5289c4a5dc6c341bbdde130205.html" ><pre>  FUN_00404c10(param_2 + 0x328);</pre></a>
+
+<a class="reference" href="./225d18dd938c28b8f795f04289d39b5f.html" title="./225d18dd938c28b8f795f04289d39b5f.html" ><pre>  FUN_00405914(param_2 + 0x328,param_3[4],*param_3);</pre></a>
+
+<a class="reference" href="./266c5e004e817da847173e15c555b6e6.html" title="./266c5e004e817da847173e15c555b6e6.html" ><pre>  FUN_004094b8(&amp;local_130);</pre></a>
+
+<pre>  return 0x1001;</pre>
+<pre>}</pre>
+<br />
+  <!-- content end -->
+</div>
+
+<a href="https://github.com/e-m-b-a/emba" title="github.com/e-m-b-a/emba" target="_blank">
+  <div id="buttonInfo" class="rectButtonVisible">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" transform="translate(2 2)"><g stroke="white" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 12.5v-4h-1"/><path d="M7.5 12.5h2"/></g><circle cx="8.5" cy="5.5" fill="white" r="1"/></g></svg>
+  </div>
+</a>
+<div id="buttonBack" class="nonClickable rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M9.5 14.5l4-4l-4-4" fill="none" stroke="#444" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<div id="buttonForward" class="nonClickable rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M11.5 14.5l-4-4l4-4" fill="none" stroke="#444" stroke-linecap="round" stroke-linejoin="round"/></svg></div> 
+<div id="buttonDown" class="rectButton" onclick="scrollDown()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5l-4 4l-4-4"/><path d="M14.5 10.5l-4 4l-4-4"/></g></svg></div>
+<div id="buttonUp" class="rectButton" onclick="scrollUp()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 14.5l4-4l4 4"/><path d="M6.5 10.5l4-4l4 4"/></g></svg></div> 
+
+<script>
+window.onload = function () {
+  var buttons = document.getElementsByClassName("rectButton");
+  for (let i=0; i<buttons.length; i++) {
+    buttons[i].style.visibility = "visible";
+  }
+  var buttonDown = document.getElementById("buttonDown");
+  buttonDown.classList.add('rectButtonVisible');
+  buttonDown.classList.remove('rectButton');
+
+  var buttonUp = document.getElementById("buttonUp");
+  buttonUp.classList.add('rectButtonVisible');
+  buttonUp.classList.remove('rectButton');
+    
+  var buttonSizer = document.getElementById("buttonSizer");
+  buttonSizer.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+  if (document.getElementById("buttonTime") !== null) {
+    var buttonTime = document.getElementById("buttonTime");
+    buttonTime.style.bottom = "50px";
+  }
+  if (document.getElementById("buttonError") !== null) {
+    var buttonError = document.getElementById("buttonError");
+    buttonError.style.bottom = "100px";
+  }
+  document.getElementById("expand").value = "+ Show more results";
+  document.getElementById("expand").className += " expand";
+  var embarkButton = document.getElementById("embark");
+  if ( !(embarkButton.href.includes("embarkBackUrl")) ) {
+    embarkButton.classList.remove('hidden');
+    document.getElementById("logoImage").src = "./../style/embark.svg";
+    document.getElementById("logo").style.background = "#2d2d2d";
+  }
+}
+
+function openNav() {
+  document.getElementById("sidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("nav").style.visibility = "visible";
+}
+
+function closeNav() {
+  document.getElementById("sidenav").style.width = "50px";
+  document.getElementById("sidenav").scrollTop = 0;
+  document.getElementById("main").style.marginLeft = "50px";
+  document.getElementById("nav").style.visibility = "hidden";
+}
+
+function scrollDown() {
+  window.scrollTo(0,document.body.scrollHeight);
+}
+
+function scrollUp() {
+  window.scrollTo(0,0);
+}
+
+function buttonNav() {
+  var button = document.getElementById("buttonSizer");
+  if ( button.classList.contains('buttonOpen') ) {
+    button.classList.remove('buttonOpen');
+    button.classList.add('buttonClose');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+    openNav();
+  } else if( button.classList.contains('buttonClose') ) {
+    button.classList.remove('buttonClose');
+    button.classList.add('buttonOpen');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 7.5v-5h-5"/><path d="M18.5 2.5l-6 5.929"/><path d="M7.5 18.5l-5 .023V13.5"/><path d="M8.5 12.5l-6 6"/></g></svg>';
+    closeNav();
+  };
+}
+
+// the following function is currently not used
+// it is for future extensions
+function overlay_output(link) {
+  var rawfile = new XMLHttpRequest();
+  rawfile.open('GET', link, false);
+  rawfile.overrideMimeType("text");
+  rawfile.onreadystatechange = function()
+  {
+    alert(rawfile.responseText);
+    //console.log(rawfile.responseText);
+  }
+  rawfile.send(null);
+}
+
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+      case 37:
+        document.getElementById("buttonForward").parentNode.click(); 
+        break;
+      case 39:
+        document.getElementById("buttonBack").parentNode.click();       
+        break;
+    }
+};
+</script>
+
+</body>
+</html>

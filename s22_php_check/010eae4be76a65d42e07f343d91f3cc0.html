@@ -1,0 +1,280 @@
+<!-- 
+EMBA - EMBEDDED LINUX ANALYZER
+
+Copyright 2020-2023 Siemens AG
+Copyright 2020-2025 Siemens Energy AG
+
+EMBA comes with ABSOLUTELY NO WARRANTY. This is free software, and you are
+welcome to redistribute it under the terms of the GNU General Public License.
+See LICENSE file for usage of this software.
+
+EMBA is licensed under GPLv3
+
+Author(s) and contributors from the EMBA project are listed here: https://github.com/e-m-b-a/emba/blob/master/CONTRIBUTORS.md
+-->
+
+<!-- Used icons: https://github.com/CoreyGinnivan/system-uicons -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EMBA firmware report</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./../style/style.css" type="text/css">
+  <link rel="icon" type="image/png" href="./../style/favicon.png">
+</head>
+<body>
+
+<div id="sidenav" class="side">
+  <div id="logo">
+    <a class="inherit" href="./../index.html"><img class="inherit" id="logoImage" src="./../style/emba.svg" alt="logo"></a>
+  </div>
+  <div id="nav">
+      <a id="embark" class="hidden" href="{{ embarkBackUrl }}">&laquo; Back to EMBArk</a> <!-- nosem -->
+      <a class="backButton" href="./../index.html">&laquo; Back to main</a>
+<a class="modul" href="./../s22_php_check.html" title="./../s22_php_check.html" >&laquo; Back to s22_php_check</a>
+      <!-- navigation start -->
+      <!-- navigation end -->
+      <input id="expand" class="expand_njs hidden" type="button" value="More results:" onclick="this.value=this.value=='+ Show more results'?'- Hide more results':'+ Show more results';">
+      <div class="expand_area">
+        <!-- etc start -->
+        <!-- etc end -->
+      </div>
+  </div>
+
+  <a href="ERRORLINK"><div id="buttonErrorInvisible" class="rectButton"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></div></a>
+  <a href="TIMELINK"><div id="buttonTimeInvisible" class="rectButton"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1 0 0 1 19 2)"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 5.5v4H5"/></g></svg></div></a>
+
+  <div id="buttonSizer" class="rectButton buttonClose" onclick="buttonNav()"></div>
+</div>
+<div id="main" class="main">
+  <!-- content start -->
+<pre>&lt;script type="text/javascript"&gt;</pre>
+<pre>function Page() {}</pre>
+<pre>Page.prototype =</pre>
+<pre>{</pre>
+<pre>	services: null,</pre>
+<pre>	OnLoad: function()</pre>
+<pre>	{</pre>
+<pre>&lt;?</pre>
+<pre>		include "/htdocs/phplib/trace.php";</pre>
+<pre>		$referer = $_SERVER["HTTP_REFERER"];</pre>
+<pre>		$t = 0;</pre>
+<br />
+<pre>		if ($_GET["PELOTA_ACTION"]=="fwupdate")</pre>
+<pre>		{</pre>
+<pre>			if ($_GET["RESULT"]=="SUCCESS")</pre>
+<pre>			{</pre>
+<pre>				$size	= fread("j","/var/session/imagesize"); if ($size == "") $size = "4000000";</pre>
+<pre>				$fptime	= query("/runtime/device/fptime");</pre>
+<pre>				$bt		= query("/runtime/device/bootuptime");</pre>
+<pre>				$delay	= 10;</pre>
+<pre>				$t		= $size/64000*$fptime/1000+$bt+$delay+20;</pre>
+<pre>				$title	= i18n("Firmware Upload");</pre>
+<pre>				$message= '"'.i18n("The device is updating the firmware now.").'", '.</pre>
+<pre>						  '"'.i18n("It takes a while to update firmware and reboot the device.").</pre>
+<pre>						  ' '.i18n("Please DO NOT power off the device.").'"';</pre>
+<pre>			}</pre>
+<pre>			else</pre>
+<pre>			{</pre>
+<pre>				$title = i18n("Firmware Upload Fail");</pre>
+<pre>				$btn = "'&lt;input type=\"button\" value=\"".i18n("Continue")."\" onclick=\"self.location=\\'tools_firmware.php\\';\"&gt;'";</pre>
+<pre>				if ($_GET["REASON"]=="ERR_NO_FILE")</pre>
+<pre>				{</pre>
+<pre>					$message = "'".i18n("No image file.")." ".i18n("Please select the correct image file and upload it again.")."', ".$btn;</pre>
+<pre>				}</pre>
+<pre>				else if ($_GET["REASON"]=="ERR_INVALID_SEAMA" || $_GET["REASON"]=="ERR_INVALID_FILE")</pre>
+<pre>				{</pre>
+<pre>					$message = "'".i18n("Invalid image file.")." ".i18n("Please select the correct image file and upload it again.")."', ".$btn;</pre>
+<pre>				}</pre>
+<pre>				else if ($_GET["REASON"]=="ERR_UNAUTHORIZED_SESSION")</pre>
+<pre>				{</pre>
+<pre>					$message = "'".i18n("You are unauthorized or authority limited.")." ".i18n("Please Login first.")."', ".$btn;</pre>
+<pre>				}</pre>
+<pre>				else if ($_GET["REASON"]=="ERR_ANOTHER_FWUP_PROGRESS")</pre>
+<pre>				{</pre>
+<pre>					$message = "'".i18n("Another image update process is progressing.")." ".i18n("If you still want to update the image, please wait until the other process is done and try it again.")."', ".$btn;</pre>
+<pre>				}</pre>
+<pre>			}</pre>
+<pre>		}</pre>
+<pre>		else if ($_POST["ACTION"]=="langupdate")</pre>
+<pre>		{</pre>
+<pre>			TRACE_debug("ACTION=".$_POST["ACTION"]);</pre>
+<pre>			TRACE_debug("FILE=".$_FILES["sealpac"]);</pre>
+<pre>			TRACE_debug("FILETYPES=".$_FILETYPES["sealpac"]);</pre>
+<pre>			$slp = "/var/sealpac/sealpac.slp";</pre>
+<pre>			$title = i18n("Update Language Pack");</pre>
+<pre>			if ($_FILES["sealpac"]=="")</pre>
+<pre>			{</pre>
+<pre>				$title = i18n("Language Pack Upload Fail");</pre>
+<pre>				$message = "'".i18n("The language pack image is invalid.")."', ".</pre>
+<pre>							"'&lt;a href=\"".$referer."\"&gt;".i18n("Click here to return to the previous page.")."&lt;/a&gt;'";</pre>
+<pre>			}</pre>
+<pre>			else if (fcopy($_FILES["sealpac"], $slp)!="1")</pre>
+<pre>			{</pre>
+<pre>				$title = i18n("Language Pack Upload Fail");</pre>
+<pre>				$message = "'INTERNAL ERROR: fcopy() return error!'";</pre>
+<pre>			}</pre>
+<pre>			else</pre>
+<pre>			{			</pre>
+<pre>				$langcode = sealpac($slp);</pre>
+<pre>				if ($langcode != "")</pre>
+<pre>				{</pre>
+<pre>					$message = "'".i18n("You have installed the language pack ($1) successfully.",$langcode)."', ".</pre>
+<pre>								"'&lt;a href=\"".$referer."\"&gt;".i18n("Click here to return to the previous page.")."&lt;/a&gt;'";</pre>
+<pre>					fwrite(w, "/var/sealpac/langcode", $langcode);</pre>
+<pre>					set("/runtime/device/langcode", $langcode);</pre>
+<pre>					event("SEALPAC.SAVE");</pre>
+<pre>				}</pre>
+<pre>				else</pre>
+<pre>				{</pre>
+<pre>					$title = i18n("Language Pack Upload Fail");</pre>
+<pre>					$message = "'".i18n("The language pack image is invalid.")."', ".</pre>
+<pre>								"'&lt;a href=\"".$referer."\"&gt;".i18n("Click here to return to the previous page.")."&lt;/a&gt;'";</pre>
+<pre>					unlink($slp);</pre>
+<pre>				}</pre>
+<pre>			}</pre>
+<pre>		}</pre>
+<pre>		else if ($_POST["ACTION"]=="langclear")</pre>
+<pre>		{</pre>
+<pre>			$title = i18n("Clear Language Pack");</pre>
+<pre>			$message = "'".i18n("Clearing the language pack ...")."', ".</pre>
+<pre>						"'&lt;a href=\"".$referer."\"&gt;".i18n("Click here to return to the previous page.")."&lt;/a&gt;'";</pre>
+<pre>			set("/runtime/device/langcode", "en");</pre>
+<pre>			event("SEALPAC.CLEAR");</pre>
+<pre>		}</pre>
+<pre>		else</pre>
+<pre>		{</pre>
+<pre>			$title = i18n("Unknown action - ").$_POST["ACTION"];</pre>
+<pre>			$message = "'&lt;a href=\"./index.php\"&gt;".i18n("Click here to redirect to the home page now.")."&lt;/a&gt;'";</pre>
+<pre>			$referer = "./index.php";</pre>
+<pre>		}</pre>
+<br />
+<pre>		echo "\t\tvar msgArray = [".$message."];\n";</pre>
+<pre>		if ($t &gt; 0)</pre>
+<pre><span class="green">			echo "\t\tBODY.ShowCountdown(\"".$title."\", msgArray, ".$t.", \"".$referer."\");\n"</span></span>   //possible issue identified - semgrep</pre>
+<pre>		else</pre>
+<pre><span class="green">			echo "\t\tBODY.ShowMessage(\"".$title."\", msgArray);\n"</span></span>   //possible issue identified - semgrep</pre>
+<pre>?&gt;	},</pre>
+<pre>	OnUnload: function() {},</pre>
+<pre>	OnSubmitCallback: function (code, result) { return true; },</pre>
+<pre>	InitValue: function(xml) { return true; },</pre>
+<pre>	PreSubmit: function() { return null; },</pre>
+<pre>	IsDirty: null,</pre>
+<pre>	Synchronize: function() {}</pre>
+<pre>	// The above are MUST HAVE methods ...</pre>
+<pre>	///////////////////////////////////////////////////////////////////////</pre>
+<pre>}</pre>
+<pre>&lt;/script&gt;</pre>
+  <!-- content end -->
+</div>
+
+<a href="https://github.com/e-m-b-a/emba" title="github.com/e-m-b-a/emba" target="_blank">
+  <div id="buttonInfo" class="rectButtonVisible">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" transform="translate(2 2)"><g stroke="white" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 12.5v-4h-1"/><path d="M7.5 12.5h2"/></g><circle cx="8.5" cy="5.5" fill="white" r="1"/></g></svg>
+  </div>
+</a>
+<div id="buttonBack" class="nonClickable rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M9.5 14.5l4-4l-4-4" fill="none" stroke="#444" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<div id="buttonForward" class="nonClickable rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M11.5 14.5l-4-4l4-4" fill="none" stroke="#444" stroke-linecap="round" stroke-linejoin="round"/></svg></div> 
+<div id="buttonDown" class="rectButton" onclick="scrollDown()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5l-4 4l-4-4"/><path d="M14.5 10.5l-4 4l-4-4"/></g></svg></div>
+<div id="buttonUp" class="rectButton" onclick="scrollUp()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 14.5l4-4l4 4"/><path d="M6.5 10.5l4-4l4 4"/></g></svg></div> 
+
+<script>
+window.onload = function () {
+  var buttons = document.getElementsByClassName("rectButton");
+  for (let i=0; i<buttons.length; i++) {
+    buttons[i].style.visibility = "visible";
+  }
+  var buttonDown = document.getElementById("buttonDown");
+  buttonDown.classList.add('rectButtonVisible');
+  buttonDown.classList.remove('rectButton');
+
+  var buttonUp = document.getElementById("buttonUp");
+  buttonUp.classList.add('rectButtonVisible');
+  buttonUp.classList.remove('rectButton');
+    
+  var buttonSizer = document.getElementById("buttonSizer");
+  buttonSizer.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+  if (document.getElementById("buttonTime") !== null) {
+    var buttonTime = document.getElementById("buttonTime");
+    buttonTime.style.bottom = "50px";
+  }
+  if (document.getElementById("buttonError") !== null) {
+    var buttonError = document.getElementById("buttonError");
+    buttonError.style.bottom = "100px";
+  }
+  document.getElementById("expand").value = "+ Show more results";
+  document.getElementById("expand").className += " expand";
+  var embarkButton = document.getElementById("embark");
+  if ( !(embarkButton.href.includes("embarkBackUrl")) ) {
+    embarkButton.classList.remove('hidden');
+    document.getElementById("logoImage").src = "./../style/embark.svg";
+    document.getElementById("logo").style.background = "#2d2d2d";
+  }
+}
+
+function openNav() {
+  document.getElementById("sidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("nav").style.visibility = "visible";
+}
+
+function closeNav() {
+  document.getElementById("sidenav").style.width = "50px";
+  document.getElementById("sidenav").scrollTop = 0;
+  document.getElementById("main").style.marginLeft = "50px";
+  document.getElementById("nav").style.visibility = "hidden";
+}
+
+function scrollDown() {
+  window.scrollTo(0,document.body.scrollHeight);
+}
+
+function scrollUp() {
+  window.scrollTo(0,0);
+}
+
+function buttonNav() {
+  var button = document.getElementById("buttonSizer");
+  if ( button.classList.contains('buttonOpen') ) {
+    button.classList.remove('buttonOpen');
+    button.classList.add('buttonClose');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+    openNav();
+  } else if( button.classList.contains('buttonClose') ) {
+    button.classList.remove('buttonClose');
+    button.classList.add('buttonOpen');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 7.5v-5h-5"/><path d="M18.5 2.5l-6 5.929"/><path d="M7.5 18.5l-5 .023V13.5"/><path d="M8.5 12.5l-6 6"/></g></svg>';
+    closeNav();
+  };
+}
+
+// the following function is currently not used
+// it is for future extensions
+function overlay_output(link) {
+  var rawfile = new XMLHttpRequest();
+  rawfile.open('GET', link, false);
+  rawfile.overrideMimeType("text");
+  rawfile.onreadystatechange = function()
+  {
+    alert(rawfile.responseText);
+    //console.log(rawfile.responseText);
+  }
+  rawfile.send(null);
+}
+
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+      case 37:
+        document.getElementById("buttonForward").parentNode.click(); 
+        break;
+      case 39:
+        document.getElementById("buttonBack").parentNode.click();       
+        break;
+    }
+};
+</script>
+
+</body>
+</html>

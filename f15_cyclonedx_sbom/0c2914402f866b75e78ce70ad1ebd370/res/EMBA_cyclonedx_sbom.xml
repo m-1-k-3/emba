@@ -1,0 +1,2536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" serialNumber="urn:uuid:358677f0-adc1-422c-a9cf-c892862e0bcf" version="1" xmlns="http://cyclonedx.org/schema/bom/1.7">
+  <metadata>
+    <timestamp>2026-09-15T18:50:28Z</timestamp>
+    <lifecycles>
+      <lifecycle>
+        <phase>operations</phase>
+      </lifecycle>
+    </lifecycles>
+    <tools>
+      <components>
+        <component type="application">
+          <author>EMBA community</author>
+          <name>EMBA binary analysis environment</name>
+          <version>2.0.3-8a4dc30f3eae35c215883f7bd33d83cf0e1e7d49</version>
+          <description>EMBA firmware analyzer - https://github.com/e-m-b-a/emba</description>
+        </component>
+      </components>
+    </tools>
+    <component type="data" bom-ref="eb204600-d799-4f11-9daa-43d673993c07">
+      <name>/home/runner/work/emba/emba/DIR-300_fw_revb_214b01_ALL_de_20130206.zip</name>
+      <hashes>
+        <hash alg="MD5">a654b0ff7cbdbf1889bd824a5adff916</hash>
+        <hash alg="SHA-256">917060d9541c9c9d54c8269928a64af337f69253214217f76b9186338f4e1d4f</hash>
+        <hash alg="SHA-512">beafc72ec0d511524dcb77795e1c8db7b25d54ec9603d30860fd026aa93f1e96d16228397cefd8556a757d198361d2b6d18549acfde733f3bd079009f5b790dd</hash>
+      </hashes>
+    </component>
+    <supplier>
+      <name>EMBA binary analyzer</name>
+      <url>https://github.com/e-m-b-a/emba</url>
+    </supplier>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="a4ca3bf2-0c73-463d-b504-64d38846d10f">
+      <supplier>
+        <name>kernel.org</name>
+      </supplier>
+      <group>linux_kernel</group>
+      <name>linux_kernel</name>
+      <version>2.6.33.2</version>
+      <description>EMBA SBOM-group: linux_kernel - name: linux_kernel - version: 2.6.33.2</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">3f5bb38082a91288af3921dd0431855e</hash>
+        <hash alg="SHA-256">6488a2bbc37dc5c1a95f3c15743e23f019fa0b07c0a7f7e69f4252e0d00f1e17</hash>
+        <hash alg="SHA-512">b96b5be7827b50805ce464d83a20d3235e6449e2029cf0da55b78284a313c188982c38cd123a1f12b4de09f30b1d6a6a143fa33f8450701bc1bbb1db6c3dbf05</hash>
+      </hashes>
+      <cpe>cpe:2.3:o:linux:linux_kernel:2.6.33.2:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/linux_kernel@2.6.33.2?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/6C/decompressed.bin.elf'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS-I version 1 (SYSV), statically linked, not stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'Linux version 2.6.33.2 '</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\:linux:linux_kernel:2.6.33.2'</property>
+        <property name="EMBA:sbom:6:product_name">'linux_kernel'</property>
+        <property name="EMBA:sbom:7:vendor_name">'linux'</property>
+        <property name="EMBA:sbom:8:confidence">'high'</property>
+        <property name="EMBA:sbom:source_location:9:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/A0/decompressed.bin.elf</property>
+        <property name="EMBA:sbom:source_location:10:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/modules/sw_tcpip.ko</property>
+        <property name="EMBA:sbom:source_location:11:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/modules/sw_tcpip.ko</property>
+        <property name="EMBA:sbom:source_location:12:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/modules/ifresetcnt.ko</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="2e468cf1-2e5b-458b-9087-b381fbf09904">
+      <supplier>
+        <name>BusyBox</name>
+      </supplier>
+      <group>static_bin_analysis</group>
+      <name>busybox</name>
+      <version>1.14.1</version>
+      <description>EMBA SBOM-group: static_bin_analysis - name: busybox - version: 1.14.1</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">9beba86bc1e47c56d6fc16fd49b9d36d</hash>
+        <hash alg="SHA-256">c3f209fe7b8736295576cb8c5d5fe91995c132d485e7997a4d8afa49d91d2c6d</hash>
+        <hash alg="SHA-512">e376218a4975322ceedb82614c263315a04789296735f316683bf1684d107e1f844d0fb0c79be67883826f5e1303541e9393c3e74e400333f5a8001475f252e5</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:busybox:busybox:1.14.1:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/busybox@1.14.1?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/bin/busybox'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), statically linked, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'BusyBox v1.14.1 '</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\:busybox:busybox:1.14.1'</property>
+        <property name="EMBA:sbom:6:product_name">'busybox'</property>
+        <property name="EMBA:sbom:7:vendor_name">'busybox'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+        <property name="EMBA:sbom:source_location:9:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/bin/busybox</property>
+        <property name="EMBA:sbom:source_location:10:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/bin/busybox</property>
+        <property name="EMBA:sbom:source_location:11:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/bin/busybox</property>
+        <property name="EMBA:sbom:source_location:12:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/bin/busybox</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="519f1da5-6209-409f-b18e-79bae27f9c9a">
+      <supplier>
+        <name>BusyBox</name>
+      </supplier>
+      <group>static_bin_analysis</group>
+      <name>busybox</name>
+      <version>1.14.1</version>
+      <description>EMBA SBOM-group: static_bin_analysis - name: busybox - version: 1.14.1</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">9beba86bc1e47c56d6fc16fd49b9d36d</hash>
+        <hash alg="SHA-256">c3f209fe7b8736295576cb8c5d5fe91995c132d485e7997a4d8afa49d91d2c6d</hash>
+        <hash alg="SHA-512">e376218a4975322ceedb82614c263315a04789296735f316683bf1684d107e1f844d0fb0c79be67883826f5e1303541e9393c3e74e400333f5a8001475f252e5</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:busybox:busybox:1.14.1:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/busybox@1.14.1?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/bin/busybox'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), statically linked, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'BusyBox v1.14.1 (2011-04-08 11:04:07 CST)'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\:busybox:busybox:1.14.1'</property>
+        <property name="EMBA:sbom:6:product_name">'busybox'</property>
+        <property name="EMBA:sbom:7:vendor_name">'busybox'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="ca80582d-a597-4f89-a27d-48033fa61a0c">
+      <supplier>
+        <name>dnsmasq</name>
+      </supplier>
+      <group>static_bin_analysis</group>
+      <name>dnsmasq</name>
+      <version>2.45</version>
+      <description>EMBA SBOM-group: static_bin_analysis - name: dnsmasq - version: 2.45</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">9d449b75d6947d205935ce0dbac75df1</hash>
+        <hash alg="SHA-256">27c42331064329d47e2aaa068e919e291c27363bc3f37ede0e16e7b4ec7d642a</hash>
+        <hash alg="SHA-512">5921c7fc8dd3e5808ff18e8b84b12ec16d4b77e1a424a8fa9e6d190cb296361217fb3a4699402bb89b88ac0a8cb7dc3b3d819b1173ccff90df1b53fba8d07718</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:dnsmasq:dnsmasq:2.45:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/dnsmasq@2.45?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/dnsmasq'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'dnsmasq-2.45'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\::dnsmasq:2.45'</property>
+        <property name="EMBA:sbom:6:product_name">'dnsmasq'</property>
+        <property name="EMBA:sbom:7:vendor_name">'dnsmasq'</property>
+        <property name="EMBA:sbom:8:vendor_name">'thekelleys'</property>
+        <property name="EMBA:sbom:9:confidence">'medium'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="0e8a750e-5472-42a2-b3ff-5807951a6df2">
+      <supplier>
+        <name>w1.fi</name>
+      </supplier>
+      <group>static_bin_analysis</group>
+      <name>hostapd</name>
+      <version>0.5.11</version>
+      <description>EMBA SBOM-group: static_bin_analysis - name: hostapd - version: 0.5.11</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">dcbf30a2d47217d266f478e27fa69797</hash>
+        <hash alg="SHA-256">c41912f56fa176d72c96d9d00fe61c5d4287d47ec7b339cc624b385708d819a7</hash>
+        <hash alg="SHA-512">794e056d4a9107cec28ed0ec85623e0badb784a890baa9cd5a1f3821b48a4731f8a42f6472c946907b8dcfb0ea6c2b945d86ded7b3cef458fda66bd623a63af2</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:w1.fi:hostapd:0.5.11:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/hostapd@0.5.11?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/hostapd'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'hostapd v0.5.11'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\:w1.fi:hostapd:0.5.11'</property>
+        <property name="EMBA:sbom:6:product_name">'hostapd'</property>
+        <property name="EMBA:sbom:7:vendor_name">'w1.fi'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="4c739bc0-64b4-45de-8f0b-f4f63011e1a5">
+      <supplier>
+        <name>w1.fi</name>
+      </supplier>
+      <group>static_bin_analysis</group>
+      <name>hostapd</name>
+      <version>0.5.11</version>
+      <description>EMBA SBOM-group: static_bin_analysis - name: hostapd - version: 0.5.11</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">dcbf30a2d47217d266f478e27fa69797</hash>
+        <hash alg="SHA-256">c41912f56fa176d72c96d9d00fe61c5d4287d47ec7b339cc624b385708d819a7</hash>
+        <hash alg="SHA-512">794e056d4a9107cec28ed0ec85623e0badb784a890baa9cd5a1f3821b48a4731f8a42f6472c946907b8dcfb0ea6c2b945d86ded7b3cef458fda66bd623a63af2</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:w1.fi:hostapd:0.5.11:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/hostapd@0.5.11?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/hostapd'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'hostapd v0.5.11'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\:w1.fi:hostapd:0.5.11'</property>
+        <property name="EMBA:sbom:6:product_name">'hostapd'</property>
+        <property name="EMBA:sbom:7:vendor_name">'w1.fi'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="4d5b98c4-6391-49e8-b3e5-ed4f8b27fe9f">
+      <supplier>
+        <name>w1.fi</name>
+      </supplier>
+      <group>static_bin_analysis</group>
+      <name>hostapd</name>
+      <version>0.4.8</version>
+      <description>EMBA SBOM-group: static_bin_analysis - name: hostapd - version: 0.4.8</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">cc5abbfd3ad475cb0408177570da490f</hash>
+        <hash alg="SHA-256">2c09e3feed4b2f796b4020e7e2ba1e6d064ab47a209241c3b10e96e0c20ec231</hash>
+        <hash alg="SHA-512">0c0f205db698b5367ed0831bce592bb1db07c27899ce5c835e575cab81147cf095e49ab1a4e9df3c98c8cecc07cef981653e631b64dd2f532f8a7dec1f9a3780</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:w1.fi:hostapd:0.4.8:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/hostapd@0.4.8?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/hostapd'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'hostapd v0.4.8'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\:w1.fi:hostapd:0.4.8'</property>
+        <property name="EMBA:sbom:6:product_name">'hostapd'</property>
+        <property name="EMBA:sbom:7:vendor_name">'w1.fi'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="bd81de36-a403-4db3-834f-4b82ea5b5260">
+      <supplier>
+        <name>w1.fi</name>
+      </supplier>
+      <group>static_bin_analysis</group>
+      <name>hostapd</name>
+      <version>0.4.8</version>
+      <description>EMBA SBOM-group: static_bin_analysis - name: hostapd - version: 0.4.8</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">cc5abbfd3ad475cb0408177570da490f</hash>
+        <hash alg="SHA-256">2c09e3feed4b2f796b4020e7e2ba1e6d064ab47a209241c3b10e96e0c20ec231</hash>
+        <hash alg="SHA-512">0c0f205db698b5367ed0831bce592bb1db07c27899ce5c835e575cab81147cf095e49ab1a4e9df3c98c8cecc07cef981653e631b64dd2f532f8a7dec1f9a3780</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:w1.fi:hostapd:0.4.8:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/hostapd@0.4.8?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/hostapd'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'hostapd v0.4.8'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\:w1.fi:hostapd:0.4.8'</property>
+        <property name="EMBA:sbom:6:product_name">'hostapd'</property>
+        <property name="EMBA:sbom:7:vendor_name">'w1.fi'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="340eac58-464f-4645-b461-9842cad002ae">
+      <supplier>
+        <name>netfilter</name>
+      </supplier>
+      <group>static_bin_analysis</group>
+      <name>iptables</name>
+      <version>1.4.7</version>
+      <description>EMBA SBOM-group: static_bin_analysis - name: iptables - version: 1.4.7</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">0e6cf7f7d444ac69ccb0fc08c4fbb669</hash>
+        <hash alg="SHA-256">96c4cef31d2ded681b0844e4d3ddb2feaf3709e4010847fb27776446955734ed</hash>
+        <hash alg="SHA-512">506f297bc3b88b2ab61b12bd2da613605a8c09e3d22a88138c5a6c9c2aa50cfaab46931dc9a6730ef1a8a6002bfc93b9b4439ad5a2f3dbb09a3a08148a466ec1</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:netfilter:iptables:1.4.7:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/iptables@1.4.7?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/iptables-multi'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'1.4.7'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\:netfilter:iptables:1.4.7'</property>
+        <property name="EMBA:sbom:6:product_name">'iptables'</property>
+        <property name="EMBA:sbom:7:vendor_name">'netfilter'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+        <property name="EMBA:sbom:source_location:9:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/iptables-multi</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="8382d0e0-e495-4e7a-bdec-14a69fe16e72">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>static_bin_analysis</group>
+      <name>logd</name>
+      <version>0.1</version>
+      <description>EMBA SBOM-group: static_bin_analysis - name: logd - version: 0.1</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">25d1158a32d10857f8bca7be7a018cd9</hash>
+        <hash alg="SHA-256">9329f2c8689f79f46065261769b45f2c59ad8bcbb868f3383b52ba6420c4556e</hash>
+        <hash alg="SHA-512">b9b43af391c95b0e0ca8b432f191a367093825166c06a1c1177cd52c7ba2f211ef637d70eb66877fc84e9959f1784939fe0004cd84744e285bfd5e67386451c0</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:logd:logd:0.1:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/logd@0.1?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/logd'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'logd version 0.1'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\::logd:0.1'</property>
+        <property name="EMBA:sbom:6:product_name">'logd'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="e9cdec3f-d8ae-429e-8ab6-4474d84910b2">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>static_bin_analysis</group>
+      <name>logger</name>
+      <version>0.01</version>
+      <description>EMBA SBOM-group: static_bin_analysis - name: logger - version: 0.01</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">b4f8b7e39af2dd2c87b0490572d6e67a</hash>
+        <hash alg="SHA-256">0fdb0a98d57aee908674a83c8a3f4bf657fa898f10bbda9dc4bf5ff9996535b0</hash>
+        <hash alg="SHA-512">f61c882746b236a9c2fab963fc83e1b27f111b1b04ba74aad13159316f17ff59fca99f6249778110fbc4fd9f16dd3fd630ff9848b13a68adbfbb76ec7fc6d464</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:logger:logger:0.01:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/logger@0.01?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/logger'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'logger version 0.01'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\::logger:0.01'</property>
+        <property name="EMBA:sbom:6:product_name">'logger'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="2f5fff55-a6c0-4187-8425-9f62c30686f1">
+      <supplier>
+        <name>openssl</name>
+      </supplier>
+      <group>static_bin_analysis</group>
+      <name>openssl</name>
+      <version>0.9.8a</version>
+      <description>EMBA SBOM-group: static_bin_analysis - name: openssl - version: 0.9.8a</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">9564c016869273e0ce8cf34478f8627a</hash>
+        <hash alg="SHA-256">ca9179178da1654fe3b04a9ce987683e01cb46dddcde14907d3172d45467f07a</hash>
+        <hash alg="SHA-512">1dd12458b04ee2275a4cd85722cf926904c89c46bf09dd7c79d1dfe37403c26387131db3a44ea23b8fcefe2155765c39dc3684ad8abf0b73acb5963db2d70583</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:openssl:openssl:0.9.8a:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/openssl@0.9.8a?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/wps'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), statically linked, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'part of OpenSSL 0.9.8a '</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\:openssl:openssl:0.9.8a'</property>
+        <property name="EMBA:sbom:6:product_name">'openssl'</property>
+        <property name="EMBA:sbom:7:vendor_name">'openssl'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+        <property name="EMBA:sbom:source_location:9:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/wps</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="fb07eeb8-a4be-442b-8528-b068b7b2f391">
+      <supplier>
+        <name>point-to-point_protocol_project</name>
+      </supplier>
+      <group>static_bin_analysis</group>
+      <name>point-to-point_protocol</name>
+      <version>2.4.2b3</version>
+      <description>EMBA SBOM-group: static_bin_analysis - name: point-to-point_protocol - version: 2.4.2b3</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">d2fd2b6a4eb186bab80489fae9cc8f09</hash>
+        <hash alg="SHA-256">0e9a4f25369b46ee349f4990b1482d3f0120629dd49bbd2a11522f4b2120325c</hash>
+        <hash alg="SHA-512">a2f6178a2a8fa20e0b1f8a41e3f0b3d470dbb67bf2449cf7ce187cf7264cae4dff85257ff6da06e8199920ff2cd48464d6e619382bd568670f4ae1616150df26</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:point-to-point_protocol_project:point-to-point_protocol:2.4.2b3:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/point-to-point_protocol@2.4.2b3?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/pppd'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'2.4.2b3'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\:point-to-point_protocol_project:point-to-point_protocol:2.4.2b3'</property>
+        <property name="EMBA:sbom:6:product_name">'point-to-point_protocol'</property>
+        <property name="EMBA:sbom:7:vendor_name">'point-to-point_protocol_project'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+        <property name="EMBA:sbom:source_location:9:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/pppd</property>
+        <property name="EMBA:sbom:source_location:10:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/pppd</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="de96068f-c2f7-4947-8044-c36d5abad4ad">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>static_bin_analysis</group>
+      <name>proxyd</name>
+      <version>0.0.1</version>
+      <description>EMBA SBOM-group: static_bin_analysis - name: proxyd - version: 0.0.1</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">ba6d9ac0a49f430ab56d405a50219b97</hash>
+        <hash alg="SHA-256">3fbad7b3398db0f1d1816f043e43340e260be7a02896f0acc477363ccb1533fc</hash>
+        <hash alg="SHA-512">a1c5e9f3ad3423aae5d68361d888ad845f1ba0c40b0e85cbb9edee29d774b03d5ac5ee33cb14d8a3985e0e1744639ed7978ab9f6ce50ea493691dc189d444123</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:proxyd:proxyd:0.0.1:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/proxyd@0.0.1?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/proxyd'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'proxyd VERSION 0.0.1'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\::proxyd:0.0.1'</property>
+        <property name="EMBA:sbom:6:product_name">'proxyd'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="1eb1bf7e-d91e-492c-abae-163daf729483">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>static_bin_analysis</group>
+      <name>rndimgae</name>
+      <version>0.0.1</version>
+      <description>EMBA SBOM-group: static_bin_analysis - name: rndimgae - version: 0.0.1</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">40e7374e288809c7bb5ce7d2befd8959</hash>
+        <hash alg="SHA-256">bd109d34cd57e1f0807c429b040c251d1484130d0e9de02202f3f6df2e29d43d</hash>
+        <hash alg="SHA-512">61e60eaa6e1563280e99606fa141fc1f51ac0790c2aeb7ca10c3e97b46c5df13f83555570739b08da513fb06b287a4e13797a9262f6e6363bf5bc957ce004b7c</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:rndimgae:rndimgae:0.0.1:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/rndimgae@0.0.1?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/rndimage'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'RNDIMGAE v0.0.1'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\::rndimgae:0.0.1'</property>
+        <property name="EMBA:sbom:6:product_name">'rndimgae'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="87948ea5-40f3-432c-89a3-d99121677424">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>static_bin_analysis</group>
+      <name>seama</name>
+      <version>0.20</version>
+      <description>EMBA SBOM-group: static_bin_analysis - name: seama - version: 0.20</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">601ead75c8e030aa6f352295489b2262</hash>
+        <hash alg="SHA-256">e656633b1af2720669dba04a377de3dc5f999397ba1e677cc9183d279842a33e</hash>
+        <hash alg="SHA-512">04b4dd71392b14f8f9b08b42e7b0c84320b458afa71ebfe8b58ae794e7a3f3be026c25916011c2735fdd56069ce43d5d95f125f877f1c22ac4bec3ee3749a6a7</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:seama:seama:0.20:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/seama@0.20?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/rgbin'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'seama version 0.20'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\::seama:0.20'</property>
+        <property name="EMBA:sbom:6:product_name">'seama'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+        <property name="EMBA:sbom:source_location:8:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/rgbin</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="34a5223d-f388-4e53-a810-49fbb205e1d8">
+      <supplier>
+        <name>gnu</name>
+      </supplier>
+      <group>static_bin_analysis</group>
+      <name>sed</name>
+      <version>4.0</version>
+      <description>EMBA SBOM-group: static_bin_analysis - name: sed - version: 4.0</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">9beba86bc1e47c56d6fc16fd49b9d36d</hash>
+        <hash alg="SHA-256">c3f209fe7b8736295576cb8c5d5fe91995c132d485e7997a4d8afa49d91d2c6d</hash>
+        <hash alg="SHA-512">e376218a4975322ceedb82614c263315a04789296735f316683bf1684d107e1f844d0fb0c79be67883826f5e1303541e9393c3e74e400333f5a8001475f252e5</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:gnu:sed:4.0:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/sed@4.0?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/bin/busybox'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), statically linked, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'GNU sed version 4.0'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\:gnu:sed:4.0'</property>
+        <property name="EMBA:sbom:6:product_name">'sed'</property>
+        <property name="EMBA:sbom:7:vendor_name">'gnu'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+        <property name="EMBA:sbom:source_location:9:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/bin/busybox</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="de794622-ffdb-48f7-ba21-7a7ef3edf8db">
+      <supplier>
+        <name>sysklogd_project</name>
+      </supplier>
+      <group>static_bin_analysis</group>
+      <name>sysklogd</name>
+      <version>0.01</version>
+      <description>EMBA SBOM-group: static_bin_analysis - name: sysklogd - version: 0.01</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">97b0919a972bc9d6e1906912e314f657</hash>
+        <hash alg="SHA-256">6ddd71d27035f8b09abb4f4ad68626091ceb0717478a410409b1d2632f3a8d2e</hash>
+        <hash alg="SHA-512">2ed164335fc3deafaaa5f66e5176189a3b16e9b0f7fe1acc16c8d3287d7b9e1d353b1f73944ed77529c4d090f3e0aa7f4f588b0c91bc31dac54f4783cd3b54e3</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:sysklogd_project:sysklogd:0.01:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/sysklogd@0.01?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/klogd'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, not stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'klogd version 0.01'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\:sysklogd_project:sysklogd:0.01'</property>
+        <property name="EMBA:sbom:6:product_name">'sysklogd'</property>
+        <property name="EMBA:sbom:7:vendor_name">'sysklogd_project'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+        <property name="EMBA:sbom:source_location:9:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/klogd</property>
+        <property name="EMBA:sbom:source_location:10:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/klogd</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="99c24b13-db47-46a7-b449-eb12581553e3">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>static_bin_analysis</group>
+      <name>xmldb</name>
+      <version>3</version>
+      <description>EMBA SBOM-group: static_bin_analysis - name: xmldb - version: 3</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">690be1a07746fc2fa0ca5bb30f8a9d36</hash>
+        <hash alg="SHA-256">f3e8b59d47e208b42f6f1bf8e4c4263b02a481aff3c979401dbb14cae4dee1d5</hash>
+        <hash alg="SHA-512">8aa2a5aaa7f006c5848b29fdc30b36e7c11af80731ff1287981298c543dfb632affd8fbb7d0f738b42582b61762438dcce076dc34e38e8d5b4ad657ff4ab34a2</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:xmldb:xmldb:3:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/xmldb@3?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/xmldb'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'xmldbc version 3'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\::xmldb:3'</property>
+        <property name="EMBA:sbom:6:product_name">'xmldb'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+      </properties>
+    </component>
+    <component type="operating-system" bom-ref="2f6126bc-508a-4d47-8952-d5202cf1ade8">
+      <supplier>
+        <name>D'Link</name>
+      </supplier>
+      <group>static_distri_analysis</group>
+      <name>dir-300_firmware</name>
+      <version>2.06:orb01</version>
+      <description>EMBA SBOM-group: static_distri_analysis - name: dir-300_firmware - version: 2.06:orb01</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">fbed3077e42a998c8c59a8f7a32d6202</hash>
+        <hash alg="SHA-256">ae10e3843d452f62c14f887290750d0b632d5e116a7c8516d83700ea2d232bbe</hash>
+        <hash alg="SHA-512">19327ce10a5bbbc844efd41615e6670a30b7219e36353d57a24a97e10cd44a0a1025279312f9b0b78c446cb31e7cc238b64c85899870f3020994d0c7053790ac</hash>
+      </hashes>
+      <cpe>cpe:2.3:o:dlink:dir-300_firmware:2.06:orb01:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/dir-300_firmware@2.06:orb01?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/etc/config/image_sign'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:identifer_detected">'D-Link dir-300 v2.06ORB01'</property>
+        <property name="EMBA:sbom:4:minimal_identifier">'\:dlink:dir-300_firmware:2.06:orb01'</property>
+        <property name="EMBA:sbom:5:vendor_name">'dlink'</property>
+        <property name="EMBA:sbom:6:confidence">'medium'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="f44653d6-6a06-47d2-9db5-2730374e9e15">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>user_mode_bin_analysis</group>
+      <name>ddnsd</name>
+      <version>0.1</version>
+      <description>EMBA SBOM-group: user_mode_bin_analysis - name: ddnsd - version: 0.1</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">634911efc3b9a7c00d8ab05dcd784e06</hash>
+        <hash alg="SHA-256">c15bc0e56a4f1ab567f369c2dca5452b6d87e7cbb1b73bbc145f7eb476f8895d</hash>
+        <hash alg="SHA-512">b4aa6791580e0e16d1b2070f1e3a10a71ddad47cf7b34d495fe4e8dce905e85e792c1c6646b5d7d9c06f9ddd702390bf709730317918b23b45bedb137eb4d41b</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:ddnsd:ddnsd:0.1:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/ddnsd@0.1?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/ddnsd'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'ddnsd version 0.1'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\::ddnsd:0.1'</property>
+        <property name="EMBA:sbom:6:product_name">'ddnsd'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="e6cba78a-04e1-41f6-b9eb-d1cdebd8c511">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>user_mode_bin_analysis</group>
+      <name>ecmh</name>
+      <version>2005.02.09</version>
+      <description>EMBA SBOM-group: user_mode_bin_analysis - name: ecmh - version: 2005.02.09</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">ffce8ba118469b7e923e89e16f31321a</hash>
+        <hash alg="SHA-256">97e915507cafa93691d15b26b03a92fe32965c89141f8a89a1ce849d033abefc</hash>
+        <hash alg="SHA-512">e874b49d20f79a00a0313bcbf16017706f2193b109961a9de9780891cdf350d00c2fd3c272645816176cca2fddc000f4f0dc003b4cb2079f783170e9157eb517</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:ecmh:ecmh:2005.02.09:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/ecmh@2005.02.09?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/ecmh'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'Easy Cast du Multi Hub (ecmh) 2005.02.09 by Jeroen Massar &lt;jeroen@unfix.org&gt;'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\::ecmh:2005.02.09'</property>
+        <property name="EMBA:sbom:6:product_name">'ecmh'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="a0c61d66-f1a6-452f-aec9-697f35eb0138">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>user_mode_bin_analysis</group>
+      <name>igmpproxy</name>
+      <version>3.0</version>
+      <description>EMBA SBOM-group: user_mode_bin_analysis - name: igmpproxy - version: 3.0</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">3b717c9b2bf3ae90c64dea40fee36d21</hash>
+        <hash alg="SHA-256">c5b3b833abf63c93e0c1d9589f3918220cf429a059c9cdb318f03892b3f19ae3</hash>
+        <hash alg="SHA-512">4b8628162264d5df682a661d8265e8b6539c88d78c003347f2f3eea4a14243bc1d9b06428d1803f6ac5c3095f6d6afc83c7ecc746498a8402471850a875a33d8</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:igmpproxy:igmpproxy:3.0:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/igmpproxy@3.0?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/igmpproxy'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'igmpproxy versoin 3.0 beta'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\::igmpproxy:3.0'</property>
+        <property name="EMBA:sbom:6:product_name">'igmpproxy'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="cb0c998b-93e8-4850-901a-e7ff41605f74">
+      <supplier>
+        <name>iproute2_project</name>
+      </supplier>
+      <group>user_mode_bin_analysis</group>
+      <name>iproute2</name>
+      <version>100224</version>
+      <description>EMBA SBOM-group: user_mode_bin_analysis - name: iproute2 - version: 100224</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">959b1aa862fc47e60a41a649bb13063d</hash>
+        <hash alg="SHA-256">de1959f54d5da2d7945001b77782741fedbcda620632853d89ab31a15eb8fb64</hash>
+        <hash alg="SHA-512">5fe5b9a306492a49c7f2177d0c6d64dfed76b7848f7effddea4f73429e9cde8c14d20e90714f483219e9f6050cfbb6990f3608f7faa2dc695b88b14065cf7dc6</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:iproute2_project:iproute2:100224:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/iproute2@100224?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/ip6tables-multi'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'iproute2-ss100224'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\:iproute2_project:iproute2:100224'</property>
+        <property name="EMBA:sbom:6:product_name">'iproute2'</property>
+        <property name="EMBA:sbom:7:vendor_name">'iproute2_project'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+        <property name="EMBA:sbom:source_location:9:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/tc</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="3db67932-5160-4be9-ac06-c1dfdd8a99f7">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>user_mode_bin_analysis</group>
+      <name>llmnresp</name>
+      <version>1.0</version>
+      <description>EMBA SBOM-group: user_mode_bin_analysis - name: llmnresp - version: 1.0</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">4b02dbc72e1e67884fc4d4fb29dc28d0</hash>
+        <hash alg="SHA-256">af41b127043ef8ce8fd4697bb28536774828713543ee3f9e3cd493b5da99f06a</hash>
+        <hash alg="SHA-512">2859871b2062dab3f60d0493b49b263b760fa0edb9482ee63c0cc0b6eed0f556500158f76f4c11cfd07bda39afb8ecd208d1f1de04324ea883ab4a8b82ad580e</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:llmnresp:llmnresp:1.0:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/llmnresp@1.0?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/llmnresp'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'llmnresp versoin 1.0'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\::llmnresp:1.0'</property>
+        <property name="EMBA:sbom:6:product_name">'llmnresp'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="9011127f-e3ee-4e78-8327-d01981fd01d3">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>user_mode_bin_analysis</group>
+      <name>ndisc6</name>
+      <version>0.9.9</version>
+      <description>EMBA SBOM-group: user_mode_bin_analysis - name: ndisc6 - version: 0.9.9</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">7a5927999f89d3d7811e21c7fed64222</hash>
+        <hash alg="SHA-256">9b3c27254740549358461f86d60dc72ea96167b74324cbdc54848eee3328427b</hash>
+        <hash alg="SHA-512">9c9849975f9165cbdf4b16826e8e8af1c856e3b6f12b41c0e5fba09cff3452d8be2eb6fbd0fab7a0a6411d1a8f63ba903cb124dd3516b76f6162082efa8065d3</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:ndisc6:ndisc6:0.9.9:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/ndisc6@0.9.9?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/rdisc6'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'ndisc6: IPv6 Neighbor/Router Discovery userland tool 0.9.9 '</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\::ndisc6:0.9.9'</property>
+        <property name="EMBA:sbom:6:product_name">'ndisc6'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="b46255b2-c979-402b-a8ae-bfbe56c99915">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>user_mode_bin_analysis</group>
+      <name>portt</name>
+      <version>1</version>
+      <description>EMBA SBOM-group: user_mode_bin_analysis - name: portt - version: 1</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">4d4d1785613fec45a7529359824fa357</hash>
+        <hash alg="SHA-256">2050ca569f8c12c616a048e98d1ec397c2710141274b464fb8cb8e1e8f179c94</hash>
+        <hash alg="SHA-512">86ba0e6e4afa001ba625ff8cb7cbacd5cb9a556516ac265e18cb5dc16451a48346403b52e3131dde4ae7e17e21de78de62a559cdcea874795a49fa636b514d95</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:portt:portt:1:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/portt@1?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/portt'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, not stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'portt version 1'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\::portt:1'</property>
+        <property name="EMBA:sbom:6:product_name">'portt'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="e0e9ba20-e929-466f-a265-ff0831b0a281">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>user_mode_bin_analysis</group>
+      <name>radvd</name>
+      <version>1.8</version>
+      <description>EMBA SBOM-group: user_mode_bin_analysis - name: radvd - version: 1.8</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">67d219fdaae0229fc299e26301e0f4cb</hash>
+        <hash alg="SHA-256">91db33f8d93aa6813b3361282773df54b6c5e530237c14afcc0977106e6464c1</hash>
+        <hash alg="SHA-512">2f312fbc800a6f9d643c286ce6f85b8c9e79f1c19d9b4b2275056f014b2d4703bcb91daf126ab16501cadc3288e882bb7c8cc5e2fe1f2ed2a33e9f1c1327ee7b</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:radvd:radvd:1.8:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/radvd@1.8?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/radvd'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'Version: 1.8'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\::radvd:1.8'</property>
+        <property name="EMBA:sbom:6:product_name">'radvd'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+        <property name="EMBA:sbom:source_location:8:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/radvdump</property>
+        <property name="EMBA:sbom:source_location:9:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/radvdump</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="0464b1c3-4b3e-4f05-a712-17addbbae2a6">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>user_mode_bin_analysis</group>
+      <name>servd</name>
+      <version>1</version>
+      <description>EMBA SBOM-group: user_mode_bin_analysis - name: servd - version: 1</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">2d065ac660b0b105af2f07e94d9c3577</hash>
+        <hash alg="SHA-256">610b9a90d27c1d9a203ffab3e2e8df80b73c339383cd63013682181a3352c8eb</hash>
+        <hash alg="SHA-512">4739616521c555a9e9fd1213f9220911f0ea8bbaf0b95b857db15a4433ccbba00c33b9fd77912ed05840a84a23abaabf170e32cdf10ede1daeb721be29338ee3</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:servd:servd:1:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/servd@1?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/servd'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'servd version 1'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\::servd:1'</property>
+        <property name="EMBA:sbom:6:product_name">'servd'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="4a02b526-5c63-45fc-ad7b-fcaecd30406d">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>user_mode_bin_analysis</group>
+      <name>trigger</name>
+      <version>1</version>
+      <description>EMBA SBOM-group: user_mode_bin_analysis - name: trigger - version: 1</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">286446713b39bb2cb7fd2eadbce9069e</hash>
+        <hash alg="SHA-256">7a9dbaf2a04fc839de46826d56f3fbae551f36817dbc93c18c5a8f390eabd775</hash>
+        <hash alg="SHA-512">e9cf5fe29215111c197b23ee697bdb815ac5932434440c7b0ec5b07aa0cd5dea22181e73efd682eadeb84a635cb7a2a970e1e92312e7d94578b5b9bf5a53fdad</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:trigger:trigger:1:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/trigger@1?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/trigger'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, not stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'trigger version 1'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\::trigger:1'</property>
+        <property name="EMBA:sbom:6:product_name">'trigger'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="7cf54661-4f27-4372-b0b1-6fd8c2db09db">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>user_mode_bin_analysis</group>
+      <name>wireless_tools</name>
+      <version>26</version>
+      <description>EMBA SBOM-group: user_mode_bin_analysis - name: wireless_tools - version: 26</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">35fa296101c1ed9c6db91fa383b7645a</hash>
+        <hash alg="SHA-256">f1cd536aba7ae0bd07256b6a0d93cf65a22779365f206755a633d97dc7c91470</hash>
+        <hash alg="SHA-512">9bcb7fa33b3986854ea484b60a329288c494ad22e3293bd3817a6f100bd96d07abf1890b26cb64694323add0f0424adb02cdea3d9ca1931a1ae398df0746f522</hash>
+      </hashes>
+      <cpe>cpe:2.3:a:wireless_tools:wireless_tools:26:*:*:*:*:*:*:*</cpe>
+      <purl>pkg:binary/generic/wireless_tools@26?arch=MIPS</purl>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/iwconfig'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:4:identifer_detected">'iwconfig  Version 26'</property>
+        <property name="EMBA:sbom:5:minimal_identifier">'\::wireless_tools:26'</property>
+        <property name="EMBA:sbom:6:product_name">'wireless_tools'</property>
+        <property name="EMBA:sbom:8:confidence">'medium'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="60ae6409-41b5-4357-bc5e-83e8a021beea">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>ated</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: ated - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">b88d07e9023289c8faacf014ec6ab7c1</hash>
+        <hash alg="SHA-256">90c9314163acc6ea2db4932ddbe3aa1ef216ae0013b59136a5bf0bb9e5aa27bb</hash>
+        <hash alg="SHA-512">035196c7bee0cb0e522f066378cdac1ca1dbfd337b0db0f9887b4dee5a1e3009e98c6287f274932efdb761543c157be42020e247cbfe70b31a57f40682d005c7</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/ated'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="bedbb38e-eaed-479b-a8c8-8d4f5a71f92c">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>busybox</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: busybox - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">a3e788306e2bd2a265e1e1cb8f37274f</hash>
+        <hash alg="SHA-256">02433e676b1f3a216f0b31d2d9947f42fcefdbe827edb29ea40b650b43721b07</hash>
+        <hash alg="SHA-512">b769f093832b5874034cc0c50c1786ce8a177b73bfcf40422b6f235ea2ad72e6f5390d921eda4b658d46f6dd61041d143274bff100519f7ecbf0c4a9c83a6e07</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/bin/busybox'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), statically linked, stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/bin/busybox</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="01782a28-5316-4b34-8a5e-6e8202e06d40">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>cgibin</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: cgibin - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">56662b58b72a3d01f6be177472782e02</hash>
+        <hash alg="SHA-256">0ec14bd8403db78740c5e611f94768421f9c166b2ea88d50c694976adeec4765</hash>
+        <hash alg="SHA-512">9c8ad89302491111dcc22f330db95916c8ef254c483018c67c1357e2915f573a540bfd5768b03d3b8461f4f9ae750810f47b459a853c35f5e08943837869510c</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/htdocs/cgibin'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/htdocs/cgibin</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="79a73ed6-3faa-409c-83e3-6f25e0692c4a">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>ddnsd</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: ddnsd - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">634911efc3b9a7c00d8ab05dcd784e06</hash>
+        <hash alg="SHA-256">c15bc0e56a4f1ab567f369c2dca5452b6d87e7cbb1b73bbc145f7eb476f8895d</hash>
+        <hash alg="SHA-512">b4aa6791580e0e16d1b2070f1e3a10a71ddad47cf7b34d495fe4e8dce905e85e792c1c6646b5d7d9c06f9ddd702390bf709730317918b23b45bedb137eb4d41b</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/ddnsd'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/ddnsd</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="69e9f864-46ba-49e9-b989-781aee524756">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>dhcp6c</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: dhcp6c - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">a7e48a80381c5c65289317d32ae6e1cb</hash>
+        <hash alg="SHA-256">8f3ec0da7f075cea96e5192b3223da504efb8334b877842eccff23d9ebcfa5ee</hash>
+        <hash alg="SHA-512">e1c78bc32656e7b2a20302a7f32cba4255cc4c91811b91eaf2ef8128d085c7359c551becb1527e3fb07574142c4a47c9528f55e3c80f3809c9b261fddc1549aa</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/dhcp6c'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="c98d8ae4-df46-4fd0-9a53-4170b65f1953">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>dhcp6s</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: dhcp6s - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">ff540d6275878051083b8b33f85b9480</hash>
+        <hash alg="SHA-256">03da316edcddf2b66af5869563a0da3c4785800aaa53a61408dce94b0788010c</hash>
+        <hash alg="SHA-512">f2741eea4608899e8daf1535e4da910bea3505e5a8da346907d37cf6fd95d682bd777187b921e54baa422e26b67ba97c01cd922c7af123bfcb798dc633c56174</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/dhcp6s'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="aea56036-eea6-4b9e-adce-9f5b21e64bb7">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>ecmh</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: ecmh - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">ffce8ba118469b7e923e89e16f31321a</hash>
+        <hash alg="SHA-256">97e915507cafa93691d15b26b03a92fe32965c89141f8a89a1ce849d033abefc</hash>
+        <hash alg="SHA-512">e874b49d20f79a00a0313bcbf16017706f2193b109961a9de9780891cdf350d00c2fd3c272645816176cca2fddc000f4f0dc003b4cb2079f783170e9157eb517</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/ecmh'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/ecmh</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="90c2a628-325a-4481-a644-d62a701b9c8b">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>gpiod</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: gpiod - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">7e4799322516e8e1b6062c6f01bc4ffe</hash>
+        <hash alg="SHA-256">8e17e4618600943757cf47b572367f1f2925f3948746c415206cf728b099711a</hash>
+        <hash alg="SHA-512">2713c3ca0667a7b6d82a8a061ffffa914ead7573f37818bbb715f22ceb56260ec9ec6c9ad2a8dc47d4d1b4e6d43b13709ac834e1f80cf254fa26cb625cdab1ec</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/gpiod'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, not stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/gpiod</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="309b9f2f-1353-4a85-bca3-05a9b216e4e7">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>hostapd</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: hostapd - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">dcbf30a2d47217d266f478e27fa69797</hash>
+        <hash alg="SHA-256">c41912f56fa176d72c96d9d00fe61c5d4287d47ec7b339cc624b385708d819a7</hash>
+        <hash alg="SHA-512">794e056d4a9107cec28ed0ec85623e0badb784a890baa9cd5a1f3821b48a4731f8a42f6472c946907b8dcfb0ea6c2b945d86ded7b3cef458fda66bd623a63af2</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/hostapd'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/hostapd</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="48c2fd26-e949-4ccd-abc3-a03f1f35bdd2">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>httpd</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: httpd - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">2544dfc0e8053880f570f19e86307532</hash>
+        <hash alg="SHA-256">76498e6856ba9d3504ab0fe9e17a2e47d76e0f685be64301992bd132a95e0470</hash>
+        <hash alg="SHA-512">680372c994368ba604706f5196b45868d05494e24e87e9309142fac79106bbfe1c402ea323ada728b783eda47b3bc577c02f8466f0b1bab8c9c2d758d56cae6f</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/sbin/httpd'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/sbin/httpd</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="18a8c612-b81e-4317-95a8-18ca0a74bfa2">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>ifresetcnt.ko</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: ifresetcnt.ko - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">bccde048c2c6f81c617f8a62cececa78</hash>
+        <hash alg="SHA-256">98644d31539eebf9d9fa6a031940a2f88754653588210f80f3e5e3050b693c18</hash>
+        <hash alg="SHA-512">8a5e0980aef580103edbe1bf7c805e9dda821a3c707eb3625e7c29391aac79c22a4d397373b3bbf3610df1fea38dedb78956e5a2671925e48fca5b86c11a87ff</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/modules/ifresetcnt.ko'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB relocatable, MIPS, MIPS32 rel2 version 1 (SYSV), BuildID[sha1]=3855c434a32282b6b3fa42aa1a1aed9a9cf10a86, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="564c7777-d2d5-4195-b430-79b273218af9">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>igmpproxy</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: igmpproxy - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">3b717c9b2bf3ae90c64dea40fee36d21</hash>
+        <hash alg="SHA-256">c5b3b833abf63c93e0c1d9589f3918220cf429a059c9cdb318f03892b3f19ae3</hash>
+        <hash alg="SHA-512">4b8628162264d5df682a661d8265e8b6539c88d78c003347f2f3eea4a14243bc1d9b06428d1803f6ac5c3095f6d6afc83c7ecc746498a8402471850a875a33d8</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/igmpproxy'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/igmpproxy</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="68cf9e82-2fae-4c1e-a48a-5a651df590f9">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>ip</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: ip - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">a56d23bcdbea512f486c2be04f5f2750</hash>
+        <hash alg="SHA-256">6a65ee6d4d8ed684668102a7e6e24e168f034b22ba6f3d88cba867b70aeee740</hash>
+        <hash alg="SHA-512">42dd5523518379a9c3ab4d1a871a5f3239557c15177f743d3025ac26ded4ef85794458e9e8e8ce07e098d2ac56738eda369c69b5819c6650e85143f5bf5615e0</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/ip'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="f7357463-9bdf-4717-bbbf-67ca4471b5e6">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>iptables-multi</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: iptables-multi - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">aa31163e0a6dfda973ba62a9bf80c42f</hash>
+        <hash alg="SHA-256">995fb201a30c9f9c77f8d7df33a67ec2123481833a8b7ac0201c75b8d08ab0b4</hash>
+        <hash alg="SHA-512">1bcd46064b09c963f458b13b1298b7ffd2e0ef2b2bbe9285bdd43a773cacc59ff61a9f0bcaf4b5439d4f197b462b7a54511879a5194028c0e44a14e4a82866e4</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/iptables-multi'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/iptables-multi</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="99b577ce-d0df-482c-a262-d357151bdd7b">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>klogd</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: klogd - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">ee997f14c7724bc0ecbf4da4c253de5d</hash>
+        <hash alg="SHA-256">9b8de87d955693a71a043d47a4e988722e14aa40c9810edda3c2a76316f4a751</hash>
+        <hash alg="SHA-512">8a106074e8d1befbf5cd5906eccae9ea36668bd62ad4590ffeec037cc79e52cddfc22a2ab4b336896f4549e0c8fa181dff89454c5e2124211a3db4e217cd12ba</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/klogd'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, not stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/klogd</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="51972033-9cf3-4125-a6e1-65dd01f8b99c">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>ld-uClibc-0.9.30.1.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: ld-uClibc-0.9.30.1.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">9802370f193400fb3529f2f1b2d834cf</hash>
+        <hash alg="SHA-256">ee3a042f42cf49c837f4d7f6ebb720fd878cbee40d3d58be12dcaca0eafbd463</hash>
+        <hash alg="SHA-512">94f81ec87de0fec38313104385ee6ab420883868b1b7c8aecd1cb55e3a8cfe9ec46d6dab31d77b3f5dfd018a18cc5ed8f6d7a6dad6dcd724caa4313393ebe395</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/ld-uClibc-0.9.30.1.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="4e3b2ebc-7ac9-4c40-b9f0-50138fd3bbe7">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libcrypt-0.9.30.1.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libcrypt-0.9.30.1.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">44dcdefb7dafaa462c0ee408aba8746e</hash>
+        <hash alg="SHA-256">63f3ab57f9cbb0a65187ac977b95d64187178c2634dcc41748bcac8bab4dcda0</hash>
+        <hash alg="SHA-512">19d64206cdbde2d7488929fd2e01dd87d0b4bfde8bd1f125411b463c80b435297268f877e38d7e0e6c9c138a509832ebdea5cba55cca2b3f01657885b4cc289b</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libcrypt-0.9.30.1.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="23a44e3c-0dd9-4acb-b628-1ebfa84db1aa">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libdl-0.9.30.1.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libdl-0.9.30.1.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">d96103d96d5420e7a83bf364ce6cebe3</hash>
+        <hash alg="SHA-256">6090ca81014dcacf9b8e9d73399f72700a83f28f43588fd13aab216b0a2a4b7e</hash>
+        <hash alg="SHA-512">a83656a69ffe6e823cbb1f1e6ff7f681141ae25c14c96d84b81b0f18e34e5dc308de03f00c38d8385981dda5ad5cff80d2f3883660465cd5292e4f48e32d0283</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libdl-0.9.30.1.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="5a11e656-df19-44cc-8357-e90f111ef05d">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libgcc_s.so.1</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libgcc_s.so.1 - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">7a8b34e4ea61bb04c407616238920151</hash>
+        <hash alg="SHA-256">32c17dad8c3e5cf5026f69e17523463586ccacffeff6e208adeaa18107019633</hash>
+        <hash alg="SHA-512">111fcb5f9256cfb685720334f8869ae78e642d65245dfbd8f8913526c42f675c710046ca0a7d44f7c1ef7021ac828fae0ad5b13cf8526ce05be012a807609137</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libgcc_s.so.1'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="fed08150-3f03-4a60-8ae8-e7611621b8f8">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libip4tc.so.0.0.0</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libip4tc.so.0.0.0 - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">04ee4a730a805a493f6b4bf873c1979e</hash>
+        <hash alg="SHA-256">4d594ca91f82c80aae27eb07ba21b025b735572f4a3de73d536e00fb410df234</hash>
+        <hash alg="SHA-512">df6be1370a81c7661e2adac005abee78043c2660ff732710cb4b6cd5d91406e9f71a2ecc8ebb3f6d5a72962b0369cf2717619fbcb6c56037a25a7b9deebaebb8</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libip4tc.so.0.0.0'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="a5cca9e5-3e70-4ee8-8546-849ecf879c4b">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libip6t_LOG.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libip6t_LOG.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">0400d1b98e4b4c138e3fff2525977234</hash>
+        <hash alg="SHA-256">02de44c3d0d61fe6dce2f4bc1934b8712fc7678f09dd3954281199f263fbb7ab</hash>
+        <hash alg="SHA-512">bf241f2e8580bc028b0dd047c39b09c059d2bf9f5e340cca2f2c187aeb10719329ba4fd09bc7548be0184b723593d7aa19513a946d20a1afa6b300e755b37298</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libip6t_LOG.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="6d610deb-11ae-4e06-9a8e-83c32f2cdecb">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libip6t_REJECT.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libip6t_REJECT.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">b19f5821b68fe0211983bda9614cd53c</hash>
+        <hash alg="SHA-256">f9d8d1879a7d808ddce95dd499b62047e906edbce813943aabd4cc73d0caeacd</hash>
+        <hash alg="SHA-512">0363394ecc6685d4104360c4f5b0cb20ff2968615eed6342f50c616dcd533b2c5d4d505d43aef8a135fe5e5e378f10b51b07d640daf7f0325b68a480a13f9cf3</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libip6t_REJECT.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="65648a8e-4b48-4cb9-813a-2b4a8dc1ebce">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libip6t_icmp6.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libip6t_icmp6.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">3aa7dda7037b1fc93764f984b37e1dc5</hash>
+        <hash alg="SHA-256">cddc7c4b2f5890cefcc3a0f312f9896c6d64fcce921e78d20c44c1e8db0a3ac3</hash>
+        <hash alg="SHA-512">03fbc3f020512305ec407f0f8a0a4b9f54d0cfe2e7539f9e80bde7f084030b3f95d25c30c5f356bca69d3c096d6aea93fd9333ffe8bfbf2dc605dcde2b961455</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/xtables/libip6t_icmp6.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="3fe7c749-4684-472e-ab9b-9498d0128e07">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libip6tc.so.0.0.0</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libip6tc.so.0.0.0 - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">67c957ba13be4a6aa9b40849dc69bef1</hash>
+        <hash alg="SHA-256">ed16dbd878f0a65991a5197b48d0d82ca5df19e32f65c4b10ecb4e5d309423d2</hash>
+        <hash alg="SHA-512">d22055f74f42ea92b5b7eed3b8e1e924fddfcdf6edeb23ba543d35e94d992a4ac4618a261b38e0b28345350891b03049464b5e55be100ba6d3c51e21be8f3ee2</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/libip6tc.so.0.0.0'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="8ed7e562-3f0d-491b-89e2-6213d0311ed8">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libipt_DNAT.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libipt_DNAT.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">1a32366c55aa09ffdd9d3edf76711dd3</hash>
+        <hash alg="SHA-256">5824d96574e3be6aa157e830d596197df48688badb838c406dc217e33283c141</hash>
+        <hash alg="SHA-512">fefa5c524fe194c19b48d61badc893ff834d70d1f6b0785053e742f966c989f8fb70534351bfae2577e34eb8cf6180d1200d45d64dc7ec903875bf16c5f5d67b</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libipt_DNAT.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="fe4cf1e5-4e20-4aed-84ba-a2c7fb99771a">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libipt_HIJACK.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libipt_HIJACK.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">cadbc45c3f6e001e82e0a0dfee01e005</hash>
+        <hash alg="SHA-256">316bd57e45c1904b4641d75144dff76b76754f97fd6f4412e3bf69ba290b3621</hash>
+        <hash alg="SHA-512">1191f5f8f829dee957a30286b51b1fcaa203171c481745c6ab1be63036b3089794ba584584a8988d0edfe1967675842b7f683d61a6d32e24781ced3d944964c9</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libipt_HIJACK.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="8b3061aa-d4c3-4724-bcbe-ced1156e4132">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libipt_LOG.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libipt_LOG.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">85520e34c625fd49daa9a55fe34e3537</hash>
+        <hash alg="SHA-256">954557d3081a5c4a36fc611623814cbef8ed19bc49be0281acafec8ccab3ebc9</hash>
+        <hash alg="SHA-512">69e8adbac3fdff694e9beef825461767ce48ab13fd4918224ace192509d117f6763ed3165151b2b2446dcd138d4ca8c2138f60a03aca2dd90a3322543d9097bb</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libipt_LOG.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="e3023078-dd17-4e03-84c3-56a74a07d37f">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libipt_MASQUERADE.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libipt_MASQUERADE.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">38bb5ec19600dde98d87cdd0a6824c91</hash>
+        <hash alg="SHA-256">b81d7f2d8db12520f995c2dc13270a0cc510b838615fd0330cbef66ca1d948f0</hash>
+        <hash alg="SHA-512">21d7d1c582226e01852cfd398f199f1929ddb2e44d085cf11e02fc9988e0b7cdbe749f2e37118446bb6a183f54e4d025ba7f2b2d368fb6d453763e08f27a9e9e</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libipt_MASQUERADE.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="5f552e4b-45cd-45f0-b7f8-c8da66defb70">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libipt_REDIRECT.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libipt_REDIRECT.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">8e41e5eb0765a7535728c0aa449d15a8</hash>
+        <hash alg="SHA-256">5132ba2721588e17274f16b454e134e6e4f051c775fe15a36d818bdbbe79599d</hash>
+        <hash alg="SHA-512">4d8e76c3f03df898df21c45b357d874d6acc0267afe37bde44d95f82b4f314b0758160ea53a6055147dea33d3b4f35db9ff2f76dca499e0926defde756e057ba</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libipt_REDIRECT.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="7846c316-fcce-4bd5-9339-cc27f9ac917e">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libipt_REJECT.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libipt_REJECT.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">08b245698e10130ff35435345c12e371</hash>
+        <hash alg="SHA-256">74d4c7a5fccbdddf1b750a166dc5eede34ddf29b1807479adc6f0ab08af1b629</hash>
+        <hash alg="SHA-512">8bc05735dbbe6ea31211db7d36d13e344f77d408c59219a9fb45cbd40e8d09e3e79f050240279cefcec80d699ba8913b8efe26d69ee07fc83e638ba2041cf528</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libipt_REJECT.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="b92ecacc-9e3d-4b8c-a298-70ad7d5c62d8">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libipt_SNAT.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libipt_SNAT.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">dc4b7221d0fa06cdcb3dbd0640e334e6</hash>
+        <hash alg="SHA-256">64cf67aafae94f8e7ad55bb51072dc779c8bad7d19e1d1b4d3a8507cc8591944</hash>
+        <hash alg="SHA-512">507a5ea51cb76062b36570d916703850b9784e4433497dfdcc36b2111c973fc3bb09d261d4f1ac03c1a41f7352faf0cbf4057301814ef5ff73b8637d674ce6fd</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libipt_SNAT.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="bbd21525-88b9-4954-8916-2ea4e56ccb39">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libipt_TTL.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libipt_TTL.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">05ef9b56d97db0681d2f926a5def2e06</hash>
+        <hash alg="SHA-256">9dd5c3d5fb4a01535ed9dd894ec03d4b66e7d48dd32fd766436020bb8b8d848b</hash>
+        <hash alg="SHA-512">c52b2b0ae4c2a1e7d461d6ad9bed3f9194b0eb44a11ee7c3114c1c8b46b6908e5cd4a8c0b608a1362ce073da934511cb09ad7b6dd1ea23bedf1b854af95baeca</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libipt_TTL.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="5e70d6c3-7236-45b4-9124-8b1b4206350b">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libipt_icmp.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libipt_icmp.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">30deabc4d55275ac1a4b6c5b29729e6d</hash>
+        <hash alg="SHA-256">5cb1617fb605aced977cabe55940daa2d6b8a7c1d5117bfd112b41b3e01aa1f9</hash>
+        <hash alg="SHA-512">1d1c0b2255a6214a23c62a109df5f2a4cbe3bb737def6b6c120790d4332daa2c951f3c0b6e6d488084f1cee098b46e634fdf5b1c0552b137b8c5aa1b158e3e5a</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libipt_icmp.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="293d15fe-75a8-4c94-96a7-08202aa2f926">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libiptc.so.0.0.0</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libiptc.so.0.0.0 - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">9dc353cdeffb5173767ac9a4c6efb321</hash>
+        <hash alg="SHA-256">4498eafed0b37f80767d38b185ad169c8bdc83ebccab494378728623dfbcb521</hash>
+        <hash alg="SHA-512">933474cbaabf2bb6bd0bdcd5bfc9f263259b00dae107b1c9a1c63d79f0d3cd7d40dd7373ae102f004128e29bb7a374021852fac7861a3108ad7c2615b187b966</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/libiptc.so.0.0.0'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libiptc.so.0.0.0</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="0a627ded-625c-46f8-ba4d-3c6eb2bdd1d7">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libm-0.9.30.1.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libm-0.9.30.1.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">a15178aa5ec68fc5d41a21d6b37fdc48</hash>
+        <hash alg="SHA-256">634053c69dc68065c720576631a71d2353ff9d690fbd611f7b690bf233a19d1f</hash>
+        <hash alg="SHA-512">f5f045955910ce28a26a65fe526c9534de49ea0967259d6dfd97944a9006ef59bf44fe15751e6edd17226f0300205ff8d8a41f336841282c25545ac335ce5e20</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libm-0.9.30.1.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="55d127f6-b4b8-4744-ad86-c3d79da50931">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libnsl-0.9.30.1.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libnsl-0.9.30.1.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">c024a32057f2f277188507dd310c898f</hash>
+        <hash alg="SHA-256">40697ae499239b8e919912e189095413dbbeed8c4c64ae54fcecb2ad66d79f4c</hash>
+        <hash alg="SHA-512">063919e46d391dd8d3391ddc363d99804e3804dbd8e355a90a48692885c496dead2b2d4fe93bb2468da7ccc991ed6effb9f8eb443067c54e3b2f5f602b7745d2</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libnsl-0.9.30.1.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="a75f5f09-64c3-4344-8dbd-dc70790c327f">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libpthread-0.9.30.1.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libpthread-0.9.30.1.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">9807ebdca6350c33056a3e670fd10d7d</hash>
+        <hash alg="SHA-256">4bac66abf15bc9089d9abf0ced2d88117f6eb5397a6d0752e2bdaf7f60eb281d</hash>
+        <hash alg="SHA-512">04e4074c86c946b95d9584d5462c4743aa82b10eb28f39a1701e08a74fd97952e1675c658518713610e6c219060a609e8912ed6d928e1a82fa41e7bb8188fb51</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libpthread-0.9.30.1.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="14fa8d33-1b7e-4bdd-b8ce-8db150597821">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libresolv-0.9.30.1.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libresolv-0.9.30.1.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">642568853d75ba51d25c36d747872021</hash>
+        <hash alg="SHA-256">f803b68d64884ee92d28ee135c2d87124806cd207fd9e6e8c5c2113fc6bcffc3</hash>
+        <hash alg="SHA-512">3fe9c18f495ce0aab7909e0eeb429c290e1f9e53d5445a836147b4707d89ae9150ba86c142d70c8b6fae4897fd4f7278482854d2951d6926aac56cbd34384c9f</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libresolv-0.9.30.1.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="627c5b53-cfa7-44a1-b32b-ed9115c7da3c">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>librt-0.9.30.1.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: librt-0.9.30.1.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">babfc9a24847d8279286a6e78067f130</hash>
+        <hash alg="SHA-256">7f75b8fb343d205eb92a9fe5f28f118f044bc9cec8a0879133f5c64f3d80c6b5</hash>
+        <hash alg="SHA-512">7b07b385306f066b0b7f2c03d59934366edcd0ba200cd1e1f0f0d68a749b616f67eb8642cb9ae99df6a442697579ddabd6d83e7650ba7ce34cfe69fda33289c6</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/librt-0.9.30.1.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="26d91282-1e58-405b-ad0b-985f7e5fce31">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libuClibc-0.9.30.1.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libuClibc-0.9.30.1.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">59ab4616788875883e334559093b6c98</hash>
+        <hash alg="SHA-256">9203e3d01359543faf37d2ea30b87c308f4f1cc58b8a14bbfde9dbdaf38a8cfc</hash>
+        <hash alg="SHA-512">211a9dacd8ee4a4ae489ded4848577064811188ef869ea602a7becdfd9f1db085ca3d21a71e9902be34ecfcfb8f0cbd7d9f13d9b9f8e9cfdc36f1ed737388c01</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libuClibc-0.9.30.1.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="21f81743-4b37-4563-a9fd-2289e0eeaf3a">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libutil-0.9.30.1.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libutil-0.9.30.1.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">1a5538cf5442382bf532d7100b433469</hash>
+        <hash alg="SHA-256">c99644883ff97304a41b499f02193f904ed95134a12d356e3ffbb9eccb7a940d</hash>
+        <hash alg="SHA-512">c1d54468c85883e24e82d37e9340d22cae74704b2ecb8bdd7f6818631cc16fcb4aa9b323dfc65af7a70bf8f42d6cccbcbce43b170bc48d697609b3553605eefc</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libutil-0.9.30.1.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="0bffa161-2665-438d-9e0c-ed2bc5c0bd70">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libxt_CLASSIFY.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libxt_CLASSIFY.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">b411a27a3eb6913279301403bc064652</hash>
+        <hash alg="SHA-256">af1bc2f99060c030355b83bc179589083b84822def6fd4b34a44bf3215e6a2d9</hash>
+        <hash alg="SHA-512">611f79dcf7b8247a80f0fee6cb631bf1a7d3beb427458cbf11e43db48530c005e7546d813f624ffbcad660b4bdf823e5232d17788d1df9579523f04381535fa4</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_CLASSIFY.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="3b677c07-641a-4842-af15-ca162fe4f777">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libxt_MARK.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libxt_MARK.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">2e3c0c850c994d68f40546bf1d9c5e7e</hash>
+        <hash alg="SHA-256">0f7ff57c878919b12b96e235bd81c0309ba33ce47833af78129194a2a6a4fc0d</hash>
+        <hash alg="SHA-512">c8aae8ad20d6e18a5ea32469b635c67a242cb48b192bf05915c149cb8912a50065353548cc77274bad703ba1270c6cc79ffa64b508d58acbe9cc5f9b02abb8b2</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_MARK.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="e31966f6-61be-450c-abe6-3361d200cb36">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libxt_TCPMSS.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libxt_TCPMSS.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">2dc7a4930157a9fc724b474ec6412a43</hash>
+        <hash alg="SHA-256">336784494f08607e191771fbc5fc9d526fd74df4407325a912e37178d45179dd</hash>
+        <hash alg="SHA-512">d3f04c12989c5356343f2bad9c8c9454198824372394847f458721c3b5f6112e8411e23be362c8ef2eb0339c5e88ba82db8d87c304587c84c679126ed626fc90</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_TCPMSS.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="e42256d5-43ea-4f23-94b9-7cb448d61958">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libxt_conntrack.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libxt_conntrack.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">70563013801580a5fd99418d831cadfb</hash>
+        <hash alg="SHA-256">3c1f92d438c517fb80fc24580134c230a0077459e312cfb9ed80613b4b703d5e</hash>
+        <hash alg="SHA-512">6816b59441a34180299742cc357cf265d415597ceed6ea23fdbc333eb1f0415175eae9f07640d4fbb57728bc00d5f240b601cc264edffc0ac653c573c30107c8</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_conntrack.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="2b7971cf-93e5-492b-8236-9cc8a9b603fb">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libxt_helper.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libxt_helper.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">a011e4cc87d739bfb54ff6a1e6d0106e</hash>
+        <hash alg="SHA-256">d3f9ab5fd99a2bbf3774fda0f958204ef00ccbcc4003fc1112c8abdd6bde5f4a</hash>
+        <hash alg="SHA-512">434bc723debecfd46555e90dadced659b1e09bb49698aa56fc728de4649c4f3c72b9a9a6b4cb4eec2c8e2b9017119dc03140be6a1fb9a0f2634e22b49b182d27</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_helper.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="73451622-a210-4bbb-9fbb-6815eda299f7">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libxt_iprange.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libxt_iprange.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">e16635d7b386364c8e2dafa3c1b1756c</hash>
+        <hash alg="SHA-256">f1521f08185b3122a8e957b76fc7dd665d1a0b3bf8c9c5ecd9f5cb3b30751ca2</hash>
+        <hash alg="SHA-512">25c77133525a16dac1d2902a809b2a783d9bccf7be5fea0867ce5a9dacbd1d12ca6de80630e5428e311b56c5439ada06a47df44f36feb14fdebabd8390a11130</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_iprange.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="44a0d5a3-b984-405e-9bbc-857087f12537">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libxt_limit.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libxt_limit.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">eab11adf337cdf06bdfd0af1633a224d</hash>
+        <hash alg="SHA-256">11a56b0e6710ca4c46dc46b03a0fd52d267b2895df7b132fcc2f5067d307749b</hash>
+        <hash alg="SHA-512">ef3a02eed4905bbed7e538522f2f8def61718e8d760d12672e6bfdb8907d563d1769e5593dc5a4d928a5ec01e120802d3178c1ada8db9382e657ee1a8be42178</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_limit.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="33028037-4ebb-4d76-bc57-95e260211c30">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libxt_mac.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libxt_mac.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">640cce232f5f28c2ed0bc768a181ad7c</hash>
+        <hash alg="SHA-256">1fabe60e0cf2f942b18b5b0a3fb21a97938e495b7bb066205ef347fc46f7bbef</hash>
+        <hash alg="SHA-512">e9b8e6892f5e3a888b7b3070745558d0d79bb2020cb4038f13a2488727d6cc1c3fb245a5f593a08e47fe4ee18ea4e2025e06522a1a5d7f00f6af9b823e32db9a</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_mac.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="c04f8b7c-0200-43a7-8741-fc2dddfd0c8d">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libxt_mark.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libxt_mark.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">7086106c2ae0f913b39f9ccbf73eb732</hash>
+        <hash alg="SHA-256">559a835e413430310eccbf40e249cb85ac07311e93bffd03e41c9a3c43e6d1d1</hash>
+        <hash alg="SHA-512">fd474c5cbb90213d76034fdf171215b4f22560a98a76c48e70c5d812be78aa3bc23707a847c799c76c5b4826615d7f856dcdf851df4dc01a42499f7f1db6d9d9</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_mark.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="d6f297a6-e052-4d08-81af-655d2cc36d4b">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libxt_mport.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libxt_mport.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">feecf2061d5799e8cdeb84d7a08401c2</hash>
+        <hash alg="SHA-256">7ede40e7e62ea5cc7f77e6e3854c2cb247722a9f205664b9d05e3d4924a1970c</hash>
+        <hash alg="SHA-512">b7fb5c4daffdccb54fedbba6b6c870a3e3299fab7f0d86dde508fac56efbfa76b702e9fc0b0a1e98b1b9a729130d2475b74f19c05d1ed1e98effa850fab9f05a</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_mport.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="d18227ff-e534-46c0-9890-059417b8c061">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libxt_multiport.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libxt_multiport.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">44fc82e8747ec6d591aadab9302b620d</hash>
+        <hash alg="SHA-256">e4d9395921c9f833e394cd01210e91ef90b4fdfc82a99a9022335e82cfdda679</hash>
+        <hash alg="SHA-512">caee29ef07b469322077e919beadb65999ca57eb9a226750ca8c5138c67f01bd7910aa9d091db023c7145d671266aeccf8056c510f66355f3b83a64dfe6faf5c</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_multiport.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="34a00533-bb84-4716-8492-94b9e039a25f">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libxt_physdev.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libxt_physdev.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">8dc6c93ab7da479369fc45610f6ff455</hash>
+        <hash alg="SHA-256">2a3492ea9bf16ab22cbaccfce4d38bf710012c71d41d0d592c19a5b9c159859b</hash>
+        <hash alg="SHA-512">728e23662d1086561d06b4b3b99ca87884edd42590eaed35e852e2d26c576390042ba724dae0f20b54b3c2bfb6057767982ea597b2c2f2ad2ffdecd4730e72b0</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_physdev.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="350dccb2-6a9b-4127-aa20-5e111c7fec22">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libxt_pkttype.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libxt_pkttype.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">5aa1870b1f5155b6b7e3fe384b9c04b7</hash>
+        <hash alg="SHA-256">45b877d0a699caef9a05cc86f05386a6614fd6b174b6090f6b5b8d1a0e837d8c</hash>
+        <hash alg="SHA-512">406fa7ab8da17a6f612c385931579c7c5e753d28390fcb52afd2a834275a2b93abc7286d3895553f9eee303d6a391ee4ef710ad4f7d42f55f851bf9858c275d5</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_pkttype.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="97656269-9634-4f53-b239-6dc4d46efd0b">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libxt_standard.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libxt_standard.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">8f21f3fbbb89a3e12d2556a0427f5bdb</hash>
+        <hash alg="SHA-256">f077e412cf3b26f965d42b133390056a0e0f9a0562cbdc63153ea935bb81ee73</hash>
+        <hash alg="SHA-512">907f1bd44c75a25e5f2154969e2d82e9c46597e3e4dfc7b4a7131c40259de5e0e3d2c21b000cb8f2b4cf055690f6204aeb6ca21466563edc11bd958e8a25ed81</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_standard.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="ba04ca90-369d-43d4-aa95-04ae7b19b8db">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libxt_state.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libxt_state.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">1c32f065b7d645b9e7dc771d977ea863</hash>
+        <hash alg="SHA-256">7f0e4f071f0d02fcf852d68c80bf6ddc2be377e76db7ab3df80c48b97a01db9e</hash>
+        <hash alg="SHA-512">6b9331f47cf1e9a165124f33150c64eeb5b9237ee44c69e9957d1c8962955d855210f7b62395f959ac6f4a8bbeed5bb1affbcb521fb5c442d8628368362c163c</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_state.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="0a2caf2d-229a-4537-94e3-7363fa959a0e">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libxt_string.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libxt_string.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">78fc2fd159bb0ddbdd9dce02ed5bae35</hash>
+        <hash alg="SHA-256">905e41de1411810096df080a36adb6a9003289a1893dc1a4a3ae590ddd583ede</hash>
+        <hash alg="SHA-512">ce21b12c5dc62223b0c535a1e94577af929469db1bb68480e65eb99ffc9b26d9b659d075939811ae5f05ff5f31c54af32e7cb0a5c4a0dc24204c47b24987e303</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_string.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="68d981dc-c857-45c1-b8c0-a6136dcdf695">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libxt_tcp.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libxt_tcp.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">d658a4e6800cde2de247809eb72da685</hash>
+        <hash alg="SHA-256">aedcd741c00913ab81b69f5ed5e6cb60d8457141824b110c3a689fb087865ceb</hash>
+        <hash alg="SHA-512">9416a82b5041fa90ccb765131d8b84ea5461a262438e815a99fd2a643829a6a530adcde4aec531d2677be0916902f8b091f32329b721c837a004b1f74cc3db93</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_tcp.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="4f174e57-6cee-4cc0-886b-85c9c605c2c4">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libxt_tcpmss.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libxt_tcpmss.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">2b1bf0503cea03cddd62b903c9d8efd0</hash>
+        <hash alg="SHA-256">81adcde3db5af5564e0016007215ee2ff99fe6d2b634ecb21633532cc239694b</hash>
+        <hash alg="SHA-512">1f4a5469b89dee6fbd7cac39faf1ac4dd666c70fe8bef0fb8d68b12f01db14c1bd5f235942ffab3e17c6cf2fd0cd62d815ff28326555fa2c5b542851527e9836</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_tcpmss.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="75c36d4d-81c7-4fa0-8751-1fb05d0e4054">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libxt_time.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libxt_time.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">1b9ea9016e31753a49d558d2a71e4df7</hash>
+        <hash alg="SHA-256">3687de4fdfd47f9fc13f2f4e5a8d6b0ede67164b4a641d7f898ca33fdb8952ea</hash>
+        <hash alg="SHA-512">a0f42f7db7f5d8abfae2edb8b702e8d4187b9950e9d26403eee75e8ccaee1bc7bb4ad0c923e74d297aa76f7a44794d291855a4fefe8f85e196a0e6ce3e089592</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_time.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="beb2ce6b-d948-4507-9c83-e8c7eefd55d1">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libxt_udp.so</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libxt_udp.so - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">b5a5a310811339547ed9b12a12d3007d</hash>
+        <hash alg="SHA-256">33c1bcf41ad3ddce53d68662f9ede6edc070e74298e4c42db49c638c5cfaacfa</hash>
+        <hash alg="SHA-512">320575b300c9b442cd8aeb218cbd505c09443e54b28160eab9860c7bf16663014b9b0a7bea921be8bf4ae4122cfae95f2f4d9491621e3899d4ae4c54cc75b2a4</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/xtables/libxt_udp.so'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="b573a444-588e-4f27-a62a-1c1bd4cb436e">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>libxtables.so.4.0.0</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: libxtables.so.4.0.0 - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">25be7eb4847fa28cedd1c991ed0026b9</hash>
+        <hash alg="SHA-256">dc27a26eacd3d1c675e58de3edfbbe2c868f1c64f1d1b211a5fb2521ef19617f</hash>
+        <hash alg="SHA-512">b1d158a695badbb036b62c9167b593fba22fa2692892d720bebb1949e3c51b7c669d6a674c39f63583532712fcde5708bc21969deff5cb033571de604faf521d</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/libxtables.so.4.0.0'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB shared object, MIPS, MIPS32 version 1 (SYSV), dynamically linked, not stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="fa70b9e4-e10f-441e-ad30-a3f95d64dade">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>lld2d</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: lld2d - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">7ba832b42d62474b6cbcdbcda75d6397</hash>
+        <hash alg="SHA-256">7ed37ae216ecfdc964af113decfadef318b9db6ec22c08fad1a06c07d8f9452b</hash>
+        <hash alg="SHA-512">4eb019be5f49264ae0351ff8a268cd43ea2e4c4a3e8295b0487e253050488cef41c686ca91187df70e829c8d7a9a17e8050cfbd2bd67b4e2f0b2253adfd63ec7</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/lld2d'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="ee0e6c02-973d-40dd-a192-c3f319c334ea">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>neaps</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: neaps - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">4a0e0031e8a0d31f504463dc3d5b116d</hash>
+        <hash alg="SHA-256">2cbad5eb3a258ef10ed8b0a09980be7278a806c32daa067b573d49362d6ba178</hash>
+        <hash alg="SHA-512">9c194a069a5ef7991df7fc7aec147ed74b250588a17f18068ab48c77c4a1ab584b73303fd298d7c4b3522e05a5d167cf9d0e4788d8c000335f0e8b507425c61d</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/neaps'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="3b0e36bb-4d58-44fd-8af2-0806824d139b">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>netbios</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: netbios - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">3e00c79c314f4b84d62dce87ed3d20ae</hash>
+        <hash alg="SHA-256">b59ecb3f1723b852f7a3827241adf1781db2c6e43698df6a8649d224455e3c5f</hash>
+        <hash alg="SHA-512">944251fee1cdceb69b20abf7643469fd407072921b00a5c813604cfa9fa9d621226b98904646e06cd48d3c80c00f763a0b6ceef53e09b6fd21439e62ea6cfefd</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/netbios'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="a92de6f6-1f7d-4210-bbd9-d7e37085912f">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>nsbbox</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: nsbbox - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">e99fc7d1817e719bd79118a8eb577daa</hash>
+        <hash alg="SHA-256">644bec378e9b544f8e589895ce7e08362a02ccc9cb52ccb3f9ac4fb072a9ecdd</hash>
+        <hash alg="SHA-512">22da11f1b7edb0e803565bf76e52f5c92f0fee771bb1221bbf9d6f755f525e522d2f3324d9ed6fbe6362e5ceed355e120b1298f680f767454dd87e8015de1f42</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/nsbbox'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/nsbbox</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="74bd6994-21bf-4598-b8df-20fafe37b0ee">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>pppd</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: pppd - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">d2fd2b6a4eb186bab80489fae9cc8f09</hash>
+        <hash alg="SHA-256">0e9a4f25369b46ee349f4990b1482d3f0120629dd49bbd2a11522f4b2120325c</hash>
+        <hash alg="SHA-512">a2f6178a2a8fa20e0b1f8a41e3f0b3d470dbb67bf2449cf7ce187cf7264cae4dff85257ff6da06e8199920ff2cd48464d6e619382bd568670f4ae1616150df26</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/pppd'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/pppd</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="0350dcea-ef53-4545-b10b-6bedc274068e">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>radvdump</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: radvdump - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">6dd84731d6024e548ec115eab63c50f3</hash>
+        <hash alg="SHA-256">d796881a56e624886da52e5f37cbea74b44b77150cc21911756a215e65ec03ca</hash>
+        <hash alg="SHA-512">737742500f7d22cf774ecf7e69d147792c69c4026384aec4f26c83fa2af79025300fd04c9aa44c965d475de42f4b602de5e57dcd49a2f54ff4d291a0c889c0a8</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/radvdump'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="72fa0e96-440c-49ef-8186-6cb2974ba3e4">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>rgbin</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: rgbin - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">c83a3a74cad96c0b0c1e0e6bbcd9b14b</hash>
+        <hash alg="SHA-256">6afed736e1defc91c5fd32d05b664786d63b2eac6c0c2258fad21ae3b574fd2e</hash>
+        <hash alg="SHA-512">727101b3d12c48285b20adc72587affebfca7b0045190981ad76785ddea1ba046590826b01ee13cd13ba6666819cccad1473d2c9c0272719f3f36db00d87c052</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/rgbin'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/rgbin</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="00d5947d-7a93-4103-a264-a20c9021f949">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>rt2860v2_ap.ko</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: rt2860v2_ap.ko - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">4ce30a4e7891b5fbec73eb3ba3745ba0</hash>
+        <hash alg="SHA-256">2c56c3050a0f3026af81bd4b9de6a88bcaebec72b33d630d5160623eb9f8305e</hash>
+        <hash alg="SHA-512">0e056f96552318c597b7271b88a4aaa4d0d5a65bf42a72da4217dabf480c7dd9002387bc51fc3cfef39abda7c707453e196c28784d5a52fcd3eea8c5b016ed1c</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/modules/rt2860v2_ap.ko'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB relocatable, MIPS, MIPS32 rel2 version 1 (SYSV), BuildID[sha1]=36ae984e31c0d1f53721e6a7b73f8b8dd0dc7607, not stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/modules/rt2860v2_ap.ko</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="2db2ae6c-09a1-4e7a-a81e-cec6ef5b97b5">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>rt3052esw</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: rt3052esw - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">c7078f3824e6cbd44dcd9202e10f1f97</hash>
+        <hash alg="SHA-256">53e589ec590453f0e58b3b9422afab6bac7cbffb9d87820431902a59958b3918</hash>
+        <hash alg="SHA-512">dbde0893419d0da155c2c6d6b8294426f2e3fb67bb2ac5ccdb4e1ef8f2e677d1a0e04477ddb1e4a635f7fee7b58c8eb6630241c81023bb5ed23d2aeb5d231af7</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/rt3052esw'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="09f02505-5e82-4b74-8d79-688f469d8da9">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>sendmail</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: sendmail - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">7c3ebf83e6b5e8a88e024e8cea9ce57c</hash>
+        <hash alg="SHA-256">fe3570c76e8c08c672d0ea17ff002e217bc6af004f2994af54cd62c3d8674736</hash>
+        <hash alg="SHA-512">fe1f2fb66260918fe0c05b42dd7166b7f8215ae4c82975cd32620ffc46c7c2aa3c7ae9d44000108ea5f537723629654bf45507e9afd56c51ccfb301b9d2ab6a7</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/sendmail'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), statically linked, stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/sendmail</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="e41ad632-948d-4b75-b5a1-477b875afa91">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>sw_tcpip.ko</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: sw_tcpip.ko - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">18868a6ab95c960687d93b3718b05fd2</hash>
+        <hash alg="SHA-256">6179d39ce21f9609bcd98f2812641abc21cc82e0f068f023bc96a1b2c4d574b2</hash>
+        <hash alg="SHA-512">0ebd5e0fa924e8e3a7f7fa55e16d480f416abc16fdb78bc50dee2647ba8888ce2840edf5653483f775c792f1aed60a489f612a0dd30b036ee436eb8014945f70</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/lib/modules/sw_tcpip.ko'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB relocatable, MIPS, MIPS32 rel2 version 1 (SYSV), BuildID[sha1]=eeb7300a39e8e99c40ca80c2fdf3be4a63a2e402, not stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/lib/modules/sw_tcpip.ko</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="59fe4e70-eb62-4035-8f1a-9f23e56a213c">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>tc</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: tc - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">5b0fdb981b5698b3cdf319bf508a916f</hash>
+        <hash alg="SHA-256">0078ad1eaf1822c7859ff8672207807a77ebac4c058521f6aab9d2551d2400f5</hash>
+        <hash alg="SHA-512">6d6a41fc8a5b49ee4570d0ff645a1b976359f3707e6a89126f6cae7030fdb3b40b0b9ed6ecaace32cc9692e1d0d4193b26ffd673f0a4622fa181dc6e8408a585</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/tc'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, with debug_info, not stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/tc</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="29f3a3f8-1595-40e6-a348-1fb78cbceeff">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>telnetd</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: telnetd - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">496cfe63e0a88d74140efc4a9cb34cf4</hash>
+        <hash alg="SHA-256">b0ec879054cfbea1f319525cfc6d56f2725e40d39b4a5fcdf80934feef41d1cb</hash>
+        <hash alg="SHA-512">9e1d96a80f80f830b66dccc11ba1eefa893ae58abbe9a88a7a079e4268c4fe1249e2e5e5c3463011a17898dde959f9b80afbfa13374ef30e5d3e16d96aa442ca</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/telnetd'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="f8b515a9-0360-4737-b23b-cc9726d19591">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>ubcfg</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: ubcfg - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">1ff01792e9426f3b9522fe4080f52597</hash>
+        <hash alg="SHA-256">a3c37e8bbd68b1746fac110a3afe9682877963a938629a023914675e067b5f29</hash>
+        <hash alg="SHA-512">9796e067ae2dd648a38b6a5ff60729b46f9f94e485a3a38144bcbc756bf4a4a239a99e4875b3e400b7d6556df463e447e439a2cffe1104f9b1a4ac93961b8fcd</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/ubcfg'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="77ed5cfc-699b-4ab7-a516-2913ea56d226">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>ubcom</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: ubcom - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">0e984adb874e55f56ffb520f6a351718</hash>
+        <hash alg="SHA-256">f97359458cc7437d4030dbde693975b8b183f4c01ae9562ab94fb1948cbaa4c4</hash>
+        <hash alg="SHA-512">6ebe6eea52899c584298cb3b54183b7ff2b53b727699958afedd9458a2ee335f5c031414ef48f99104cb7bde91bf7bb6c4de4da45932b68883e16de58079f7cf</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/sbin/ubcom'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="71d0ec2a-bfd4-447b-a998-87e2a91a4a68">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>udhcpd</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: udhcpd - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">08a38650e80b28e3dbf4db0f9161c19e</hash>
+        <hash alg="SHA-256">2aed5bea889b017baa384d62666e5990acfe1ea8822e2c51f2c92e34c3ff2902</hash>
+        <hash alg="SHA-512">f1bb762e1253b04e9962f5c90e004cb822051465173d037d6b48c6b7d2ed013aa52941db89adcf749fc9b3ef7c945fd6f1acceecdeb9bce8afb19aafccca15af</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/udhcpd'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/udhcpd</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="46a07474-70bd-4de8-903f-6c4fdda2d46d">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>updateleases</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: updateleases - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">12b0549a5c9f2c72c109f032aa835d4f</hash>
+        <hash alg="SHA-256">a15f7ac6b6c043d03d820022298a5667a30524dcb6f1201069c00e581fe67d34</hash>
+        <hash alg="SHA-512">d942e43f210eae71372d7bd8dd48e0524260d574633282e74d4850ec2762ffd5f93f3fa47729ac5fac4b42975c67f27378b47221fe3849b165b09e24e9403ce8</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/updateleases'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/updateleases</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="bf32d802-e2fe-46bf-b78e-50ec49e98fdf">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>updatewifistats</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: updatewifistats - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">a8bf64d9040884e6ef4967607955b66f</hash>
+        <hash alg="SHA-256">ef638432edeb619c60c0e8e3fbbd24ab0e84f27c680dc07ac6591bd90f350ac5</hash>
+        <hash alg="SHA-512">6310ecd65f8acb60cb908b5fc8bc46c8fa697695e39a98b2e3673e6e5a6e11a3b7680e8afefd29533500c08d5b3ddddc8ed8a5c0e455335389bba1f1ea5c3636</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/updatewifistats'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/updatewifistats</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="ef22b1a5-cdfd-4e99-92a2-11e425dc27e4">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>widget</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: widget - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">83050bb61af159bce264a20f3f66544e</hash>
+        <hash alg="SHA-256">f8af915108fb75590c1a5744b445311629628f6bba2eacdfe9f7921df5b1d3bd</hash>
+        <hash alg="SHA-512">0d1920829bb94f7ace532e88f666aa3a14b4601c86bf7c5562c08fc108395cef2a1b3184236bc623f1e151b1135d39339536cad2a0a6be582b5c619370ee0162</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/widget'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), dynamically linked, interpreter /lib/ld-uClibc.so.0, stripped'</property>
+      </properties>
+    </component>
+    <component type="library" bom-ref="3f81a0a6-6a92-4acf-a2fa-3c8c7b60f51d">
+      <supplier>
+        <name>Unknown</name>
+      </supplier>
+      <group>unhandled_file</group>
+      <name>wps</name>
+      <version>Unknown Version</version>
+      <description>EMBA SBOM-group: unhandled_file - name: wps - version: Unknown Version</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="MD5">9564c016869273e0ce8cf34478f8627a</hash>
+        <hash alg="SHA-256">ca9179178da1654fe3b04a9ce987683e01cb46dddcde14907d3172d45467f07a</hash>
+        <hash alg="SHA-512">1dd12458b04ee2275a4cd85722cf926904c89c46bf09dd7c79d1dfe37403c26387131db3a44ea23b8fcefe2155765c39dc3684ad8abf0b73acb5963db2d70583</hash>
+      </hashes>
+      <properties>
+        <property name="EMBA:sbom:source_location:1:source_path">'/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/usr/sbin/wps'</property>
+        <property name="EMBA:sbom:2:source_arch">'MIPS'</property>
+        <property name="EMBA:sbom:3:source_details">'ELF 32-bit LSB executable, MIPS, MIPS32 version 1 (SYSV), statically linked, stripped'</property>
+        <property name="EMBA:sbom:source_location:4:additional_source_path">/logs/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/usr/sbin/wps</property>
+      </properties>
+    </component>
+  </components>
+</bom>

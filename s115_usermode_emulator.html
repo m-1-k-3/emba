@@ -1,0 +1,691 @@
+<!-- 
+EMBA - EMBEDDED LINUX ANALYZER
+
+Copyright 2020-2023 Siemens AG
+Copyright 2020-2025 Siemens Energy AG
+
+EMBA comes with ABSOLUTELY NO WARRANTY. This is free software, and you are
+welcome to redistribute it under the terms of the GNU General Public License.
+See LICENSE file for usage of this software.
+
+EMBA is licensed under GPLv3
+
+Author(s) and contributors from the EMBA project are listed here: https://github.com/e-m-b-a/emba/blob/master/CONTRIBUTORS.md
+-->
+
+<!-- Used icons: https://github.com/CoreyGinnivan/system-uicons -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EMBA firmware report</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style/style.css" type="text/css">
+  <link rel="icon" type="image/png" href="./style/favicon.png">
+</head>
+<body>
+
+<div id="sidenav" class="side">
+  <div id="logo">
+    <a class="inherit" href="./index.html"><img class="inherit" id="logoImage" src="./style/emba.svg" alt="logo"></a>
+  </div>
+  <div id="nav">
+      <a id="embark" class="hidden" href="{{ embarkBackUrl }}">&laquo; Back to EMBArk</a> <!-- nosem -->
+      <a class="backButton" href="./index.html">&laquo; Back to main</a>
+      <!-- navigation start --><a class="modul" href="#qemu_user-mode_emulation" title="#qemu_user-mode_emulation" >Qemu user-mode emulation</a><a class="submodul" href="#preparationphase" title="#preparationphase" >Preparation phase</a><a class="submodul" href="#preparationphase" title="#preparationphase" >Preparation phase</a><a class="submodul" href="#reportingphase" title="#reportingphase" >Reporting phase</a>
+      <!-- navigation end -->
+      <input id="expand" class="expand_njs hidden" type="button" value="More results:" onclick="this.value=this.value=='+ Show more results'?'- Hide more results':'+ Show more results';">
+      <div class="expand_area">
+        <!-- etc start -->
+        <!-- etc end -->
+      </div>
+  </div>
+
+  <a href="ERRORLINK"><div id="buttonErrorInvisible" class="rectButton"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></div></a>
+  <a href="TIMELINK"><div id="buttonTimeInvisible" class="rectButton"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1 0 0 1 19 2)"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 5.5v4H5"/></g></svg></div></a>
+
+  <div id="buttonSizer" class="rectButton buttonClose" onclick="buttonNav()"></div>
+</div>
+<div id="main" class="main">
+  <!-- content start -->
+<pre>[</span><span class="blue">+</span>] </span><span class="cyan"><span class="bold"><a id="qemu_user-mode_emulation">Qemu user-mode emulation</a></span></pre>
+<pre><span class="bold"><hr class="double" /></span></pre>
+<pre>The usermode emulator module emulates exectuables from the firmware with Qemu to get version information.</pre>
+<br />
+<pre>[</span><span class="orange">*</span>] Using </span><span class="orange">jchroot</span> for building more secure chroot environments</pre>
+<pre>[</span><span class="orange">*</span>] This module creates a working copy of the firmware filesystem in the log directory /logs.</pre>
+<br />
+<pre>[</span><span class="orange">*</span>] Create a firmware backup for emulation ...</pre>
+<pre>[</span><span class="orange">*</span>] Firmware backup for emulation created in </span><span class="orange">/logs/s115_usermode_emulator/firmware</span></pre>
+<pre>[</span><span class="orange">*</span>] Root directory auto detection for </span><span class="orange">/logs/s115_usermode_emulator/firmware</span> (could take some time)</pre>
+<br />
+<a class="refmodul" href="./s05_firmware_details.html#anchor_file_dirs" title="LINK" ><pre>[</span><span class="orange">*</span>] Found </span><span class="orange">2</span> different root directories:</pre></a>
+
+<a class="refmodul" href="./s05_firmware_details.html#anchor_file_dirs" title="LINK" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found the following root directory: </span><span class="orange">/logs/s115_usermode_emulator/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root</span><span class="green"> via </span><span class="orange">dir names</span><span class="green">.</pre></a>
+<pre></span></pre>
+
+<a class="refmodul" href="./s05_firmware_details.html#anchor_file_dirs" title="LINK" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found the following root directory: </span><span class="orange">/logs/s115_usermode_emulator/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root</span><span class="green"> via </span><span class="orange">dir names</span><span class="green">.</pre></a>
+<pre></span></pre>
+
+<pre>[</span><span class="orange">*</span>] Detected </span><span class="orange">2</span> root directories</pre>
+<br />
+<pre>[</span><span class="orange">*</span>] Detected root path: </span><span class="orange">/logs/s115_usermode_emulator/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root</span></pre>
+<pre>[</span><span class="orange">*</span>] Running emulation processes in </span><span class="orange">/logs/s115_usermode_emulator/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root</span> root path (</span><span class="orange">1/2</span>).</pre>
+<pre>[</span><span class="orange">*</span>] Create unique binary array for </span><span class="orange">/logs/s115_usermode_emulator/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root</span> root path (</span><span class="orange">1/2</span>).</pre>
+<pre>[</span><span class="orange">*</span>] Testing </span><span class="orange">50</span> unique executables in root directory: </span><span class="orange">/logs/s115_usermode_emulator/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root</span> (</span><span class="orange">1/2</span>).</pre>
+<br />
+<br />
+<pre></span><span class="blue">==&gt</span></span> </span><span class="cyan"><a id="preparationphase"><a id="preparationphase">Preparation phase</a></a></span></pre>
+<pre><hr class="mono" /></pre>
+<pre>[</span><span class="orange">*</span>] Preparing the environment for usermode emulation</pre>
+<pre>[</span><span class="orange">*</span>] Creating dev area for user mode emulation</pre>
+<pre>[</span><span class="orange">*</span>] Creating /dev/armem</pre>
+<pre>[</span><span class="orange">*</span>] Creating /dev/tty0</pre>
+<pre>[</span><span class="orange">*</span>] Creating /dev/ttyS0 - ttyS3</pre>
+<pre>[</span><span class="orange">*</span>] Creating /dev/adsl0</pre>
+<pre>[</span><span class="orange">*</span>] Creating /dev/hidraw0</pre>
+<br />
+<pre>[</span><span class="orange">*</span>] Currently mounted areas:</pre>
+<pre>    proc on /logs/s115_usermode_emulator/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/proc type proc (rw,relatime)</pre>
+<pre>    tmpfs on /logs/s115_usermode_emulator/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/run type tmpfs (rw,nosuid,nodev,noexec,relatime,mode=755,inode64)</pre>
+<pre>    sysfs on /logs/s115_usermode_emulator/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300B5_FW214WWB01.bin.extracted/12008C/squashfs-root/sys type sysfs (ro,nosuid,nodev,noexec,relatime)</pre>
+<br />
+<pre>[</span><span class="orange">*</span>] Final fixes of the root filesytem in a chroot environment</pre>
+<br />
+<pre><hr class="mono" /></pre>
+<br />
+<a class="reference" href="./s115_usermode_emulator/42feca81d2fda22e0e914f79f0a77541.html" title="./s115_usermode_emulator/42feca81d2fda22e0e914f79f0a77541.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">libiptc.so.0.0.0</span> with CPU configuration </span><span class="orange"></span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/cacc3b06aeaef2315584a9e5e994868c.html" title="./s115_usermode_emulator/cacc3b06aeaef2315584a9e5e994868c.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">libgcc_s.so.1</span> with CPU configuration </span><span class="orange"></span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/fa78cc07d74c10cfb3fe6fdf91d1bad5.html" title="./s115_usermode_emulator/fa78cc07d74c10cfb3fe6fdf91d1bad5.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">libxtables.so.4.0.0</span> with CPU configuration </span><span class="orange"></span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/8dd9e43bd7352a6382cf59d01e4e8cd2.html" title="./s115_usermode_emulator/8dd9e43bd7352a6382cf59d01e4e8cd2.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">libip4tc.so.0.0.0</span> with CPU configuration </span><span class="orange"></span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/c05b47221ecffeb924687da4954aa106.html" title="./s115_usermode_emulator/c05b47221ecffeb924687da4954aa106.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">libip6tc.so.0.0.0</span> with CPU configuration </span><span class="orange"></span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/94c7a3f19a3dd0f70ab3981d69bdaf6c.html" title="./s115_usermode_emulator/94c7a3f19a3dd0f70ab3981d69bdaf6c.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">cgibin</span> with CPU configuration </span><span class="orange"></span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/527ba690a3c720ad2964a79d7d0f4fcd.html" title="./s115_usermode_emulator/527ba690a3c720ad2964a79d7d0f4fcd.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">servd</span> with CPU configuration </span><span class="orange"></span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/faed65ce4a2ff9ed835dfdd0496c2b8f.html" title="./s115_usermode_emulator/faed65ce4a2ff9ed835dfdd0496c2b8f.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./htdocs/cgibin</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/abbbc4cf25209952c18f848ae20dd0f0.html" title="./s115_usermode_emulator/abbbc4cf25209952c18f848ae20dd0f0.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">portt</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/3d109614dfc70d03358a86dfcf92303e.html" title="./s115_usermode_emulator/3d109614dfc70d03358a86dfcf92303e.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">sendmail</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/e3f28ca8541201baf08d8a2d8fac79fc.html" title="./s115_usermode_emulator/e3f28ca8541201baf08d8a2d8fac79fc.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">logd</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/83584785f5ba53f2748a136ee60647ca.html" title="./s115_usermode_emulator/83584785f5ba53f2748a136ee60647ca.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/servd</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/f8338b6708572d6f0eb569955268d1e7.html" title="./s115_usermode_emulator/f8338b6708572d6f0eb569955268d1e7.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/portt</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/e379a3a5f8e3540f54cb230dd3dfde4e.html" title="./s115_usermode_emulator/e379a3a5f8e3540f54cb230dd3dfde4e.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">pppd</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/2ab2798ab150357ab43d492576c77dd4.html" title="./s115_usermode_emulator/2ab2798ab150357ab43d492576c77dd4.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">hostapd</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/e95edb9ab84ef90d3a2bc7ad2e1be5cf.html" title="./s115_usermode_emulator/e95edb9ab84ef90d3a2bc7ad2e1be5cf.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/logd</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/697443fb7037353dedb5d91dcf2e30e7.html" title="./s115_usermode_emulator/697443fb7037353dedb5d91dcf2e30e7.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/pppd</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/0db3aeefa27d2aeb07efc3c886569473.html" title="./s115_usermode_emulator/0db3aeefa27d2aeb07efc3c886569473.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">dhcp6s</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/4a1d3303e55969c5bb5a98ddd23d1997.html" title="./s115_usermode_emulator/4a1d3303e55969c5bb5a98ddd23d1997.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/hostapd</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/8dfc16414547e61b9999e15b97650c86.html" title="./s115_usermode_emulator/8dfc16414547e61b9999e15b97650c86.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">neaps</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/dbab78e48080429d57bb15ecd1146b01.html" title="./s115_usermode_emulator/dbab78e48080429d57bb15ecd1146b01.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/dhcp6s</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/9755744edc6b5f6bf92f22381bbbb02e.html" title="./s115_usermode_emulator/9755744edc6b5f6bf92f22381bbbb02e.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">dhcp6c</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/8dbbcbe0829ee32b655f8648252f628c.html" title="./s115_usermode_emulator/8dbbcbe0829ee32b655f8648252f628c.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/neaps</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/cf0a17fee50f9b374ff253f47f7a95ee.html" title="./s115_usermode_emulator/cf0a17fee50f9b374ff253f47f7a95ee.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">igmpproxy</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/b380703edf0babdb892c1d06ff72e26e.html" title="./s115_usermode_emulator/b380703edf0babdb892c1d06ff72e26e.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/dhcp6c</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/0a0835a67522df2f20a64f6331536dbc.html" title="./s115_usermode_emulator/0a0835a67522df2f20a64f6331536dbc.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">xmldb</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/97dc54a04ba471a7e88454ea8ada5e24.html" title="./s115_usermode_emulator/97dc54a04ba471a7e88454ea8ada5e24.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/igmpproxy</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/abed92bae702be188496e5afd5ab02a6.html" title="./s115_usermode_emulator/abed92bae702be188496e5afd5ab02a6.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./lib/libgcc_s.so.1</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/0b670227549f56ca7cec4d8409011573.html" title="./s115_usermode_emulator/0b670227549f56ca7cec4d8409011573.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./lib/libiptc.so.0.0.0</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/b72af1fd9308787cb3800e8254724264.html" title="./s115_usermode_emulator/b72af1fd9308787cb3800e8254724264.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">updatewifistats</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/f9e30ace7e0b337c88d922550e7e2fde.html" title="./s115_usermode_emulator/f9e30ace7e0b337c88d922550e7e2fde.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/xmldb</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/aae2c74244007598becb7915d2fda491.html" title="./s115_usermode_emulator/aae2c74244007598becb7915d2fda491.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./lib/libxtables.so.4.0.0</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/6f20d10db23793f684f2ffe08c9f614c.html" title="./s115_usermode_emulator/6f20d10db23793f684f2ffe08c9f614c.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./lib/libip4tc.so.0.0.0</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/9891b9434da1dd16bf53de145ab448f6.html" title="./s115_usermode_emulator/9891b9434da1dd16bf53de145ab448f6.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">ip6tables-multi</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/66c05f2e335830ede7ec179fa894fe83.html" title="./s115_usermode_emulator/66c05f2e335830ede7ec179fa894fe83.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/updatewifistats</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/49479e0d43d3fa227216966c0a698821.html" title="./s115_usermode_emulator/49479e0d43d3fa227216966c0a698821.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./lib/libip6tc.so.0.0.0</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/6f5d4f2cc00ef7bc7a19b551b47418f8.html" title="./s115_usermode_emulator/6f5d4f2cc00ef7bc7a19b551b47418f8.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">ubcfg</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/b1a98f87f88462ea2ef4b81309312273.html" title="./s115_usermode_emulator/b1a98f87f88462ea2ef4b81309312273.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/ip6tables-multi</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/fa9f5812353e0fa2fc8af5e37fe9af4e.html" title="./s115_usermode_emulator/fa9f5812353e0fa2fc8af5e37fe9af4e.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/sendmail</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/74b45fcfc0be363f452429d742c4c23c.html" title="./s115_usermode_emulator/74b45fcfc0be363f452429d742c4c23c.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/ubcfg</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/fd034359067871beeca015435f0f9333.html" title="./s115_usermode_emulator/fd034359067871beeca015435f0f9333.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">gpiod</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/5726c4a06e6aed025a81df1628123ef5.html" title="./s115_usermode_emulator/5726c4a06e6aed025a81df1628123ef5.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/gpiod</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/7e022a3771ab684dadc8ac0381f0aa1e.html" title="./s115_usermode_emulator/7e022a3771ab684dadc8ac0381f0aa1e.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">telnetd</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/fd0dd09d1835a840a2749f7dfc0a5972.html" title="./s115_usermode_emulator/fd0dd09d1835a840a2749f7dfc0a5972.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/telnetd</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/de1eacee232d2ba35a9172663b2192b5.html" title="./s115_usermode_emulator/de1eacee232d2ba35a9172663b2192b5.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">klogd</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/03477bd874a5efe1755487362af3a9b2.html" title="./s115_usermode_emulator/03477bd874a5efe1755487362af3a9b2.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">llmnresp</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/f15327299368d056c42ebb9fbcd032c2.html" title="./s115_usermode_emulator/f15327299368d056c42ebb9fbcd032c2.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/klogd</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/33d47e161a98df3a4250b67d27393911.html" title="./s115_usermode_emulator/33d47e161a98df3a4250b67d27393911.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">ddnsd</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/2931d501242cd1b949b765342c30bf78.html" title="./s115_usermode_emulator/2931d501242cd1b949b765342c30bf78.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/llmnresp</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/1475f3a39e90f2e96c61c2ebdc08122e.html" title="./s115_usermode_emulator/1475f3a39e90f2e96c61c2ebdc08122e.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">updateleases</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/a825a989fdba2e7baa4f4d45da7046ef.html" title="./s115_usermode_emulator/a825a989fdba2e7baa4f4d45da7046ef.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">iptables-multi</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/b665be3d70a83b051f1296cdb9b3befd.html" title="./s115_usermode_emulator/b665be3d70a83b051f1296cdb9b3befd.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">widget</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/4ff98c0b62e575454a58429b7afc0cc4.html" title="./s115_usermode_emulator/4ff98c0b62e575454a58429b7afc0cc4.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/ddnsd</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/3bbca2e93c9f9a3d9a6f41985b614693.html" title="./s115_usermode_emulator/3bbca2e93c9f9a3d9a6f41985b614693.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/updateleases</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/25ca781dce4e943713873575ea65ae3f.html" title="./s115_usermode_emulator/25ca781dce4e943713873575ea65ae3f.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/iptables-multi</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/9b1432890e8c5fd9fd96b6f827e3dff7.html" title="./s115_usermode_emulator/9b1432890e8c5fd9fd96b6f827e3dff7.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">nsbbox</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/3681c56d36862c6d7c49f3ee349be3ce.html" title="./s115_usermode_emulator/3681c56d36862c6d7c49f3ee349be3ce.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/widget</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/d1539b1976958a44b0f963d0cdebeea9.html" title="./s115_usermode_emulator/d1539b1976958a44b0f963d0cdebeea9.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">trigger</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/bb8ad5acc8ff09ea2327c2374bf5fc0c.html" title="./s115_usermode_emulator/bb8ad5acc8ff09ea2327c2374bf5fc0c.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/nsbbox</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/59e015c51160dad8fc2789afc39d3269.html" title="./s115_usermode_emulator/59e015c51160dad8fc2789afc39d3269.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">rgbin</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/81a691e058645242ad576dff02903973.html" title="./s115_usermode_emulator/81a691e058645242ad576dff02903973.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/trigger</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/7290bb3476c28474f76f89aa6f7124ef.html" title="./s115_usermode_emulator/7290bb3476c28474f76f89aa6f7124ef.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">lld2d</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/890035e2aaf13edd4a371cd6c454ace8.html" title="./s115_usermode_emulator/890035e2aaf13edd4a371cd6c454ace8.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/rgbin</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/2a1919e1d8b7e33545825ca7bda92956.html" title="./s115_usermode_emulator/2a1919e1d8b7e33545825ca7bda92956.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">radvd</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<pre>[</span><span class="orange">*</span>] Binary </span><span class="orange">./usr/sbin/ated</span> (</span><span class="orange">34/50</span>) not emulated - blacklist triggered</pre>
+<a class="reference" href="./s115_usermode_emulator/596d64b63c4177847fa16d4b1c5bf7ce.html" title="./s115_usermode_emulator/596d64b63c4177847fa16d4b1c5bf7ce.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/lld2d</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/6db4c70b1b54e8839deecf013bf273c9.html" title="./s115_usermode_emulator/6db4c70b1b54e8839deecf013bf273c9.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">tc</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/23073f8812c609a2c76a27eca1438215.html" title="./s115_usermode_emulator/23073f8812c609a2c76a27eca1438215.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/radvd</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/0e186f65717423b12684be83fb1043a2.html" title="./s115_usermode_emulator/0e186f65717423b12684be83fb1043a2.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">ip</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/15b3a473ba1933f12bdce396e4c81de0.html" title="./s115_usermode_emulator/15b3a473ba1933f12bdce396e4c81de0.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/tc</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/b41fcb6d341b4358b99a5a1b0fd52c0e.html" title="./s115_usermode_emulator/b41fcb6d341b4358b99a5a1b0fd52c0e.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">ecmh</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/9c2170c1ba4dc5670f7d402c1c759241.html" title="./s115_usermode_emulator/9c2170c1ba4dc5670f7d402c1c759241.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/ip</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/f20d29ddd3ecc438bf2e0589cb0c2542.html" title="./s115_usermode_emulator/f20d29ddd3ecc438bf2e0589cb0c2542.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">dnsmasq</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/7c7b91c894c812c3fb7ca7eed9f7b74a.html" title="./s115_usermode_emulator/7c7b91c894c812c3fb7ca7eed9f7b74a.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/ecmh</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/c35247e4d2fc4ef1d729dd2ff0fba4aa.html" title="./s115_usermode_emulator/c35247e4d2fc4ef1d729dd2ff0fba4aa.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">netbios</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/befbc2ad12166f8fdcbe8be9f53ae4ee.html" title="./s115_usermode_emulator/befbc2ad12166f8fdcbe8be9f53ae4ee.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">rdisc6</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/df334cfc00f6eabc6eee2aad1e5b9e89.html" title="./s115_usermode_emulator/df334cfc00f6eabc6eee2aad1e5b9e89.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/dnsmasq</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/14e23708e39544fd848ef45958e353b5.html" title="./s115_usermode_emulator/14e23708e39544fd848ef45958e353b5.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">radvdump</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<pre>[</span><span class="orange">*</span>] Binary </span><span class="orange">./usr/sbin/udhcpd</span> (</span><span class="orange">42/50</span>) not emulated - blacklist triggered</pre>
+<a class="reference" href="./s115_usermode_emulator/ae3a90396e234721cf949a1e4d51ad11.html" title="./s115_usermode_emulator/ae3a90396e234721cf949a1e4d51ad11.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/netbios</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/88d470cc46bb9d06e2730f05f6e36437.html" title="./s115_usermode_emulator/88d470cc46bb9d06e2730f05f6e36437.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">logger</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/72b06af907484a0c7b61da8e80c1dcd7.html" title="./s115_usermode_emulator/72b06af907484a0c7b61da8e80c1dcd7.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/rdisc6</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/64db6deaad7e5168ad3dcc262f989d8f.html" title="./s115_usermode_emulator/64db6deaad7e5168ad3dcc262f989d8f.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">rt3052esw</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/d1cb51b8b9319c111852e140bbbf1e8c.html" title="./s115_usermode_emulator/d1cb51b8b9319c111852e140bbbf1e8c.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">wps</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/db8c80f06ca1ac219a28a48bc3481d87.html" title="./s115_usermode_emulator/db8c80f06ca1ac219a28a48bc3481d87.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/radvdump</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/2381334528737bbf6ff36bba46dba607.html" title="./s115_usermode_emulator/2381334528737bbf6ff36bba46dba607.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/logger</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/a442f06279acdcf226061395b182facb.html" title="./s115_usermode_emulator/a442f06279acdcf226061395b182facb.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">iwconfig</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/a9d69673f9f7c2400a59abca462f3d4d.html" title="./s115_usermode_emulator/a9d69673f9f7c2400a59abca462f3d4d.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/rt3052esw</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/769bd45f98a45a9ffb6c94381029dbba.html" title="./s115_usermode_emulator/769bd45f98a45a9ffb6c94381029dbba.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">ubcom</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/75097b171f0a33cac77e5a723ff9b7af.html" title="./s115_usermode_emulator/75097b171f0a33cac77e5a723ff9b7af.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/wps</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/d31bd1a7c12747c37237791d92fc0717.html" title="./s115_usermode_emulator/d31bd1a7c12747c37237791d92fc0717.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">rndimage</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/2af67c63328a00e4471ba008af556325.html" title="./s115_usermode_emulator/2af67c63328a00e4471ba008af556325.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/iwconfig</span> to identify missing areas</pre></a>
+
+<pre>[</span><span class="orange">*</span>] Binary </span><span class="orange">./sbin/httpd</span> (</span><span class="orange">49/50</span>) not emulated - blacklist triggered</pre>
+<a class="reference" href="./s115_usermode_emulator/f6a912c12d8efa9ebcbdcb8084300900.html" title="./s115_usermode_emulator/f6a912c12d8efa9ebcbdcb8084300900.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">busybox</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<br />
+<a class="reference" href="./s115_usermode_emulator/bf4d45ccdbfadc275302a335aeab6484.html" title="./s115_usermode_emulator/bf4d45ccdbfadc275302a335aeab6484.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./sbin/ubcom</span> to identify missing areas</pre></a>
+
+<pre>[</span><span class="orange">*</span>] Detected root path: </span><span class="orange">/logs/s115_usermode_emulator/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root</span></pre>
+<pre>[</span><span class="orange">*</span>] Running emulation processes in </span><span class="orange">/logs/s115_usermode_emulator/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root</span> root path (</span><span class="orange">2/2</span>).</pre>
+<a class="reference" href="./s115_usermode_emulator/75d6993d954bda32a989651e26105e94.html" title="./s115_usermode_emulator/75d6993d954bda32a989651e26105e94.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/rndimage</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/1cea223f9a0a1bd77eac99eafa23411c.html" title="./s115_usermode_emulator/1cea223f9a0a1bd77eac99eafa23411c.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./bin/busybox</span> to identify missing areas</pre></a>
+
+<pre>[</span><span class="orange">*</span>] Create unique binary array for </span><span class="orange">/logs/s115_usermode_emulator/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root</span> root path (</span><span class="orange">2/2</span>).</pre>
+<pre>[</span><span class="orange">*</span>] Testing </span><span class="orange">43</span> unique executables in root directory: </span><span class="orange">/logs/s115_usermode_emulator/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root</span> (</span><span class="orange">2/2</span>).</pre>
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN libiptc.so.0.0.0 was already emulated ... skipping</pre>
+<pre></span></pre>
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN libgcc_s.so.1 was already emulated ... skipping</pre>
+<pre></span></pre>
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN libxtables.so.4.0.0 was already emulated ... skipping</pre>
+<pre></span></pre>
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN libip4tc.so.0.0.0 was already emulated ... skipping</pre>
+<pre></span></pre>
+<br />
+<br />
+<pre></span><span class="blue">==&gt</span></span> </span><span class="cyan"><a id="preparationphase"><a id="preparationphase">Preparation phase</a></a></span></pre>
+<pre><hr class="mono" /></pre>
+<pre>[</span><span class="orange">*</span>] Preparing the environment for usermode emulation</pre>
+<pre>[</span><span class="orange">*</span>] Creating dev area for user mode emulation</pre>
+<pre>[</span><span class="orange">*</span>] Creating /dev/armem</pre>
+<pre>[</span><span class="orange">*</span>] Creating /dev/tty0</pre>
+<pre>[</span><span class="orange">*</span>] Creating /dev/ttyS0 - ttyS3</pre>
+<pre>[</span><span class="orange">*</span>] Creating /dev/adsl0</pre>
+<pre>[</span><span class="orange">*</span>] Creating /dev/hidraw0</pre>
+<br />
+<pre>[</span><span class="orange">*</span>] Currently mounted areas:</pre>
+<pre>    proc on /logs/s115_usermode_emulator/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/proc type proc (rw,relatime)</pre>
+<pre>    tmpfs on /logs/s115_usermode_emulator/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/run type tmpfs (rw,nosuid,nodev,noexec,relatime,mode=755,inode64)</pre>
+<pre>    sysfs on /logs/s115_usermode_emulator/firmware/binwalk_extracted/firmware.extracted/0/DIR-300_fw_revb_214b01_ALL_de_20130206/DIR300_middle_firmware_upgrade.bin.extracted/1100C0/squashfs-root/sys type sysfs (ro,nosuid,nodev,noexec,relatime)</pre>
+<br />
+<pre>[</span><span class="orange">*</span>] Final fixes of the root filesytem in a chroot environment</pre>
+<br />
+<pre><hr class="mono" /></pre>
+<br />
+<a class="reference" href="./s115_usermode_emulator/94c7a3f19a3dd0f70ab3981d69bdaf6c.html" title="./s115_usermode_emulator/94c7a3f19a3dd0f70ab3981d69bdaf6c.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">cgibin</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN servd was already emulated ... skipping</pre>
+<pre></span></pre>
+<a class="reference" href="./s115_usermode_emulator/abbbc4cf25209952c18f848ae20dd0f0.html" title="./s115_usermode_emulator/abbbc4cf25209952c18f848ae20dd0f0.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">portt</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN sendmail was already emulated ... skipping</pre>
+<pre></span></pre>
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN logd was already emulated ... skipping</pre>
+<pre></span></pre>
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN pppd was already emulated ... skipping</pre>
+<pre></span></pre>
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN hostapd was already emulated ... skipping</pre>
+<pre></span></pre>
+<a class="reference" href="./s115_usermode_emulator/faed65ce4a2ff9ed835dfdd0496c2b8f.html" title="./s115_usermode_emulator/faed65ce4a2ff9ed835dfdd0496c2b8f.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./htdocs/cgibin</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/8dfc16414547e61b9999e15b97650c86.html" title="./s115_usermode_emulator/8dfc16414547e61b9999e15b97650c86.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">neaps</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/0a0835a67522df2f20a64f6331536dbc.html" title="./s115_usermode_emulator/0a0835a67522df2f20a64f6331536dbc.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">xmldb</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN igmpproxy was already emulated ... skipping</pre>
+<pre></span></pre>
+<a class="reference" href="./s115_usermode_emulator/f8338b6708572d6f0eb569955268d1e7.html" title="./s115_usermode_emulator/f8338b6708572d6f0eb569955268d1e7.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/portt</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/b72af1fd9308787cb3800e8254724264.html" title="./s115_usermode_emulator/b72af1fd9308787cb3800e8254724264.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">updatewifistats</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/8dbbcbe0829ee32b655f8648252f628c.html" title="./s115_usermode_emulator/8dbbcbe0829ee32b655f8648252f628c.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/neaps</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/e1d00ebbde8377ca4e2423542fc6fff7.html" title="./s115_usermode_emulator/e1d00ebbde8377ca4e2423542fc6fff7.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">proxyd</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN ubcfg was already emulated ... skipping</pre>
+<pre></span></pre>
+<a class="reference" href="./s115_usermode_emulator/f9e30ace7e0b337c88d922550e7e2fde.html" title="./s115_usermode_emulator/f9e30ace7e0b337c88d922550e7e2fde.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/xmldb</span> to identify missing areas</pre></a>
+
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN gpiod was already emulated ... skipping</pre>
+<pre></span></pre>
+<a class="reference" href="./s115_usermode_emulator/7e022a3771ab684dadc8ac0381f0aa1e.html" title="./s115_usermode_emulator/7e022a3771ab684dadc8ac0381f0aa1e.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">telnetd</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/66c05f2e335830ede7ec179fa894fe83.html" title="./s115_usermode_emulator/66c05f2e335830ede7ec179fa894fe83.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/updatewifistats</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/de1eacee232d2ba35a9172663b2192b5.html" title="./s115_usermode_emulator/de1eacee232d2ba35a9172663b2192b5.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">klogd</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/22fe701011a80cb0e1f3de0001b21554.html" title="./s115_usermode_emulator/22fe701011a80cb0e1f3de0001b21554.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/proxyd</span> to identify missing areas</pre></a>
+
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN ddnsd was already emulated ... skipping</pre>
+<pre></span></pre>
+<a class="reference" href="./s115_usermode_emulator/1475f3a39e90f2e96c61c2ebdc08122e.html" title="./s115_usermode_emulator/1475f3a39e90f2e96c61c2ebdc08122e.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">updateleases</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN iptables-multi was already emulated ... skipping</pre>
+<pre></span></pre>
+<a class="reference" href="./s115_usermode_emulator/9b1432890e8c5fd9fd96b6f827e3dff7.html" title="./s115_usermode_emulator/9b1432890e8c5fd9fd96b6f827e3dff7.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">nsbbox</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/fd0dd09d1835a840a2749f7dfc0a5972.html" title="./s115_usermode_emulator/fd0dd09d1835a840a2749f7dfc0a5972.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/telnetd</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/b665be3d70a83b051f1296cdb9b3befd.html" title="./s115_usermode_emulator/b665be3d70a83b051f1296cdb9b3befd.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">widget</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/f15327299368d056c42ebb9fbcd032c2.html" title="./s115_usermode_emulator/f15327299368d056c42ebb9fbcd032c2.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/klogd</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/3bbca2e93c9f9a3d9a6f41985b614693.html" title="./s115_usermode_emulator/3bbca2e93c9f9a3d9a6f41985b614693.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/updateleases</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/d1539b1976958a44b0f963d0cdebeea9.html" title="./s115_usermode_emulator/d1539b1976958a44b0f963d0cdebeea9.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">trigger</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/bb8ad5acc8ff09ea2327c2374bf5fc0c.html" title="./s115_usermode_emulator/bb8ad5acc8ff09ea2327c2374bf5fc0c.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/nsbbox</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/59e015c51160dad8fc2789afc39d3269.html" title="./s115_usermode_emulator/59e015c51160dad8fc2789afc39d3269.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">rgbin</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/3681c56d36862c6d7c49f3ee349be3ce.html" title="./s115_usermode_emulator/3681c56d36862c6d7c49f3ee349be3ce.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/widget</span> to identify missing areas</pre></a>
+
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN lld2d was already emulated ... skipping</pre>
+<pre></span></pre>
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN tc was already emulated ... skipping</pre>
+<pre></span></pre>
+<pre>[</span><span class="orange">*</span>] Binary </span><span class="orange">./usr/sbin/ated</span> (</span><span class="orange">30/43</span>) not emulated - blacklist triggered</pre>
+<a class="reference" href="./s115_usermode_emulator/81a691e058645242ad576dff02903973.html" title="./s115_usermode_emulator/81a691e058645242ad576dff02903973.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/trigger</span> to identify missing areas</pre></a>
+
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN ip was already emulated ... skipping</pre>
+<pre></span></pre>
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN ecmh was already emulated ... skipping</pre>
+<pre></span></pre>
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN dnsmasq was already emulated ... skipping</pre>
+<pre></span></pre>
+<a class="reference" href="./s115_usermode_emulator/890035e2aaf13edd4a371cd6c454ace8.html" title="./s115_usermode_emulator/890035e2aaf13edd4a371cd6c454ace8.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/rgbin</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/c35247e4d2fc4ef1d729dd2ff0fba4aa.html" title="./s115_usermode_emulator/c35247e4d2fc4ef1d729dd2ff0fba4aa.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">netbios</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<pre>[</span><span class="orange">*</span>] Binary </span><span class="orange">./usr/sbin/udhcpd</span> (</span><span class="orange">35/43</span>) not emulated - blacklist triggered</pre>
+<a class="reference" href="./s115_usermode_emulator/88d470cc46bb9d06e2730f05f6e36437.html" title="./s115_usermode_emulator/88d470cc46bb9d06e2730f05f6e36437.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">logger</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/ae3a90396e234721cf949a1e4d51ad11.html" title="./s115_usermode_emulator/ae3a90396e234721cf949a1e4d51ad11.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/netbios</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/64db6deaad7e5168ad3dcc262f989d8f.html" title="./s115_usermode_emulator/64db6deaad7e5168ad3dcc262f989d8f.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">rt3052esw</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/2381334528737bbf6ff36bba46dba607.html" title="./s115_usermode_emulator/2381334528737bbf6ff36bba46dba607.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/logger</span> to identify missing areas</pre></a>
+
+<a class="reference" href="./s115_usermode_emulator/d1cb51b8b9319c111852e140bbbf1e8c.html" title="./s115_usermode_emulator/d1cb51b8b9319c111852e140bbbf1e8c.html" ><pre>[</span><span class="orange">*</span>] Initial CPU detection process of binary </span><span class="orange">wps</span> with CPU configuration </span><span class="orange">NONE</span>.</pre></a>
+
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN iwconfig was already emulated ... skipping</pre>
+<pre></span></pre>
+<a class="reference" href="./s115_usermode_emulator/a9d69673f9f7c2400a59abca462f3d4d.html" title="./s115_usermode_emulator/a9d69673f9f7c2400a59abca462f3d4d.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/rt3052esw</span> to identify missing areas</pre></a>
+
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN rndimage was already emulated ... skipping</pre>
+<pre></span></pre>
+<pre>[</span><span class="orange">*</span>] Binary </span><span class="orange">./sbin/httpd</span> (</span><span class="orange">41/43</span>) not emulated - blacklist triggered</pre>
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN ubcom was already emulated ... skipping</pre>
+<pre></span></pre>
+<pre>[</span><span class="magenta">!</span>]</span><span class="magenta"> BIN busybox was already emulated ... skipping</pre>
+<pre></span></pre>
+<a class="reference" href="./s115_usermode_emulator/75097b171f0a33cac77e5a723ff9b7af.html" title="./s115_usermode_emulator/75097b171f0a33cac77e5a723ff9b7af.html" ><pre>[</span><span class="orange">*</span>] Initial strace run with </span><span class="orange">jchroot</span> on the command </span><span class="orange">./usr/sbin/wps</span> to identify missing areas</pre></a>
+
+<br />
+<br />
+<br />
+<pre></span><span class="blue">==&gt</span></span> </span><span class="cyan"><a id="reportingphase">Reporting phase</a></span></pre>
+<pre><hr class="mono" /></pre>
+<a class="reference" href="./s115_usermode_emulator/680353d23eb61efb29484afa19f35d56.html" title="./s115_usermode_emulator/680353d23eb61efb29484afa19f35d56.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">libiptc.so.0.0.0</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_libiptc.so.0.0.0.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/1b396b56b01dd851067cf9be224b6e85.html" title="./s115_usermode_emulator/1b396b56b01dd851067cf9be224b6e85.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">radvdump</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_radvdump.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/672a20efee9ef7952388de2013faf4bb.html" title="./s115_usermode_emulator/672a20efee9ef7952388de2013faf4bb.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">klogd</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_klogd.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/06e65f58293e7ed80c842d8a4ac22c54.html" title="./s115_usermode_emulator/06e65f58293e7ed80c842d8a4ac22c54.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">ip</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_ip.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/f4c6b713ee1aca164750aa47103257c2.html" title="./s115_usermode_emulator/f4c6b713ee1aca164750aa47103257c2.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">libip4tc.so.0.0.0</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_libip4tc.so.0.0.0.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/424e5fa1a64facfb601df8d896a0cbdd.html" title="./s115_usermode_emulator/424e5fa1a64facfb601df8d896a0cbdd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">updateleases</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_updateleases.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/95add352465b0f72d387eb30a4d14698.html" title="./s115_usermode_emulator/95add352465b0f72d387eb30a4d14698.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">radvd</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_radvd.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/6b0c2050d7a1099db56038014ff345f6.html" title="./s115_usermode_emulator/6b0c2050d7a1099db56038014ff345f6.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">telnetd</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_telnetd.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/1f1b13a6254a09cf73cdf3a5c8201c4a.html" title="./s115_usermode_emulator/1f1b13a6254a09cf73cdf3a5c8201c4a.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">rt3052esw</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_rt3052esw.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/08cd659f237164a6e1b28dfa91c8a978.html" title="./s115_usermode_emulator/08cd659f237164a6e1b28dfa91c8a978.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">ecmh</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_ecmh.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/40511b597be06286eab201d2e901fd10.html" title="./s115_usermode_emulator/40511b597be06286eab201d2e901fd10.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">wps</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_wps.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/7a25e23efcdbc91c7458c902c194b565.html" title="./s115_usermode_emulator/7a25e23efcdbc91c7458c902c194b565.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">proxyd</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_proxyd.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/4f7c4f4ab56493615035f0bb83ef05d1.html" title="./s115_usermode_emulator/4f7c4f4ab56493615035f0bb83ef05d1.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">logger</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_logger.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/598e8811f1c8e32c0439989cc83ad77a.html" title="./s115_usermode_emulator/598e8811f1c8e32c0439989cc83ad77a.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">llmnresp</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_llmnresp.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/ded551bb921171ead11d6ad602e999ac.html" title="./s115_usermode_emulator/ded551bb921171ead11d6ad602e999ac.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">portt</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_portt.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/bf691aa83fc719e93f7923ec72531767.html" title="./s115_usermode_emulator/bf691aa83fc719e93f7923ec72531767.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">trigger</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_trigger.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/215e5ea952947a87256377773d32b790.html" title="./s115_usermode_emulator/215e5ea952947a87256377773d32b790.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">netbios</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_netbios.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/054bba9fa169c70418e04f9a60866016.html" title="./s115_usermode_emulator/054bba9fa169c70418e04f9a60866016.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">cgibin</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_cgibin.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/9fac97e2c7913c9367b6188c1c14b572.html" title="./s115_usermode_emulator/9fac97e2c7913c9367b6188c1c14b572.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">dhcp6c</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_dhcp6c.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/f2a64495068141991ab7008f52077f48.html" title="./s115_usermode_emulator/f2a64495068141991ab7008f52077f48.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">gpiod</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_gpiod.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/b29cd8b0f32f2500efd662e955d3f919.html" title="./s115_usermode_emulator/b29cd8b0f32f2500efd662e955d3f919.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">dhcp6s</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_dhcp6s.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/fc1b4dcd0dd29b215e923342b29f2eb8.html" title="./s115_usermode_emulator/fc1b4dcd0dd29b215e923342b29f2eb8.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">neaps</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_neaps.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/3d375e71c969eadbfb3aff5df342bf63.html" title="./s115_usermode_emulator/3d375e71c969eadbfb3aff5df342bf63.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">ddnsd</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_ddnsd.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/2a1dd85854ad49f18bfbcfc42937e49d.html" title="./s115_usermode_emulator/2a1dd85854ad49f18bfbcfc42937e49d.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">libgcc</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_libgcc_s.so.1.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/a410165caf3e99958cf4d8f91893cc04.html" title="./s115_usermode_emulator/a410165caf3e99958cf4d8f91893cc04.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">rgbin</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_rgbin.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/e17cd4f0f257421875f63bc7e335325b.html" title="./s115_usermode_emulator/e17cd4f0f257421875f63bc7e335325b.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">hostapd</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_hostapd.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/59a2f6630731a15b2e6e153ec9f2337d.html" title="./s115_usermode_emulator/59a2f6630731a15b2e6e153ec9f2337d.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">rdisc6</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_rdisc6.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/fb30850ab0e91c22af4dff9a1e9cb495.html" title="./s115_usermode_emulator/fb30850ab0e91c22af4dff9a1e9cb495.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">libip6tc.so.0.0.0</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_libip6tc.so.0.0.0.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/64a71bc5ada11f1a54ed5330e0156942.html" title="./s115_usermode_emulator/64a71bc5ada11f1a54ed5330e0156942.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">iptables-multi</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_iptables-multi.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/63b4e25c845e2540d18143312a258c09.html" title="./s115_usermode_emulator/63b4e25c845e2540d18143312a258c09.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">iwconfig</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_iwconfig.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/2e9a860806b0cc683be4f1a5318ea3ae.html" title="./s115_usermode_emulator/2e9a860806b0cc683be4f1a5318ea3ae.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">logd</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_logd.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/4b23af5a97ec7ca2dc9a1d78a885fed9.html" title="./s115_usermode_emulator/4b23af5a97ec7ca2dc9a1d78a885fed9.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">dnsmasq</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_dnsmasq.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/e32ce3079477b9bb25e4bf4e509b8dbb.html" title="./s115_usermode_emulator/e32ce3079477b9bb25e4bf4e509b8dbb.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">servd</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_servd.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/d62167b684a3f727cbfccc291bfeb937.html" title="./s115_usermode_emulator/d62167b684a3f727cbfccc291bfeb937.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">ubcfg</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_ubcfg.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/70ebdf95452be17c054dc0e88f49241d.html" title="./s115_usermode_emulator/70ebdf95452be17c054dc0e88f49241d.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">libxtables.so.4.0.0</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_libxtables.so.4.0.0.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/125e7a2675a03fa8629d8cad2c71148c.html" title="./s115_usermode_emulator/125e7a2675a03fa8629d8cad2c71148c.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">sendmail</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_sendmail.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/591ffdf35eb3d0166aac580febeaab76.html" title="./s115_usermode_emulator/591ffdf35eb3d0166aac580febeaab76.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">nsbbox</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_nsbbox.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/039c1c9d01783379434b9e2dc5cb18fc.html" title="./s115_usermode_emulator/039c1c9d01783379434b9e2dc5cb18fc.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">ip6tables-multi</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_ip6tables-multi.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/230a4322a3184488381a4a7b76622faf.html" title="./s115_usermode_emulator/230a4322a3184488381a4a7b76622faf.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">tc</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_tc.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/7b582f340b665074569cee977f30cae4.html" title="./s115_usermode_emulator/7b582f340b665074569cee977f30cae4.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">widget</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_widget.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/b335bb88df994709cf7e17bfd3144a9e.html" title="./s115_usermode_emulator/b335bb88df994709cf7e17bfd3144a9e.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">igmpproxy</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_igmpproxy.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/ae6012642a45575cf937cdc94df98bb2.html" title="./s115_usermode_emulator/ae6012642a45575cf937cdc94df98bb2.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">xmldb</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_xmldb.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/03991da3f623714e26ae30f6f57dfb93.html" title="./s115_usermode_emulator/03991da3f623714e26ae30f6f57dfb93.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">rndimage</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_rndimage.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/dbddc477d7e4e60ce35df7dec9382ebf.html" title="./s115_usermode_emulator/dbddc477d7e4e60ce35df7dec9382ebf.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">pppd</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_pppd.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/8479e67c12a76c45f1f23bc028e7dd9b.html" title="./s115_usermode_emulator/8479e67c12a76c45f1f23bc028e7dd9b.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">ubcom</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_ubcom.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/cb05e0118b8de865f9a87142babc4960.html" title="./s115_usermode_emulator/cb05e0118b8de865f9a87142babc4960.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">busybox</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_busybox.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/95dffbf23202d74c78b52f0132c947c2.html" title="./s115_usermode_emulator/95dffbf23202d74c78b52f0132c947c2.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">lld2d</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_lld2d.txt</span>.</pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s115_usermode_emulator/1920b31378e4c46a516324d4cc192432.html" title="./s115_usermode_emulator/1920b31378e4c46a516324d4cc192432.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"></span> Emulated binary </span><span class="green">updatewifistats</span> generated output in </span><span class="green">/logs/s115_usermode_emulator/qemu_tmp_updatewifistats.txt</span>.</pre></a>
+<pre></span></pre>
+
+  <!-- content end -->
+</div>
+
+<a href="https://github.com/e-m-b-a/emba" title="github.com/e-m-b-a/emba" target="_blank">
+  <div id="buttonInfo" class="rectButtonVisible">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" transform="translate(2 2)"><g stroke="white" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 12.5v-4h-1"/><path d="M7.5 12.5h2"/></g><circle cx="8.5" cy="5.5" fill="white" r="1"/></g></svg>
+  </div>
+</a>
+<a href="./s116_qemu_version_detection.html" title="./s116_qemu_version_detection.html" ><div id="buttonBack" class="rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M9.5 14.5l4-4l-4-4" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg></div></a>
+<a href="./s95_interesting_files_check.html" title="./s95_interesting_files_check.html" ><div id="buttonForward" class="rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M11.5 14.5l-4-4l4-4" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg></div> </a>
+<div id="buttonDown" class="rectButton" onclick="scrollDown()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5l-4 4l-4-4"/><path d="M14.5 10.5l-4 4l-4-4"/></g></svg></div>
+<div id="buttonUp" class="rectButton" onclick="scrollUp()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 14.5l4-4l4 4"/><path d="M6.5 10.5l4-4l4 4"/></g></svg></div> 
+
+<script>
+window.onload = function () {
+  var buttons = document.getElementsByClassName("rectButton");
+  for (let i=0; i<buttons.length; i++) {
+    buttons[i].style.visibility = "visible";
+  }
+  var buttonDown = document.getElementById("buttonDown");
+  buttonDown.classList.add('rectButtonVisible');
+  buttonDown.classList.remove('rectButton');
+
+  var buttonUp = document.getElementById("buttonUp");
+  buttonUp.classList.add('rectButtonVisible');
+  buttonUp.classList.remove('rectButton');
+    
+  var buttonSizer = document.getElementById("buttonSizer");
+  buttonSizer.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+  if (document.getElementById("buttonTime") !== null) {
+    var buttonTime = document.getElementById("buttonTime");
+    buttonTime.style.bottom = "50px";
+  }
+  if (document.getElementById("buttonError") !== null) {
+    var buttonError = document.getElementById("buttonError");
+    buttonError.style.bottom = "100px";
+  }
+  document.getElementById("expand").value = "+ Show more results";
+  document.getElementById("expand").className += " expand";
+  var embarkButton = document.getElementById("embark");
+  if ( !(embarkButton.href.includes("embarkBackUrl")) ) {
+    embarkButton.classList.remove('hidden');
+    document.getElementById("logoImage").src = "./style/embark.svg";
+    document.getElementById("logo").style.background = "#2d2d2d";
+  }
+}
+
+function openNav() {
+  document.getElementById("sidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("nav").style.visibility = "visible";
+}
+
+function closeNav() {
+  document.getElementById("sidenav").style.width = "50px";
+  document.getElementById("sidenav").scrollTop = 0;
+  document.getElementById("main").style.marginLeft = "50px";
+  document.getElementById("nav").style.visibility = "hidden";
+}
+
+function scrollDown() {
+  window.scrollTo(0,document.body.scrollHeight);
+}
+
+function scrollUp() {
+  window.scrollTo(0,0);
+}
+
+function buttonNav() {
+  var button = document.getElementById("buttonSizer");
+  if ( button.classList.contains('buttonOpen') ) {
+    button.classList.remove('buttonOpen');
+    button.classList.add('buttonClose');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+    openNav();
+  } else if( button.classList.contains('buttonClose') ) {
+    button.classList.remove('buttonClose');
+    button.classList.add('buttonOpen');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 7.5v-5h-5"/><path d="M18.5 2.5l-6 5.929"/><path d="M7.5 18.5l-5 .023V13.5"/><path d="M8.5 12.5l-6 6"/></g></svg>';
+    closeNav();
+  };
+}
+
+// the following function is currently not used
+// it is for future extensions
+function overlay_output(link) {
+  var rawfile = new XMLHttpRequest();
+  rawfile.open('GET', link, false);
+  rawfile.overrideMimeType("text");
+  rawfile.onreadystatechange = function()
+  {
+    alert(rawfile.responseText);
+    //console.log(rawfile.responseText);
+  }
+  rawfile.send(null);
+}
+
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+      case 37:
+        document.getElementById("buttonForward").parentNode.click(); 
+        break;
+      case 39:
+        document.getElementById("buttonBack").parentNode.click();       
+        break;
+    }
+};
+</script>
+
+</body>
+</html>

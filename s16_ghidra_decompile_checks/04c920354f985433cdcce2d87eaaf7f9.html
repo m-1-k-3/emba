@@ -1,0 +1,588 @@
+<!-- 
+EMBA - EMBEDDED LINUX ANALYZER
+
+Copyright 2020-2023 Siemens AG
+Copyright 2020-2025 Siemens Energy AG
+
+EMBA comes with ABSOLUTELY NO WARRANTY. This is free software, and you are
+welcome to redistribute it under the terms of the GNU General Public License.
+See LICENSE file for usage of this software.
+
+EMBA is licensed under GPLv3
+
+Author(s) and contributors from the EMBA project are listed here: https://github.com/e-m-b-a/emba/blob/master/CONTRIBUTORS.md
+-->
+
+<!-- Used icons: https://github.com/CoreyGinnivan/system-uicons -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EMBA firmware report</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./../style/style.css" type="text/css">
+  <link rel="icon" type="image/png" href="./../style/favicon.png">
+</head>
+<body>
+
+<div id="sidenav" class="side">
+  <div id="logo">
+    <a class="inherit" href="./../index.html"><img class="inherit" id="logoImage" src="./../style/emba.svg" alt="logo"></a>
+  </div>
+  <div id="nav">
+      <a id="embark" class="hidden" href="{{ embarkBackUrl }}">&laquo; Back to EMBArk</a> <!-- nosem -->
+      <a class="backButton" href="./../index.html">&laquo; Back to main</a>
+<a class="modul" href="./063eac48deed5bf4f0b6de4a99569af2.html" title="./063eac48deed5bf4f0b6de4a99569af2.html" >&laquo; Back to 063eac48deed5bf4f0b6de4a99569af2</a>
+      <!-- navigation start -->
+      <!-- navigation end -->
+      <input id="expand" class="expand_njs hidden" type="button" value="More results:" onclick="this.value=this.value=='+ Show more results'?'- Hide more results':'+ Show more results';">
+      <div class="expand_area">
+        <!-- etc start -->
+        <!-- etc end -->
+      </div>
+  </div>
+
+  <a href="ERRORLINK"><div id="buttonErrorInvisible" class="rectButton"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></div></a>
+  <a href="TIMELINK"><div id="buttonTimeInvisible" class="rectButton"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1 0 0 1 19 2)"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 5.5v4H5"/></g></svg></div></a>
+
+  <div id="buttonSizer" class="rectButton buttonClose" onclick="buttonNav()"></div>
+</div>
+<div id="main" class="main">
+  <!-- content start -->
+<br />
+<pre>/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */</pre>
+<br />
+<pre>undefined4 http_request_handler(int *param_1)</pre>
+<br />
+<pre>{</pre>
+<pre>  undefined *puVar1;</pre>
+<pre>  size_t sVar2;</pre>
+<pre>  tm *ptVar3;</pre>
+<pre>  size_t sVar4;</pre>
+<pre>  in_addr_t iVar5;</pre>
+<pre>  hostent *phVar6;</pre>
+<pre>  int *piVar7;</pre>
+<pre>  uint uVar8;</pre>
+<pre>  int iVar9;</pre>
+<pre>  undefined4 uVar10;</pre>
+<pre>  int iVar11;</pre>
+<pre>  char *pcVar12;</pre>
+<pre>  char *pcVar13;</pre>
+<pre>  char *pcVar14;</pre>
+<pre>  undefined **ppuVar15;</pre>
+<pre>  int iVar16;</pre>
+<pre>  int iVar17;</pre>
+<pre>  undefined4 *puVar18;</pre>
+<pre>  int iVar19;</pre>
+<pre>  int iVar20;</pre>
+<pre>  char *pcVar21;</pre>
+<pre>  socklen_t local_b20;</pre>
+<pre>  time_t tStack_b1c;</pre>
+<pre>  char local_b18 [20];</pre>
+<pre>  char *local_b04;</pre>
+<pre>  int local_b00;</pre>
+<pre>  char *local_afc;</pre>
+<pre>  uint local_af8;</pre>
+<pre>  char *local_af4;</pre>
+<pre>  size_t local_af0;</pre>
+<pre>  char local_aec [64];</pre>
+<pre>  sockaddr local_aac [7];</pre>
+<pre>  char acStack_a3c [512];</pre>
+<pre>  char acStack_83c [2052];</pre>
+<pre>  int local_38;</pre>
+<pre>  int local_34;</pre>
+<pre>  int local_30;</pre>
+<pre>  char *local_2c;</pre>
+<pre>  </pre>
+<pre>  local_b18[0x10] = '\0';</pre>
+<pre>  local_b18[0x11] = '\0';</pre>
+<pre>  local_b18[0x12] = '\0';</pre>
+<pre>  local_b18[0x13] = '\0';</pre>
+<pre>  local_af0 = 0;</pre>
+<pre>  local_b04 = (char *)0x0;</pre>
+<pre>  local_b00 = 0;</pre>
+<pre>  local_afc = (char *)0x0;</pre>
+<pre>  local_af8 = 0;</pre>
+<pre>  local_af4 = (char *)0x0;</pre>
+<pre>  local_34 = param_1[4];</pre>
+<pre>  if (param_1[7] != 3) {</pre>
+<pre>    if (param_1[7] != 5) {</pre>
+<pre>      return 0xffffffff;</pre>
+<pre>    }</pre>
+<pre>    return 0;</pre>
+<pre>  }</pre>
+<pre>  iVar20 = 0;</pre>
+<pre>  iVar16 = -1;</pre>
+<pre>  local_30 = *(int *)(param_1[1] + 4);</pre>
+<pre>  pcVar21 = *(char **)(param_1[1] + 8);</pre>
+<pre>  iVar17 = 1;</pre>
+<pre>  iVar19 = 0;</pre>
+<pre>  do {</pre>
+<pre>    if (local_30 &lt;= iVar20) {</pre>
+<pre>      if (local_af4 == (char *)0x0) {</pre>
+<pre>        ppuVar15 = &amp;PTR_DAT_00418040;</pre>
+<pre>        goto LAB_004044b4;</pre>
+<pre>      }</pre>
+<pre>      break;</pre>
+<pre>    }</pre>
+<pre>    iVar9 = (int)pcVar21[iVar20];</pre>
+<pre>    if ((iVar16 == -1) &amp;&amp; ((*(ushort *)(___ctype_b + iVar9 * 2) &amp; 4) != 0)) {</pre>
+<pre>      iVar16 = iVar20;</pre>
+<pre>    }</pre>
+<pre>    switch(iVar17) {</pre>
+<pre>    case 1:</pre>
+<pre>      if ((iVar9 - 9U &amp; 0xff) &lt; 0x18) {</pre>
+<pre>        if ((1 &lt;&lt; (iVar9 - 9U &amp; 0x1f) &amp; 0x800013U) == 0) {</pre>
+<pre>          iVar17 = 2;</pre>
+<pre>        }</pre>
+<pre>        break;</pre>
+<pre>      }</pre>
+<pre>      goto LAB_004042e0;</pre>
+<pre>    case 2:</pre>
+<pre>      if (iVar9 == 10) {</pre>
+<pre>        iVar19 = iVar20 - iVar16;</pre>
+<pre>        iVar17 = 4;</pre>
+<pre>      }</pre>
+<pre>      else if (iVar9 == 0xd) {</pre>
+<pre>        iVar19 = iVar20 - iVar16;</pre>
+<pre>        iVar17 = 3;</pre>
+<pre>      }</pre>
+<pre>      break;</pre>
+<pre>    case 3:</pre>
+<pre>      iVar17 = 5;</pre>
+<pre>      iVar11 = 10;</pre>
+<pre>      goto LAB_004042c4;</pre>
+<pre>    case 4:</pre>
+<pre>    case 6:</pre>
+<pre>      iVar17 = 0;</pre>
+<pre>      if (iVar9 != 10) goto LAB_004042e0;</pre>
+<pre>      break;</pre>
+<pre>    case 5:</pre>
+<pre>      iVar17 = 6;</pre>
+<pre>      iVar11 = 0xd;</pre>
+<pre>LAB_004042c4:</pre>
+<pre>      if (iVar9 != iVar11) {</pre>
+<pre>LAB_004042e0:</pre>
+<pre>        iVar17 = 2;</pre>
+<pre>      }</pre>
+<pre>    }</pre>
+<pre>    if (iVar19 != 0) {</pre>
+<pre>      if (local_afc == (char *)0x0) {</pre>
+<pre>        ppuVar15 = &amp;PTR_DAT_00418040;</pre>
+<pre>        do {</pre>
+<pre>          pcVar14 = *ppuVar15;</pre>
+<pre>          if (pcVar14 == (char *)0x0) goto LAB_0040441c;</pre>
+<pre>          sVar2 = strlen(pcVar14);</pre>
+<pre><span class="green">          iVar9 = strncasecmp(pcVar21 + iVar16,pcVar14,sVar2)</span></span>   //possible issue identified - semgrep</pre>
+<pre>          ppuVar15 = ppuVar15 + 1;</pre>
+<pre>        } while (iVar9 != 0);</pre>
+<pre>        local_afc = pcVar21 + iVar16 + sVar2;</pre>
+<pre>        local_af8 = iVar19 - sVar2;</pre>
+<pre>        if ((local_afc != (char *)0x0) &amp;&amp; (0 &lt; (int)local_af8)) {</pre>
+<pre>          iVar9 = 0;</pre>
+<pre>          pcVar14 = local_afc;</pre>
+<pre>          do {</pre>
+<pre>            if (*pcVar14 == ' ') {</pre>
+<pre>              pcVar13 = "HTTP/";</pre>
+<pre>              iVar11 = 1;</pre>
+<pre>              pcVar12 = pcVar14;</pre>
+<pre>              while ((iVar11 + iVar9 &lt; (int)local_af8 &amp;&amp;</pre>
+<pre>                     (iVar11 = iVar11 + 1, pcVar12[1] == *pcVar13))) {</pre>
+<pre>                pcVar12 = pcVar12 + 1;</pre>
+<pre>                pcVar13 = pcVar13 + 1;</pre>
+<pre>                if (iVar11 == 6) {</pre>
+<pre>                  if (pcVar14 != (char *)0x0) {</pre>
+<pre><span class="green">                    local_b00 = (~((int)pcVar14 - (int)local_afc) + iVar19) - sVar2</span></span>   //possible issue identified - semgrep</pre>
+<pre>                    local_b04 = pcVar14 + 1;</pre>
+<pre><span class="green">                    local_af8 = (int)pcVar14 - (int)local_afc</span></span>   //possible issue identified - semgrep</pre>
+<pre>                  }</pre>
+<pre>                  goto LAB_0040441c;</pre>
+<pre>                }</pre>
+<pre>              }</pre>
+<pre>            }</pre>
+<pre>            iVar9 = iVar9 + 1;</pre>
+<pre>            pcVar14 = pcVar14 + 1;</pre>
+<pre>          } while (iVar9 &lt; (int)local_af8);</pre>
+<pre>        }</pre>
+<pre>      }</pre>
+<pre>LAB_0040441c:</pre>
+<pre>      iVar9 = strncasecmp(pcVar21 + iVar16,"Host: ",6);</pre>
+<pre>      if (iVar9 == 0) {</pre>
+<pre><span class="green">        local_af0 = iVar19 - 6</span></span>   //possible issue identified - semgrep</pre>
+<pre>        local_af4 = pcVar21 + iVar16 + 6;</pre>
+<pre>      }</pre>
+<pre>      iVar19 = 0;</pre>
+<pre>      iVar16 = -1;</pre>
+<pre>    }</pre>
+<pre>    iVar20 = iVar20 + 1;</pre>
+<pre>  } while (iVar17 != 0);</pre>
+<pre>  goto LAB_004044cc;</pre>
+<pre>LAB_00404778:</pre>
+<pre>  if (puVar18 == (undefined4 *)0x0) goto LAB_00404794;</pre>
+<pre>  iVar19 = strncasecmp(pcVar21,(char *)*puVar18,iVar17 - iVar16);</pre>
+<pre>  if (iVar19 == 0) goto LAB_00404b24;</pre>
+<pre>  puVar18 = (undefined4 *)puVar18[1];</pre>
+<pre>  goto LAB_00404778;</pre>
+<pre>  while( true ) {</pre>
+<pre>    sVar2 = strlen(pcVar14);</pre>
+<pre><span class="green">    iVar16 = strncasecmp(pcVar21,pcVar14,sVar2)</span></span>   //possible issue identified - semgrep</pre>
+<pre>    ppuVar15 = ppuVar15 + 1;</pre>
+<pre>    if (iVar16 == 0) break;</pre>
+<pre>LAB_004044b4:</pre>
+<pre>    pcVar14 = *ppuVar15;</pre>
+<pre>    if (pcVar14 == (char *)0x0) {</pre>
+<pre>      pcVar21 = "error in parsing http request header...(fd=%d)\n";</pre>
+<pre>      iVar16 = *param_1;</pre>
+<pre>      goto LAB_00404f30;</pre>
+<pre>    }</pre>
+<pre>  }</pre>
+<pre>  if (((uint *)param_1[1])[1] &lt; *(uint *)param_1[1]) {</pre>
+<pre>    return 0;</pre>
+<pre>  }</pre>
+<pre>LAB_004044cc:</pre>
+<pre>  sVar2 = local_af0;</pre>
+<pre>  pcVar21 = local_af4;</pre>
+<pre>  if (local_afc == (char *)0x0) {</pre>
+<pre>    iVar16 = *param_1;</pre>
+<pre>    pcVar21 = "no http url found...(fd=%d)\n";</pre>
+<pre>LAB_00404f30:</pre>
+<pre>    debug(_stderr,pcVar21,iVar16);</pre>
+<pre>    return 0xffffffff;</pre>
+<pre>  }</pre>
+<pre>  local_38 = local_34 + 0x44;</pre>
+<pre>  if (g_local_urlfilter == 0) {</pre>
+<pre>    pcVar21 = local_afc + local_af8;</pre>
+<pre>    iVar17 = local_af8 - 1;</pre>
+<pre>    for (iVar16 = iVar17; -1 &lt; iVar16; iVar16 = iVar16 + -1) {</pre>
+<pre>      pcVar14 = pcVar21 + -1;</pre>
+<pre>      pcVar21 = pcVar21 + -1;</pre>
+<pre>      if (*pcVar14 == '.') {</pre>
+<pre>        puVar18 = *(undefined4 **)(param_1[3] + 0x18);</pre>
+<pre>        pcVar21 = local_afc + iVar16 + 1;</pre>
+<pre>        goto LAB_00404778;</pre>
+<pre>      }</pre>
+<pre>    }</pre>
+<pre>LAB_00404794:</pre>
+<pre><span class="green">    memset(acStack_83c,0,0x800)</span></span>   //possible issue identified - semgrep</pre>
+<pre><span class="green">    strcpy(acStack_83c,"URL: ")</span></span>   //possible issue identified - semgrep</pre>
+<pre>    iVar16 = strncasecmp(local_afc,"HTTP://",7);</pre>
+<pre>    if ((iVar16 != 0) &amp;&amp; (local_af4 != (char *)0x0)) {</pre>
+<pre><span class="green">      strcat(acStack_83c,"HTTP://")</span></span>   //possible issue identified - semgrep</pre>
+<pre>      sVar4 = strlen(acStack_83c);</pre>
+<pre>      sVar2 = local_af0;</pre>
+<pre>      if (0x800 &lt; sVar4 + local_af0) {</pre>
+<pre><span class="green">        sVar2 = 0x800 - sVar4</span></span>   //possible issue identified - semgrep</pre>
+<pre>      }</pre>
+<pre><span class="green">      memcpy(acStack_83c + sVar4,local_af4,sVar2)</span></span>   //possible issue identified - semgrep</pre>
+<pre>    }</pre>
+<pre>    sVar2 = strlen(acStack_83c);</pre>
+<pre>    uVar8 = local_af8;</pre>
+<pre>    if (0x800 &lt; local_af8 + 0x20 + sVar2) {</pre>
+<pre>      uVar8 = 0x7e0 - sVar2;</pre>
+<pre>    }</pre>
+<pre><span class="green">    memcpy(acStack_83c + sVar2,local_afc,uVar8)</span></span>   //possible issue identified - semgrep</pre>
+<pre><span class="green">    strcat(acStack_83c,"\nCLIENT: ")</span></span>   //possible issue identified - semgrep</pre>
+<pre>    pcVar21 = inet_ntoa((in_addr)param_1[10]);</pre>
+<pre><span class="green">    strcat(acStack_83c,pcVar21)</span></span>   //possible issue identified - semgrep</pre>
+<pre><span class="green">    strcat(acStack_83c,"\n\n")</span></span>   //possible issue identified - semgrep</pre>
+<pre>    local_aec[0] = '0';</pre>
+<pre>    local_aec[1] = '\0';</pre>
+<pre><span class="green">    memset(local_aec + 2,0,0x3e)</span></span>   //possible issue identified - semgrep</pre>
+<pre>    debug(_stderr,"lookup server \'%s\'\n",acStack_83c);</pre>
+<pre>    puVar1 = g_unixsock;</pre>
+<pre>    iVar16 = socket(1,2,0);</pre>
+<pre>    uVar10 = _stderr;</pre>
+<pre>    if (iVar16 &lt; 0) {</pre>
+<pre>      piVar7 = __errno_location();</pre>
+<pre>      pcVar21 = strerror(*piVar7);</pre>
+<pre>      debug(uVar10,"socket: %s\n",pcVar21);</pre>
+<pre>    }</pre>
+<pre>    else {</pre>
+<pre>      fcntl(iVar16,2,1);</pre>
+<pre>      local_aac[0].sa_family = 1;</pre>
+<pre><span class="green">      snprintf(local_aac[0].sa_data,0x6c,"%s",puVar1)</span></span>   //possible issue identified - semgrep</pre>
+<pre>      iVar17 = connect(iVar16,local_aac,0x6e);</pre>
+<pre>      uVar10 = _stderr;</pre>
+<pre>      if (iVar17 &lt; 0) {</pre>
+<pre>        piVar7 = __errno_location();</pre>
+<pre>        pcVar21 = strerror(*piVar7);</pre>
+<pre>        pcVar14 = "connect: %s.\n";</pre>
+<pre>LAB_00404ad8:</pre>
+<pre>        debug(uVar10,pcVar14,pcVar21);</pre>
+<pre>      }</pre>
+<pre>      else {</pre>
+<pre>        if (iVar16 == 0) goto LAB_00404b00;</pre>
+<pre>        sVar2 = strlen(acStack_83c);</pre>
+<pre>        send(iVar16,acStack_83c,sVar2,0x4000);</pre>
+<pre><span class="green">        pcVar21 = (char *)recv(iVar16,local_aec,0x40,0)</span></span>   //possible issue identified - semgrep</pre>
+<pre>        if ((int)pcVar21 &lt; 1) {</pre>
+<pre>          pcVar14 = "error readding from socket\n";</pre>
+<pre>          uVar10 = _stderr;</pre>
+<pre>          goto LAB_00404ad8;</pre>
+<pre>        }</pre>
+<pre>        local_aec[(int)pcVar21] = '\0';</pre>
+<pre>      }</pre>
+<pre>      close(iVar16);</pre>
+<pre>    }</pre>
+<pre>LAB_00404b00:</pre>
+<pre>    iVar16 = atoi(local_aec);</pre>
+<pre>  }</pre>
+<pre>  else if ((int)local_af0 &lt; 0x200) {</pre>
+<pre><span class="green">    memset(acStack_a3c,0,0x200)</span></span>   //possible issue identified - semgrep</pre>
+<pre><span class="green">    memcpy(acStack_a3c,pcVar21,sVar2)</span></span>   //possible issue identified - semgrep</pre>
+<pre>    time(&amp;tStack_b1c);</pre>
+<pre>    puVar18 = &amp;g_url_list;</pre>
+<pre>    ptVar3 = localtime(&amp;tStack_b1c);</pre>
+<pre>    iVar16 = -1;</pre>
+<pre>    local_2c = acStack_a3c;</pre>
+<pre>    do {</pre>
+<pre>      while( true ) {</pre>
+<pre>        iVar16 = iVar16 + 1;</pre>
+<pre>        if ((iVar16 == 0x20) || ((char *)*puVar18 == (char *)0x0)) {</pre>
+<pre>          if (g_local_urlfilter_action == 1) goto LAB_00404704;</pre>
+<pre>          iVar16 = 200;</pre>
+<pre>          goto LAB_00404b18;</pre>
+<pre>        }</pre>
+<pre>        pcVar21 = strstr(local_2c,(char *)*puVar18);</pre>
+<pre>        if (pcVar21 != (char *)0x0) break;</pre>
+<pre>LAB_004046d4:</pre>
+<pre>        puVar18 = puVar18 + 0x11;</pre>
+<pre>      }</pre>
+<pre>      if (puVar18[1] == 0) break;</pre>
+<pre>      if ((&amp;g_url_list)[iVar16 * 0x11 + ptVar3-&gt;tm_wday + 2] == 0) goto LAB_004046d4;</pre>
+<pre>      local_b18[0] = '\0';</pre>
+<pre>      local_b18[1] = '\0';</pre>
+<pre>      local_b18[2] = '\0';</pre>
+<pre>      local_b18[3] = '\0';</pre>
+<pre>      local_b18[4] = '\0';</pre>
+<pre>      local_b18[5] = '\0';</pre>
+<pre>      local_b18[6] = '\0';</pre>
+<pre>      local_b18[7] = '\0';</pre>
+<pre>      local_b18[8] = '\0';</pre>
+<pre>      local_b18[9] = '\0';</pre>
+<pre>      local_b18[10] = '\0';</pre>
+<pre>      local_b18[0xb] = '\0';</pre>
+<pre>      local_b18[0xc] = '\0';</pre>
+<pre>      local_b18[0xd] = '\0';</pre>
+<pre>      local_b18[0xe] = '\0';</pre>
+<pre>      local_b18[0xf] = '\0';</pre>
+<pre><span class="green">      sprintf(local_b18,"%02d:%02d",ptVar3-&gt;tm_hour,ptVar3-&gt;tm_min)</span></span>   //possible issue identified - semgrep</pre>
+<pre>      iVar17 = strcmp(&amp;DAT_0041a274 + iVar16 * 0x44,local_b18);</pre>
+<pre>      if (0 &lt; iVar17) goto LAB_004046d4;</pre>
+<pre>      iVar17 = strcmp(local_b18,&amp;DAT_0041a284 + iVar16 * 0x44);</pre>
+<pre>      puVar18 = puVar18 + 0x11;</pre>
+<pre>    } while (0 &lt; iVar17);</pre>
+<pre>    if (g_local_urlfilter_action == 1) {</pre>
+<pre>      iVar16 = 200;</pre>
+<pre>    }</pre>
+<pre>    else {</pre>
+<pre>LAB_00404704:</pre>
+<pre>      iVar16 = 0x193;</pre>
+<pre>    }</pre>
+<pre>  }</pre>
+<pre>  else {</pre>
+<pre>    printf("%s(): target too long.\n","query_local_url_filter");</pre>
+<pre>    iVar16 = 0x193;</pre>
+<pre>  }</pre>
+<pre>LAB_00404b18:</pre>
+<pre>  if (iVar16 == 200) {</pre>
+<pre>LAB_00404b24:</pre>
+<pre>    local_b20 = 0x10;</pre>
+<pre>    if (*(int *)(local_34 + 0x44) != 0) {</pre>
+<pre>      param_1[7] = 5;</pre>
+<pre>      return 0;</pre>
+<pre>    }</pre>
+<pre>    *(undefined4 *)(local_34 + 0x68) = 0;</pre>
+<pre>    *(undefined4 *)(local_34 + 0x6c) = 0;</pre>
+<pre>    *(undefined4 *)(local_34 + 0x70) = 0;</pre>
+<pre>    *(undefined4 *)(local_34 + 0x74) = 0;</pre>
+<pre>    iVar16 = getsockopt(*param_1,0,0x50,(void *)(local_34 + 0x68),&amp;local_b20);</pre>
+<pre>    uVar10 = _stderr;</pre>
+<pre>    if (iVar16 == 0) {</pre>
+<pre>      pcVar21 = inet_ntoa((in_addr)*(in_addr_t *)(local_38 + 0x28));</pre>
+<pre>      debug(uVar10,"Orgi destination:%s:%u g_smart404:%s\n",pcVar21,*(undefined2 *)(local_34 + 0x6a)</pre>
+<pre>            ,g_smart404);</pre>
+<pre>      if (((g_smart404 != 0) &amp;&amp;</pre>
+<pre>          (iVar5 = inet_addr((char *)g_smart404), iVar5 == *(in_addr_t *)(local_34 + 0x6c))) &amp;&amp;</pre>
+<pre>         (pcVar21 = (char *)malloc(local_af0 + 1), pcVar21 != (char *)0x0)) {</pre>
+<pre><span class="green">        memcpy(pcVar21,local_af4,local_af0)</span></span>   //possible issue identified - semgrep</pre>
+<pre>        uVar10 = _stderr;</pre>
+<pre>        pcVar21[local_af0] = '\0';</pre>
+<pre>        debug(uVar10,"Got host:%s\n",pcVar21);</pre>
+<pre>        phVar6 = gethostbyname(pcVar21);</pre>
+<pre>        uVar10 = _stderr;</pre>
+<pre>        if (phVar6 == (hostent *)0x0) {</pre>
+<pre>          piVar7 = __h_errno_location();</pre>
+<pre>          pcVar14 = hstrerror(*piVar7);</pre>
+<pre>          debug(uVar10,"gethostbyname error for host: %s",pcVar14);</pre>
+<pre>        }</pre>
+<pre>        else if (phVar6-&gt;h_addrtype == 2) {</pre>
+<pre><span class="green">          memcpy((void *)(local_34 + 0x6c),*phVar6-&gt;h_addr_list,4)</span></span>   //possible issue identified - semgrep</pre>
+<pre>          uVar10 = _stderr;</pre>
+<pre>          pcVar14 = inet_ntoa((in_addr)*(in_addr_t *)(local_38 + 0x28));</pre>
+<pre>          debug(uVar10,"New destination:%s:%u\n",pcVar14,*(undefined2 *)(local_34 + 0x6a));</pre>
+<pre>        }</pre>
+<pre>        free(pcVar21);</pre>
+<pre>      }</pre>
+<pre>      iVar16 = socket(2,2,6);</pre>
+<pre>      *(int *)(local_34 + 0x44) = iVar16;</pre>
+<pre>      if (iVar16 &lt; 1) {</pre>
+<pre>        return 0xffffffff;</pre>
+<pre>      }</pre>
+<pre>      uVar8 = fcntl(iVar16,3);</pre>
+<pre>      fcntl(*(int *)(local_34 + 0x44),4,uVar8 | 0x80);</pre>
+<pre>      iVar16 = 2;</pre>
+<pre>LAB_00404e94:</pre>
+<pre>      param_1[7] = iVar16;</pre>
+<pre>      return 0;</pre>
+<pre>    }</pre>
+<pre>    pcVar21 = "can not get original destination\n";</pre>
+<pre>  }</pre>
+<pre>  else {</pre>
+<pre>    pcVar21 = (char *)0x0;</pre>
+<pre>    for (piVar7 = *(int **)(param_1[3] + 0x1c); piVar7 != (int *)0x0; piVar7 = (int *)piVar7[2]) {</pre>
+<pre>      if (pcVar21 == (char *)0x0) {</pre>
+<pre>        iVar17 = *piVar7;</pre>
+<pre>        if (iVar17 == 0) {</pre>
+<pre>          pcVar21 = (char *)piVar7[1];</pre>
+<pre>          goto LAB_00404e10;</pre>
+<pre>        }</pre>
+<pre>      }</pre>
+<pre>      else {</pre>
+<pre>LAB_00404e10:</pre>
+<pre>        iVar17 = *piVar7;</pre>
+<pre>      }</pre>
+<pre>      if (iVar17 == iVar16) {</pre>
+<pre>        pcVar21 = (char *)piVar7[1];</pre>
+<pre>        break;</pre>
+<pre>      }</pre>
+<pre>    }</pre>
+<pre>    if (0 &lt; *(int *)(local_34 + 0x44)) {</pre>
+<pre>      close_connection(local_38);</pre>
+<pre>    }</pre>
+<pre>    if (pcVar21 != (char *)0x0) {</pre>
+<pre><span class="green">      iVar16 = open(pcVar21,0x80)</span></span>   //possible issue identified - semgrep</pre>
+<pre>      *(int *)(local_34 + 0x44) = iVar16;</pre>
+<pre>      if (0 &lt; iVar16) {</pre>
+<pre>        iVar16 = 1;</pre>
+<pre>        goto LAB_00404e94;</pre>
+<pre>      }</pre>
+<pre>    }</pre>
+<pre>    pcVar21 = "can not open error page\n";</pre>
+<pre>  }</pre>
+<pre>  debug(_stderr,pcVar21);</pre>
+<pre>  return 0xffffffff;</pre>
+<pre>}</pre>
+<br />
+  <!-- content end -->
+</div>
+
+<a href="https://github.com/e-m-b-a/emba" title="github.com/e-m-b-a/emba" target="_blank">
+  <div id="buttonInfo" class="rectButtonVisible">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" transform="translate(2 2)"><g stroke="white" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 12.5v-4h-1"/><path d="M7.5 12.5h2"/></g><circle cx="8.5" cy="5.5" fill="white" r="1"/></g></svg>
+  </div>
+</a>
+<div id="buttonBack" class="nonClickable rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M9.5 14.5l4-4l-4-4" fill="none" stroke="#444" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<div id="buttonForward" class="nonClickable rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M11.5 14.5l-4-4l4-4" fill="none" stroke="#444" stroke-linecap="round" stroke-linejoin="round"/></svg></div> 
+<div id="buttonDown" class="rectButton" onclick="scrollDown()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5l-4 4l-4-4"/><path d="M14.5 10.5l-4 4l-4-4"/></g></svg></div>
+<div id="buttonUp" class="rectButton" onclick="scrollUp()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 14.5l4-4l4 4"/><path d="M6.5 10.5l4-4l4 4"/></g></svg></div> 
+
+<script>
+window.onload = function () {
+  var buttons = document.getElementsByClassName("rectButton");
+  for (let i=0; i<buttons.length; i++) {
+    buttons[i].style.visibility = "visible";
+  }
+  var buttonDown = document.getElementById("buttonDown");
+  buttonDown.classList.add('rectButtonVisible');
+  buttonDown.classList.remove('rectButton');
+
+  var buttonUp = document.getElementById("buttonUp");
+  buttonUp.classList.add('rectButtonVisible');
+  buttonUp.classList.remove('rectButton');
+    
+  var buttonSizer = document.getElementById("buttonSizer");
+  buttonSizer.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+  if (document.getElementById("buttonTime") !== null) {
+    var buttonTime = document.getElementById("buttonTime");
+    buttonTime.style.bottom = "50px";
+  }
+  if (document.getElementById("buttonError") !== null) {
+    var buttonError = document.getElementById("buttonError");
+    buttonError.style.bottom = "100px";
+  }
+  document.getElementById("expand").value = "+ Show more results";
+  document.getElementById("expand").className += " expand";
+  var embarkButton = document.getElementById("embark");
+  if ( !(embarkButton.href.includes("embarkBackUrl")) ) {
+    embarkButton.classList.remove('hidden');
+    document.getElementById("logoImage").src = "./../style/embark.svg";
+    document.getElementById("logo").style.background = "#2d2d2d";
+  }
+}
+
+function openNav() {
+  document.getElementById("sidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("nav").style.visibility = "visible";
+}
+
+function closeNav() {
+  document.getElementById("sidenav").style.width = "50px";
+  document.getElementById("sidenav").scrollTop = 0;
+  document.getElementById("main").style.marginLeft = "50px";
+  document.getElementById("nav").style.visibility = "hidden";
+}
+
+function scrollDown() {
+  window.scrollTo(0,document.body.scrollHeight);
+}
+
+function scrollUp() {
+  window.scrollTo(0,0);
+}
+
+function buttonNav() {
+  var button = document.getElementById("buttonSizer");
+  if ( button.classList.contains('buttonOpen') ) {
+    button.classList.remove('buttonOpen');
+    button.classList.add('buttonClose');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+    openNav();
+  } else if( button.classList.contains('buttonClose') ) {
+    button.classList.remove('buttonClose');
+    button.classList.add('buttonOpen');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 7.5v-5h-5"/><path d="M18.5 2.5l-6 5.929"/><path d="M7.5 18.5l-5 .023V13.5"/><path d="M8.5 12.5l-6 6"/></g></svg>';
+    closeNav();
+  };
+}
+
+// the following function is currently not used
+// it is for future extensions
+function overlay_output(link) {
+  var rawfile = new XMLHttpRequest();
+  rawfile.open('GET', link, false);
+  rawfile.overrideMimeType("text");
+  rawfile.onreadystatechange = function()
+  {
+    alert(rawfile.responseText);
+    //console.log(rawfile.responseText);
+  }
+  rawfile.send(null);
+}
+
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+      case 37:
+        document.getElementById("buttonForward").parentNode.click(); 
+        break;
+      case 39:
+        document.getElementById("buttonBack").parentNode.click();       
+        break;
+    }
+};
+</script>
+
+</body>
+</html>

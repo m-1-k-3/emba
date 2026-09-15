@@ -1,0 +1,337 @@
+<!-- 
+EMBA - EMBEDDED LINUX ANALYZER
+
+Copyright 2020-2023 Siemens AG
+Copyright 2020-2025 Siemens Energy AG
+
+EMBA comes with ABSOLUTELY NO WARRANTY. This is free software, and you are
+welcome to redistribute it under the terms of the GNU General Public License.
+See LICENSE file for usage of this software.
+
+EMBA is licensed under GPLv3
+
+Author(s) and contributors from the EMBA project are listed here: https://github.com/e-m-b-a/emba/blob/master/CONTRIBUTORS.md
+-->
+
+<!-- Used icons: https://github.com/CoreyGinnivan/system-uicons -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EMBA firmware report</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style/style.css" type="text/css">
+  <link rel="icon" type="image/png" href="./style/favicon.png">
+</head>
+<body>
+
+<div id="sidenav" class="side">
+  <div id="logo">
+    <a class="inherit" href="./index.html"><img class="inherit" id="logoImage" src="./style/emba.svg" alt="logo"></a>
+  </div>
+  <div id="nav">
+      <a id="embark" class="hidden" href="{{ embarkBackUrl }}">&laquo; Back to EMBArk</a> <!-- nosem -->
+      <a class="backButton" href="./index.html">&laquo; Back to main</a>
+      <!-- navigation start --><a class="modul" href="#check_decompiled_binary_source_code_for_vulnerabilities" title="#check_decompiled_binary_source_code_for_vulnerabilities" >Check decompiled binary source code for vulnerabilities</a><a class="submodul" href="#resultsghidradecompiledcodeanalysisviasemgrep" title="#resultsghidradecompiledcodeanalysisviasemgrep" >Results - Ghidra decompiled code analysis via Semgrep</a>
+      <!-- navigation end -->
+      <input id="expand" class="expand_njs hidden" type="button" value="More results:" onclick="this.value=this.value=='+ Show more results'?'- Hide more results':'+ Show more results';">
+      <div class="expand_area">
+        <!-- etc start -->
+        <!-- etc end -->
+      </div>
+  </div>
+
+  <a href="ERRORLINK"><div id="buttonErrorInvisible" class="rectButton"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></div></a>
+  <a href="TIMELINK"><div id="buttonTimeInvisible" class="rectButton"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1 0 0 1 19 2)"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 5.5v4H5"/></g></svg></div></a>
+
+  <div id="buttonSizer" class="rectButton buttonClose" onclick="buttonNav()"></div>
+</div>
+<div id="main" class="main">
+  <!-- content start -->
+<pre>[</span><span class="blue">+</span>] </span><span class="cyan"><span class="bold"><a id="check_decompiled_binary_source_code_for_vulnerabilities">Check decompiled binary source code for vulnerabilities</a></span></pre>
+<pre><span class="bold"><hr class="double" /></span></pre>
+<pre>The following module tries to decompile the firmware binaries with Ghidra. Afterwards it tests the decompiled sources with semgrep for vulnerabilities.</pre>
+<pre>Furhter details about the used approach are documented by </span><span class="orange">0xdea</span> in the following resources:</pre>
+<pre>    [*] </span><span class="orange"><a href="https://security.humanativaspa.it/automating-binary-vulnerability-discovery-with-ghidra-and-semgrep/" title="https://security.humanativaspa.it/automating-binary-vulnerability-discovery-with-ghidra-and-semgrep/" target="_blank" >https://security.humanativaspa.it/automating-binary-vulnerability-discovery-with-ghidra-and-semgrep/</a></span></pre>
+<pre>    [*] </span><span class="orange"><a href="https://github.com/0xdea/ghidra-scripts/blob/main/Haruspex.java" title="https://github.com/0xdea/ghidra-scripts/blob/main/Haruspex.java" target="_blank" >https://github.com/0xdea/ghidra-scripts/blob/main/Haruspex.java</a></span></pre>
+<pre>    [*] </span><span class="orange"><a href="https://github.com/0xdea/semgrep-rules" title="https://github.com/0xdea/semgrep-rules" target="_blank" >https://github.com/0xdea/semgrep-rules</a></span></pre>
+<br />
+<a class="reference" href="./s16_ghidra_decompile_checks/7c0e81ae7be9bbc68a743346a55cf994.html" title="./s16_ghidra_decompile_checks/7c0e81ae7be9bbc68a743346a55cf994.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">191 issues</span><span class="green"> in native binary </span><span class="orange">updatewifistats</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/36348e42baa762dee8031bcf5944552a.html" title="./s16_ghidra_decompile_checks/36348e42baa762dee8031bcf5944552a.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">396 issues</span><span class="green"> in native binary </span><span class="orange">igmpproxy</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/91f6e6a94dc3e9823dfb7d82f5b6d182.html" title="./s16_ghidra_decompile_checks/91f6e6a94dc3e9823dfb7d82f5b6d182.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">99 issues</span><span class="green"> in native binary </span><span class="orange">libip4tc.so.0.0.0</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/9bb869cedef9a5293caeee5a08729817.html" title="./s16_ghidra_decompile_checks/9bb869cedef9a5293caeee5a08729817.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">104 issues</span><span class="green"> in native binary </span><span class="orange">libip6tc.so.0.0.0</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/ea9d8cc8975360eaccfa8266624d9e55.html" title="./s16_ghidra_decompile_checks/ea9d8cc8975360eaccfa8266624d9e55.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">1236 issues</span><span class="green"> in native binary </span><span class="orange">cgibin</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/2a5675a0ea6073d433fe5948c30b85a5.html" title="./s16_ghidra_decompile_checks/2a5675a0ea6073d433fe5948c30b85a5.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">1236 issues</span><span class="green"> in native binary </span><span class="orange">cgibin</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/40a1b91e7740f094a653e0a3ed242a59.html" title="./s16_ghidra_decompile_checks/40a1b91e7740f094a653e0a3ed242a59.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">128 issues</span><span class="green"> in native binary </span><span class="orange">servd</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/83c13922cc624c3678cbcaaecf339765.html" title="./s16_ghidra_decompile_checks/83c13922cc624c3678cbcaaecf339765.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">114 issues</span><span class="green"> in native binary </span><span class="orange">libxtables.so.4.0.0</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/92ea7f3db5dde170825e744198ef1200.html" title="./s16_ghidra_decompile_checks/92ea7f3db5dde170825e744198ef1200.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">332 issues</span><span class="green"> in native binary </span><span class="orange">rgbin</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/35ac17d0047e808eab9c94304019aeac.html" title="./s16_ghidra_decompile_checks/35ac17d0047e808eab9c94304019aeac.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">146 issues</span><span class="green"> in native binary </span><span class="orange">ddnsd</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/6f889f0c3eb84f58bae1c1de492e8e01.html" title="./s16_ghidra_decompile_checks/6f889f0c3eb84f58bae1c1de492e8e01.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">445 issues</span><span class="green"> in native binary </span><span class="orange">udhcpd</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/5c8f205de034914fd09bb1a21a320d2e.html" title="./s16_ghidra_decompile_checks/5c8f205de034914fd09bb1a21a320d2e.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">272 issues</span><span class="green"> in native binary </span><span class="orange">xmldb</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/b6bb10080a39f6f12989c636416b51a9.html" title="./s16_ghidra_decompile_checks/b6bb10080a39f6f12989c636416b51a9.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">107 issues</span><span class="green"> in native binary </span><span class="orange">nsbbox</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/ba1c5c60b501b5a65d93abe80a4c8475.html" title="./s16_ghidra_decompile_checks/ba1c5c60b501b5a65d93abe80a4c8475.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">122 issues</span><span class="green"> in native binary </span><span class="orange">gpiod</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/b6304e579b9ac273c780aaf16722ae5b.html" title="./s16_ghidra_decompile_checks/b6304e579b9ac273c780aaf16722ae5b.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">183 issues</span><span class="green"> in native binary </span><span class="orange">lld2d</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/9c0a256faabf0cce854087098f354510.html" title="./s16_ghidra_decompile_checks/9c0a256faabf0cce854087098f354510.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">70 issues</span><span class="green"> in native binary </span><span class="orange">updateleases</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/b77d301b2e48806dd374222e9b00310f.html" title="./s16_ghidra_decompile_checks/b77d301b2e48806dd374222e9b00310f.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">97 issues</span><span class="green"> in native binary </span><span class="orange">neaps</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/4e8109feb554f4139793708e7a0b4395.html" title="./s16_ghidra_decompile_checks/4e8109feb554f4139793708e7a0b4395.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">88 issues</span><span class="green"> in native binary </span><span class="orange">logd</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/7eefba3aa31a4eb85ab01ecd8e3cfff5.html" title="./s16_ghidra_decompile_checks/7eefba3aa31a4eb85ab01ecd8e3cfff5.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">26 issues</span><span class="green"> in native binary </span><span class="orange">ated</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/0d887cc9ea32f30666d7e54da7156fa4.html" title="./s16_ghidra_decompile_checks/0d887cc9ea32f30666d7e54da7156fa4.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">31 issues</span><span class="green"> in native binary </span><span class="orange">ubcom</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/063eac48deed5bf4f0b6de4a99569af2.html" title="./s16_ghidra_decompile_checks/063eac48deed5bf4f0b6de4a99569af2.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">123 issues</span><span class="green"> in native binary </span><span class="orange">proxyd</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/d107333bb7121ee3c45a1c76eebe0252.html" title="./s16_ghidra_decompile_checks/d107333bb7121ee3c45a1c76eebe0252.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">39 issues</span><span class="green"> in native binary </span><span class="orange">portt</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/83401a7202e3df841f41c9e529a80c96.html" title="./s16_ghidra_decompile_checks/83401a7202e3df841f41c9e529a80c96.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">486 issues</span><span class="green"> in native binary </span><span class="orange">dhcp6s</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/0030ad9a4949638d308c599f4b0a1469.html" title="./s16_ghidra_decompile_checks/0030ad9a4949638d308c599f4b0a1469.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">13 issues</span><span class="green"> in native binary </span><span class="orange">netbios</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/6845b9231bcd24a7091e327c0e95f224.html" title="./s16_ghidra_decompile_checks/6845b9231bcd24a7091e327c0e95f224.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">620 issues</span><span class="green"> in native binary </span><span class="orange">dhcp6c</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/a5fe56b270b36ebf448616a6f8f77ebc.html" title="./s16_ghidra_decompile_checks/a5fe56b270b36ebf448616a6f8f77ebc.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">26 issues</span><span class="green"> in native binary </span><span class="orange">libutil-0.9.30.1.so</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/7e728e727fc3503b4ce5d9bff6b6bebf.html" title="./s16_ghidra_decompile_checks/7e728e727fc3503b4ce5d9bff6b6bebf.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">36 issues</span><span class="green"> in native binary </span><span class="orange">libpthread-0.9.30.1.so</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/8532ca590ae4d71a21510fc6e1296691.html" title="./s16_ghidra_decompile_checks/8532ca590ae4d71a21510fc6e1296691.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">60 issues</span><span class="green"> in native binary </span><span class="orange">llmnresp</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/23aacbcb8904dcb06bc8f7e0da841e56.html" title="./s16_ghidra_decompile_checks/23aacbcb8904dcb06bc8f7e0da841e56.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">51 issues</span><span class="green"> in native binary </span><span class="orange">sw_tcpip.ko</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/29ff2b27f964f77167c901b32111a294.html" title="./s16_ghidra_decompile_checks/29ff2b27f964f77167c901b32111a294.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">24 issues</span><span class="green"> in native binary </span><span class="orange">ubcfg</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/a58dd77502f8a7dfaa1eb53f94f4e3bd.html" title="./s16_ghidra_decompile_checks/a58dd77502f8a7dfaa1eb53f94f4e3bd.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">44 issues</span><span class="green"> in native binary </span><span class="orange">rndimage</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/1263c6bfeaa9a72bad5aca5fe6818a82.html" title="./s16_ghidra_decompile_checks/1263c6bfeaa9a72bad5aca5fe6818a82.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">15 issues</span><span class="green"> in native binary </span><span class="orange">widget</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/6151253c2c1a742c0814458131741e41.html" title="./s16_ghidra_decompile_checks/6151253c2c1a742c0814458131741e41.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">98 issues</span><span class="green"> in native binary </span><span class="orange">ecmh</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/99e76ffc28d3a0d431f1f3479a2a374b.html" title="./s16_ghidra_decompile_checks/99e76ffc28d3a0d431f1f3479a2a374b.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">4 issues</span><span class="green"> in native binary </span><span class="orange">libm-0.9.30.1.so</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/182d9ec13d047cd6fd4aa6bc7d2ae32c.html" title="./s16_ghidra_decompile_checks/182d9ec13d047cd6fd4aa6bc7d2ae32c.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">14 issues</span><span class="green"> in native binary </span><span class="orange">librt-0.9.30.1.so</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/96199aea7c6cf738286764351ced3c6e.html" title="./s16_ghidra_decompile_checks/96199aea7c6cf738286764351ced3c6e.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">4 issues</span><span class="green"> in native binary </span><span class="orange">ifresetcnt.ko</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/b14e2deddd27b1d550bb874bad8c8c19.html" title="./s16_ghidra_decompile_checks/b14e2deddd27b1d550bb874bad8c8c19.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">7 issues</span><span class="green"> in native binary </span><span class="orange">rt3052esw</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/fd6ee6857ef71eaead928d59d643c0fe.html" title="./s16_ghidra_decompile_checks/fd6ee6857ef71eaead928d59d643c0fe.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">3 issues</span><span class="green"> in native binary </span><span class="orange">libipt_HIJACK.so</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/3914d1c2e2840833c65b63853d51516a.html" title="./s16_ghidra_decompile_checks/3914d1c2e2840833c65b63853d51516a.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">21 issues</span><span class="green"> in native binary </span><span class="orange">libdl-0.9.30.1.so</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/dfcb5289802430e6fe9f1cb0f53844cb.html" title="./s16_ghidra_decompile_checks/dfcb5289802430e6fe9f1cb0f53844cb.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">121 issues</span><span class="green"> in native binary </span><span class="orange">wps</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/3be7a34e7213e92a7aac592bc0e5466e.html" title="./s16_ghidra_decompile_checks/3be7a34e7213e92a7aac592bc0e5466e.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">16 issues</span><span class="green"> in native binary </span><span class="orange">libxt_mport.so</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/a3cb600e4a0a392f12e203ea2251f94c.html" title="./s16_ghidra_decompile_checks/a3cb600e4a0a392f12e203ea2251f94c.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">5757 issues</span><span class="green"> in native binary </span><span class="orange">rt2860v2_ap.ko</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/7aee94e706e86668df1cb8f1593b9bb3.html" title="./s16_ghidra_decompile_checks/7aee94e706e86668df1cb8f1593b9bb3.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">5560 issues</span><span class="green"> in native binary </span><span class="orange">decompressed.bin.elf</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<a class="reference" href="./s16_ghidra_decompile_checks/a8c79b5871c4965398645124a9bbd938.html" title="./s16_ghidra_decompile_checks/a8c79b5871c4965398645124a9bbd938.html" ><pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">5560 issues</span><span class="green"> in native binary </span><span class="orange">decompressed.bin.elf</span><span class="green"> (</span><span class="red">common linux file: no</span><span class="green">)</span></pre></a>
+<pre></span></pre>
+
+<br />
+<br />
+<br />
+<pre></span><span class="blue">==&gt</span></span> </span><span class="cyan"><a id="resultsghidradecompiledcodeanalysisviasemgrep">Results - Ghidra decompiled code analysis via Semgrep</a></span></pre>
+<pre><hr class="mono" /></pre>
+<pre>[</span><span class="green">+</span>]</span><span class="green"> Found </span><span class="orange">24125</span><span class="green"> possible vulnerabilities (</span><span class="orange">via semgrep on Ghidra decompiled code</span><span class="green">) in </span><span class="orange">49</span><span class="green"> tested binaries:</span></pre>
+<pre></span></pre>
+<pre>    </span><span class="green">command-injection</span><span class="orange"> - 68 times.</span></pre>
+<pre>    </span><span class="green">format-string-bugs</span><span class="orange"> - 4270 times.</span></pre>
+<pre>    </span><span class="green">incorrect-unsigned-comparison</span><span class="orange"> - 17 times.</span></pre>
+<pre>    </span><span class="green">incorrect-use-of-free</span><span class="orange"> - 4 times.</span></pre>
+<pre>    </span><span class="green">insecure-api-access-stat</span><span class="orange"> - 29 times.</span></pre>
+<pre>    </span><span class="green">insecure-api-rand-srand</span><span class="orange"> - 9 times.</span></pre>
+<pre>    </span><span class="green">insecure-api-scanf</span><span class="orange"> - 24 times.</span></pre>
+<pre>    </span><span class="green">insecure-api-signal</span><span class="orange"> - 74 times.</span></pre>
+<pre>    </span><span class="green">insecure-api-sprintf-vsprintf</span><span class="orange"> - 686 times.</span></pre>
+<pre>    </span><span class="green">insecure-api-strcpy-strcat</span><span class="orange"> - 191 times.</span></pre>
+<pre>    </span><span class="green">integer-truncation</span><span class="orange"> - 4442 times.</span></pre>
+<pre>    </span><span class="green">integer-wraparound</span><span class="orange"> - 126 times.</span></pre>
+<pre>    </span><span class="green">interesting-api-calls</span><span class="orange"> - 8581 times.</span></pre>
+<pre>    </span><span class="green">off-by-one</span><span class="orange"> - 78 times.</span></pre>
+<pre>    </span><span class="green">overlapping-source-destination</span><span class="orange"> - 1 times.</span></pre>
+<pre>    </span><span class="green">pointer-subtraction</span><span class="orange"> - 77 times.</span></pre>
+<pre>    </span><span class="green">signed-unsigned-conversion</span><span class="orange"> - 4980 times.</span></pre>
+<pre>    </span><span class="green">unchecked-ret-malloc</span><span class="orange"> - 245 times.</span></pre>
+<pre>    </span><span class="green">unchecked-ret-scanf</span><span class="orange"> - 30 times.</span></pre>
+<pre>    </span><span class="green">unchecked-ret-setuid-seteuid</span><span class="orange"> - 1 times.</span></pre>
+<pre>    </span><span class="green">unsafe-ret-snprintf-vsnprintf</span><span class="orange"> - 6 times.</span></pre>
+<pre>    </span><span class="green">unsafe-ret-strlcpy-strlcat</span><span class="orange"> - 4 times.</span></pre>
+<pre>    </span><span class="green">unterminated-string-strncpy</span><span class="orange"> - 97 times.</span></pre>
+<pre>    </span><span class="green">use-after-free</span><span class="orange"> - 2 times.</span></pre>
+<pre>    </span><span class="green">use-of-source-size-in-copy</span><span class="orange"> - 83 times.</span></pre>
+<br />
+<pre><hr class="mono" /></pre>
+<br />
+  <!-- content end -->
+</div>
+
+<a href="https://github.com/e-m-b-a/emba" title="github.com/e-m-b-a/emba" target="_blank">
+  <div id="buttonInfo" class="rectButtonVisible">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" transform="translate(2 2)"><g stroke="white" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="8"/><path d="M8.5 12.5v-4h-1"/><path d="M7.5 12.5h2"/></g><circle cx="8.5" cy="5.5" fill="white" r="1"/></g></svg>
+  </div>
+</a>
+<a href="./s17_cwe_checker.html" title="./s17_cwe_checker.html" ><div id="buttonBack" class="rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M9.5 14.5l4-4l-4-4" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg></div></a>
+<a href="./s14_weak_func_radare_check.html" title="./s14_weak_func_radare_check.html" ><div id="buttonForward" class="rectButtonVisible"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><path d="M11.5 14.5l-4-4l4-4" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg></div> </a>
+<div id="buttonDown" class="rectButton" onclick="scrollDown()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5l-4 4l-4-4"/><path d="M14.5 10.5l-4 4l-4-4"/></g></svg></div>
+<div id="buttonUp" class="rectButton" onclick="scrollUp()"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 14.5l4-4l4 4"/><path d="M6.5 10.5l4-4l4 4"/></g></svg></div> 
+
+<script>
+window.onload = function () {
+  var buttons = document.getElementsByClassName("rectButton");
+  for (let i=0; i<buttons.length; i++) {
+    buttons[i].style.visibility = "visible";
+  }
+  var buttonDown = document.getElementById("buttonDown");
+  buttonDown.classList.add('rectButtonVisible');
+  buttonDown.classList.remove('rectButton');
+
+  var buttonUp = document.getElementById("buttonUp");
+  buttonUp.classList.add('rectButtonVisible');
+  buttonUp.classList.remove('rectButton');
+    
+  var buttonSizer = document.getElementById("buttonSizer");
+  buttonSizer.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+  if (document.getElementById("buttonTime") !== null) {
+    var buttonTime = document.getElementById("buttonTime");
+    buttonTime.style.bottom = "50px";
+  }
+  if (document.getElementById("buttonError") !== null) {
+    var buttonError = document.getElementById("buttonError");
+    buttonError.style.bottom = "100px";
+  }
+  document.getElementById("expand").value = "+ Show more results";
+  document.getElementById("expand").className += " expand";
+  var embarkButton = document.getElementById("embark");
+  if ( !(embarkButton.href.includes("embarkBackUrl")) ) {
+    embarkButton.classList.remove('hidden');
+    document.getElementById("logoImage").src = "./style/embark.svg";
+    document.getElementById("logo").style.background = "#2d2d2d";
+  }
+}
+
+function openNav() {
+  document.getElementById("sidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("nav").style.visibility = "visible";
+}
+
+function closeNav() {
+  document.getElementById("sidenav").style.width = "50px";
+  document.getElementById("sidenav").scrollTop = 0;
+  document.getElementById("main").style.marginLeft = "50px";
+  document.getElementById("nav").style.visibility = "hidden";
+}
+
+function scrollDown() {
+  window.scrollTo(0,document.body.scrollHeight);
+}
+
+function scrollUp() {
+  window.scrollTo(0,0);
+}
+
+function buttonNav() {
+  var button = document.getElementById("buttonSizer");
+  if ( button.classList.contains('buttonOpen') ) {
+    button.classList.remove('buttonOpen');
+    button.classList.add('buttonClose');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 16.5v-4.978l-5-.022"/><path d="M18.5 2.5l-7 7"/><path d="M16.5 9.5l-5 .023V4.5"/><path d="M9.5 11.5l-7 7"/></g></svg>';
+    openNav();
+  } else if( button.classList.contains('buttonClose') ) {
+    button.classList.remove('buttonClose');
+    button.classList.add('buttonOpen');
+    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="40" height="40" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="white" stroke-linecap="round" stroke-linejoin="round"><path d="M18.5 7.5v-5h-5"/><path d="M18.5 2.5l-6 5.929"/><path d="M7.5 18.5l-5 .023V13.5"/><path d="M8.5 12.5l-6 6"/></g></svg>';
+    closeNav();
+  };
+}
+
+// the following function is currently not used
+// it is for future extensions
+function overlay_output(link) {
+  var rawfile = new XMLHttpRequest();
+  rawfile.open('GET', link, false);
+  rawfile.overrideMimeType("text");
+  rawfile.onreadystatechange = function()
+  {
+    alert(rawfile.responseText);
+    //console.log(rawfile.responseText);
+  }
+  rawfile.send(null);
+}
+
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+      case 37:
+        document.getElementById("buttonForward").parentNode.click(); 
+        break;
+      case 39:
+        document.getElementById("buttonBack").parentNode.click();       
+        break;
+    }
+};
+</script>
+
+</body>
+</html>
